@@ -1,0 +1,32 @@
+:root {
+    /*background*/
+    --colour-bg-links:#9b3417;
+    --colour-bg-products:#ffffff;
+
+    /*product colours*/
+    --colour-mini: #9d6048;
+    --colour-keyharp: #7A4043;
+    --colour-toy: #8C6054;
+    --colour-zakka: #B75455;
+    --colour-parts: #7B5036;
+    --colour-combo: #B85426;
+    --colour-electric: #7B4E1F;
+    --colour-headphones: #A5432B;
+    --colour-effects:#8A5037;
+    --colour-fashion:#B86231;
+    --colour-other:#9A5F3A;
+
+    /*highlighted product colour*/
+    --colour-mini-highlight: #9A7C69;
+    --colour-keyharp-highlight: #5A5385;
+    --colour-toy-highlight: #7F96A8;
+    --colour-zakka-highlight: #D37AA8;
+    --colour-parts-highlight: #5E7367;
+    --colour-combo-highlight: #D67939;
+    --colour-electric-highight: #60722F;
+    --colour-headphones-highlight: #AD5646;
+    --colour-effects-highlight:#7B7468;
+    --colour-fashion-highlight:#D89854;
+    --colour-other-highlight:#9C956A;
+
+}
