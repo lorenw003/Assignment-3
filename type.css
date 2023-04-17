@@ -1,0 +1,14 @@
+@import url("https://use.typekit.net/aqr0nlg.css");
+
+:root {
+    --font-primary: futura-pt, sans-serif;
+    --font-content: 'Lucida Sans';
+}
+
+h1 {
+    font-family: var(--font-primary);
+}
+
+p {
+    font-family: var(--font-content);
+}
