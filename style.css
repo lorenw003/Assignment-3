@@ -5,6 +5,24 @@
     background-color: var(--colour-bg);
 }
 
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    text-align: center;
+}
+
+.keyNav {
+    max-width: 20vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1em;
+}
+
 .key {
     border-radius: 15px 60px 60px 15px;
     border: 2px solid;
@@ -14,12 +32,15 @@
     
     color: var(--colour-text);
     text-align: center;
-    display: inline-block;
-    font: 20px var(--font-content);
+    font: 15px var(--font-content);
 }
 
 .icon {
     border: 2px solid;
+}
+
+.combo {
+    border-color: var(--colour-combo);
 }
 
 .mini {
