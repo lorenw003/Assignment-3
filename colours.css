@@ -1,7 +1,10 @@
 :root {
     /*background*/
     --colour-bg-links:#9b3417;
-    --colour-bg-products:#ffffff;
+    --colour-bg:#FAF8EF;
+
+    /* text */
+    --colour-text: #8A5037;
 
     /*product colours*/
     --colour-mini: #9d6048;
