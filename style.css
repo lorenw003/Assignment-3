@@ -1,18 +1,63 @@
 @import url(colours.css);
+@import url(webfontkit-20230428-230817/type.css);
+
+:root{
+    background-color: var(--colour-bg);
+}
 
 .key {
     border-radius: 15px 60px 60px 15px;
     border: 2px solid;
 
-    padding: 15px 70px 15px 70px;
     background-color: var(--colour-bg);
+    padding: 0.5em;
     
     color: var(--colour-text);
     text-align: center;
     display: inline-block;
-    font-size: 20px;
+    font: 20px var(--font-content);
+}
+
+.icon {
+    border: 2px solid;
 }
 
 .mini {
     border-color: var(--colour-mini);
+}
+
+.keyHarp {
+    border-color: var(--colour-keyharp);
+}
+
+.toy {
+    border-color: var(--colour-keyharp);
+}
+
+.electric {
+    border-color: var(--colour-electric);
+}
+
+.headphones {
+    border-color: var(--colour-headphones);
+}
+
+.effects {
+    border-color: var(--colour-effects);
+}
+
+.parts {
+    border-color: var(--colour-parts);
+}
+
+.fashion {
+    border-color: var(--colour-fashion);
+}
+
+.zakka {
+    border-color: var(--colour-zakka);
+}
+
+.other {
+    border-color: var(--colour-other);
 }
