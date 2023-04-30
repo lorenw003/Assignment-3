@@ -16,7 +16,7 @@
     font-family: 'asikueitalic';
     src: url('asikue-oblique-webfont.woff2') format('woff2'),
          url('asikue-oblique-webfont.woff') format('woff');
-    font-weight: normal;
+    font-weight: lighter;
     font-style: normal;
 
 }
@@ -40,7 +40,7 @@
     font-family: 'asikueregular';
     src: url('asikue-regular-webfont.woff2') format('woff2'),
          url('asikue-regular-webfont.woff') format('woff');
-    font-weight: normal;
+    font-weight: lighter;
     font-style: normal;
 
 }
@@ -61,7 +61,7 @@ h1 {
 }
 
 h2 {
-    font-family: var(--font-primary);
+    font-family: var(--font-content);
     color: var(--colour-text);
     margin: 0;
 }
