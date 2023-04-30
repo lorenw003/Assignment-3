@@ -57,8 +57,23 @@
 h1 {
     font-family: var(--font-primary);
     color: var(--colour-text);
+    margin: 0;
+}
+
+h2 {
+    font-family: var(--font-primary);
+    color: var(--colour-text);
+    margin: 0;
+}
+
+h3 {
+    font-family: var(--font-content);
+    color: var(--colour-text);
+    margin: 0;
 }
 
 p {
     font-family: var(--font-content);
+    color: var(--colour-text);
+    margin: 0;
 }
