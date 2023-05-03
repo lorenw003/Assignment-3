@@ -3,33 +3,40 @@
     --colour-bg-links:#9b3417;
     --colour-bg:#FAF8EF;
 
+    --colour-primary-accent: #BF6B3F;
+    --colour-secondary-accent: #F3A23F;
+
+    --colour-primary: #8A5037;
+    --colour-secondary: #AB7D5B;
+
+
     /* text */
     --colour-text: #8A5037;
 
-    /*product colours*/
-    --colour-mini: #9d6048;
-    --colour-keyharp: #7A4043;
-    --colour-toy: #8C6054;
-    --colour-zakka: #B75455;
-    --colour-parts: #7B5036;
-    --colour-combo: #B85426;
-    --colour-electric: #7B4E1F;
-    --colour-headphones: #A5432B;
-    --colour-effects:#8A5037;
-    --colour-fashion:#B86231;
-    --colour-other:#9A5F3A;
+    /*dark product colours*/
+    --colour-mini-dark: #9d6048;
+    --colour-keyharp-dark: #7A4043;
+    --colour-toy-dark: #8C6054;
+    --colour-zakka-dark: #B75455;
+    --colour-parts-dark: #7B5036;
+    --colour-combo-dark: #B85426;
+    --colour-electric-dark: #7B4E1F;
+    --colour-headphones-dark: #A5432B;
+    --colour-effects-dark:#8A5037;
+    --colour-fashion-dark:#B86231;
+    --colour-other-dark:#9A5F3A;
 
     /*highlighted product colour*/
-    --colour-mini-highlight: #9A7C69;
-    --colour-keyharp-highlight: #5A5385;
-    --colour-toy-highlight: #7F96A8;
-    --colour-zakka-highlight: #D37AA8;
-    --colour-parts-highlight: #5E7367;
-    --colour-combo-highlight: #D67939;
-    --colour-electric-highight: #60722F;
-    --colour-headphones-highlight: #AD5646;
-    --colour-effects-highlight:#7B7468;
-    --colour-fashion-highlight:#D89854;
-    --colour-other-highlight:#9C956A;
+    --colour-mini: #9A7C69;
+    --colour-keyharp: #5A5385;
+    --colour-toy: #7F96A8;
+    --colour-zakka: #D37AA8;
+    --colour-parts: #5E7367;
+    --colour-combo: #D67939;
+    --colour-electric: #60722F;
+    --colour-headphones: #AD5646;
+    --colour-effects:#7B7468;
+    --colour-fashion:#D89854;
+    --colour-other:#9C956A;
 
 }

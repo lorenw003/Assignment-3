@@ -1,0 +1,58 @@
+@import url(reset.css);
+@import url(colours.css);
+@import url(webfontkit-20230428-230817/type.css);
+
+.cluster {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center;
+    flex-direction: row; */
+}
+
+.cluster > * {
+    margin: 0.5rem;
+}
+
+.sidebar-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.sidebar{
+    flex-basis: 40rem;
+    flex-grow: 1;
+}
+
+.not-sidebar{
+    flex-basis: 0;
+    flex-grow: 999;
+    min-width: 50%;
+}
+
+.stack{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.stack > main {
+    justify-content: space-around;
+}
+
+.centre {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cover{
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.top {
+    margin-bottom: auto;
+}
