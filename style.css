@@ -19,13 +19,16 @@ main {
     justify-content: space-between;
 }
 
-.title > h1 {
-    font-size: 100px;
+.title {
     color: var(--colour-primary-accent);
 }
 
 .subtitle {
     color: var(--colour-secondary-accent);
+}
+
+.title__big {
+    font-size: 100px;
 }
 
 
@@ -104,6 +107,11 @@ main {
     border-color: var(--colour-combo);
 }
 
+.combo:hover {
+    border-color: var(--colour-combo);
+    background-color: var(--colour-bg);
+}
+
 .mini {
     border-color: var(--colour-mini);
 }
@@ -113,7 +121,7 @@ main {
 }
 
 .toy {
-    border-color: var(--colour-keyharp);
+    border-color: var(--colour-toy);
 }
 
 .electric {
