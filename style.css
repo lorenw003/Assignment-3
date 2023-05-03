@@ -7,28 +7,12 @@
     background-color: var(--colour-bg);
 }
 
-body {
-    max-height: 100%;
-}
-
 main {
     min-height: 100vh;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-
-.title {
-    color: var(--colour-primary-accent);
-}
-
-.subtitle {
-    color: var(--colour-secondary-accent);
-}
-
-.title__big {
-    font-size: 100px;
 }
 
 

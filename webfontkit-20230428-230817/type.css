@@ -57,7 +57,7 @@
     --text-base-size: 1em;
     --text-scale-ratio: 1.2;
 
-    --text-xs: calc(var(--text-base-size)/var(--text-scale-ratio) * var(text-scale-ratio));
+    --text-xs: calc((var(--text-base-size)/var(--text-scale-ratio)) * var(text-scale-ratio));
     --text-sm: var(--text-base-size)
     --text-md: calc(var(--text-base-size) * var(--text-scale-ratio));
     --text-lg: calc(var(--text-base-size)* var(--text-scale-ratio) * var(--text-scale-ratio));
@@ -76,13 +76,13 @@ h1 {
 }
 
 h2 {
-    font-family: var(--font-content);
+    font-family: var(--font-primary);
     color: var(--colour-text);
     font-size: var(--text-xxl);   
 }
 
 h3 {
-    font-family: var(--font-content);
+    font-family: var(--font-primary);
     color: var(--colour-text);
     font-size: var(--text-xl);
 }
@@ -99,16 +99,31 @@ h5 {
     font-size: var(--text-md);
 }
 
+h6 {
+    font-family: var(--font-content);
+    color: var(--colour-text);
+    font-size: var(--text-sm);
+}
+
+h7 {
+    font-family: var(--font-content);
+    color: var(--colour-text);
+    font-size: var(--text-xs);
+}
+
 p {
     font-family: var(--font-content);
     color: var(--colour-text);
 }
 
 .title {
-    font-size: 100px;
     color: var(--colour-primary-accent);
 }
 
 .subtitle {
     color: var(--colour-secondary-accent);
+}
+
+.title__big {
+    font-size: 100px;
 }

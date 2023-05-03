@@ -40,6 +40,11 @@
     justify-content: space-around;
 }
 
+.stack__logo {
+    display: flex;
+    flex-direction: column;
+}
+
 .centre {
     text-align: center;
     margin-left: auto;
