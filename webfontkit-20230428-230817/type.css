@@ -2,9 +2,9 @@
 
 @font-face {
     font-family: 'asikueitalic';
-    src: url('asikue-oblique-webfont.woff2') format('woff2'),
-         url('asikue-oblique-webfont.woff') format('woff');
-    font-weight: normal;
+    src: url('https://github.com/lorenw003/Assignment-3/blob/main/webfontkit-20230428-230817/asikue-oblique-webfont.woff2') format('woff2'),
+         url('https://github.com/lorenw003/Assignment-3/blob/main/webfontkit-20230428-230817/asikue-oblique-webfont.woff') format('woff');
+    font-weight: lighter;
     font-style: normal;
 
 }

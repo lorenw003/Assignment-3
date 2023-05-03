@@ -53,9 +53,8 @@ main {
 
 .key:hover {
     border-width: 2px 2px 2px 0 ;
-    max-width: 95%;
-    max-height: 95%;
-    font-size: 95%;
+    max-width: 97%;
+    max-height: 97%;
 }
 
 .key > h3 {
