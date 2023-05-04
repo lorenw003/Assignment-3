@@ -50,6 +50,8 @@
     --font-primary: 'asikueregular';
     --font-content: 'asikueitalic';
 
+    --font-neutral: "Hiragino Sans", "ヒラギノ角ゴ", sans-serif;
+
     /* text */
     --colour-text: #8A5037;
 
@@ -57,7 +59,8 @@
     --text-base-size: 1em;
     --text-scale-ratio: 1.2;
 
-    --text-xs: calc((var(--text-base-size)/var(--text-scale-ratio)) * var(text-scale-ratio));
+
+    --text-xs: calc((var(--text-base-size)/var(--text-scale-ratio)));
     --text-sm: var(--text-base-size)
     --text-md: calc(var(--text-base-size) * var(--text-scale-ratio));
     --text-lg: calc(var(--text-base-size)* var(--text-scale-ratio) * var(--text-scale-ratio));
@@ -111,9 +114,25 @@ h7 {
     font-size: var(--text-xs);
 }
 
-p {
-    font-family: var(--font-content);
+h8 {
+    font-family: var(--font-neutral);
+    font-weight: 500;
     color: var(--colour-text);
+    font-size: var(--text-xs);
+}
+
+p {
+    font-family: "Hiragino Sans", "ヒラギノ角ゴ", sans-serif;
+    color: var(--colour-text);
+}
+
+a {
+    font-family: var(--font-neutral);
+    font-weight: 300;
+    text-decoration: none;
+    color: var(--colour-secondary);
+    line-height: 1.7em;
+    font-size: var(--text-xs);
 }
 
 .title {

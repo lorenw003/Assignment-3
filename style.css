@@ -10,9 +10,9 @@
 main {
     min-height: 100vh;
 
-    display: flex;
+    /* display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between; */
 }
 
 
@@ -93,8 +93,9 @@ main {
 }
 
 
-.combo {
+.combo, .combo > svg > path {
     border-color: var(--colour-combo);
+    fill: var(--colour-combo);
 }
 
 .combo__key {
@@ -107,8 +108,9 @@ main {
     fill: var(--colour-bg);
 }
 
-.mini {
+.mini, .mini > svg > path {
     border-color: var(--colour-mini);
+    fill: var(--colour-mini);
 }
 
 .mini__key {
@@ -252,4 +254,12 @@ main {
     border-width: 2px 2px 2px 0 ;
     max-width: 97%;
     max-height: 97%;
+}
+
+.socials {
+    max-width: 50%;
+}
+
+footer {
+    margin: 2em;
 }
