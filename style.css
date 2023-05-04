@@ -261,12 +261,8 @@ main {
     max-height: 97%;
 }
 
-.socials {
-    max-width: 90%;
-}
-
 footer {
-    margin: 2em;
+    margin: 8%;
 }
 
 .disabled {

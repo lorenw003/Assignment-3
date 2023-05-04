@@ -135,6 +135,12 @@ a {
     font-size: var(--text-xs);
 }
 
+label {
+    font-family: var(--font-neutral);
+    font-weight: 300;
+    font-size: var(--text-sm);
+}
+
 .title {
     color: var(--colour-primary-accent);
 }
