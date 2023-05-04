@@ -11,6 +11,19 @@ main {
     min-height: 100vh;
 }
 
+button {
+    border: 0.5px solid var(--colour-primary);
+    border-radius: 0.4em;
+
+    background-color: var(--colour-bg);
+
+    padding: 0 1em 0.2em 1em;
+}
+
+button:hover, button:hover > h4 {
+    background-color: var(--colour-primary);
+    color: var(--colour-bg);
+}
 
 .keyNav {
     flex: 0 0 20vw; 
@@ -290,6 +303,7 @@ input:checked {
     border-color: var(--colour-primary); 
 
     padding: 1.5em;
+    height: fit-content;
 }
 
 .product {
