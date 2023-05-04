@@ -45,6 +45,9 @@
     flex-direction: column;
 }
 
+.stack__logo > h3 {
+    margin-left: auto;
+}
 .centre {
     text-align: center;
     margin-left: auto;

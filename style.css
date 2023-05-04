@@ -73,6 +73,12 @@ main {
     align-self: center;
 }
 
+.icon:hover, .icon:hover > svg > path  {
+    border-color: var(--colour-bg);
+    background-color: var(--colour-primary);
+    fill: var(--colour-bg);
+}
+
 .icon > svg {
     max-width: 65%;
     max-height: 65%;
@@ -86,52 +92,119 @@ main {
     background-color: var(--colour-primary);
 }
 
+.icon__brown:hover, .icon__brown:hover > svg > path  {
+    border-color: var(--colour-primary);
+    background-color: var(--colour-bg);
+    fill: var(--colour-primary);
+}
+
 
 .combo {
     border-color: var(--colour-combo);
 }
 
-.combo:hover {
-    border-color: var(--colour-combo);
-    background-color: var(--colour-bg);
+.combo:hover, .combo:hover > svg > path  {
+    border-color: var(--colour-bg);
+    background-color: var(--colour-combo);
+    fill: var(--colour-bg);
 }
 
 .mini {
     border-color: var(--colour-mini);
 }
 
+.mini:hover, .mini:hover > svg > path  {
+    border-color: var(--colour-bg);
+    background-color: var(--colour-mini);
+    fill: var(--colour-bg);
+}
+
 .keyHarp {
     border-color: var(--colour-keyharp);
+}
+
+.keyHarp:hover, .keyHarp:hover > svg > path  {
+    border-color: var(--colour-bg);
+    background-color: var(--colour-keyharp);
+    fill: var(--colour-bg);
 }
 
 .toy {
     border-color: var(--colour-toy);
 }
 
+.toy:hover, .toy:hover > svg > path  {
+    border-color: var(--colour-bg);
+    background-color: var(--colour-toy);
+    fill: var(--colour-bg);
+}
+
 .electric {
     border-color: var(--colour-electric);
+}
+
+.electric:hover, .electric:hover > svg > g > path  {
+    border-color: var(--colour-bg);
+    background-color: var(--colour-electric);
+    fill: var(--colour-bg);
 }
 
 .headphones {
     border-color: var(--colour-headphones);
 }
 
+.headphones:hover, .headphones:hover > svg > path  {
+    border-color: var(--colour-bg);
+    background-color: var(--colour-headphones);
+    fill: var(--colour-bg);
+}
+
 .effects {
     border-color: var(--colour-effects);
+}
+
+.effects:hover, .effects:hover > svg > g > path, .effects:hover > svg > g > ellipse  {
+    border-color: var(--colour-bg);
+    background-color: var(--colour-effects);
+    fill: var(--colour-bg);
 }
 
 .parts {
     border-color: var(--colour-parts);
 }
 
+.parts:hover, .parts:hover > svg > path  {
+    border-color: var(--colour-bg);
+    background-color: var(--colour-parts);
+    fill: var(--colour-bg);
+}
+
 .fashion {
     border-color: var(--colour-fashion);
+}
+
+.fashion:hover, .fashion:hover > svg > path  {
+    border-color: var(--colour-bg);
+    background-color: var(--colour-fashion);
+    fill: var(--colour-bg);
 }
 
 .zakka {
     border-color: var(--colour-zakka);
 }
 
+.zakka:hover, .zakka:hover > svg > path  {
+    border-color: var(--colour-bg);
+    background-color: var(--colour-zakka);
+    fill: var(--colour-bg);
+}
+
 .other {
     border-color: var(--colour-other);
+}
+
+.other:hover, .other:hover > svg > text  {
+    border-color: var(--colour-bg);
+    background-color: var(--colour-other);
+    fill: var(--colour-bg);
 }
