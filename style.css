@@ -9,10 +9,6 @@
 
 main {
     min-height: 100vh;
-
-    /* display: flex;
-    flex-direction: row;
-    justify-content: space-between; */
 }
 
 
@@ -67,7 +63,7 @@ main {
     align-self: center;
 }
 
-.search:hover, .search:hover > svg > path  {
+.icon:hover, .icon:hover > svg > path, .icon:hover > svg > g > path  {
     border-color: var(--colour-bg);
     background-color: var(--colour-primary);
     fill: var(--colour-bg);
@@ -123,8 +119,9 @@ main {
     fill: var(--colour-bg);
 }
 
-.keyHarp {
+.keyHarp, .keyHarp > svg > path {
     border-color: var(--colour-keyharp);
+    fill: var(--colour-keyharp);
 }
 
 .keyHarp__key {
@@ -137,8 +134,9 @@ main {
     fill: var(--colour-bg);
 }
 
-.toy {
+.toy, .toy > svg > path {
     border-color: var(--colour-toy);
+    fill: var(--colour-toy);
 }
 
 .toy__key {
@@ -151,8 +149,9 @@ main {
     fill: var(--colour-bg);
 }
 
-.electric {
+.electric, .electric > svg > g > path {
     border-color: var(--colour-electric);
+    fill: var(--colour-electric);
 }
 
 .electric__key {
@@ -165,8 +164,9 @@ main {
     fill: var(--colour-bg);
 }
 
-.headphones {
+.headphones, .headphones > svg > path {
     border-color: var(--colour-headphones);
+    fill: var(--colour-headphones);
 }
 
 .headphones__key {
@@ -180,8 +180,9 @@ main {
     fill: var(--colour-bg);
 }
 
-.effects {
+.effects, .effects > svg > g > path {
     border-color: var(--colour-effects);
+    fill: var(--colour-effects);
 }
 
 .effects__key {
@@ -194,8 +195,9 @@ main {
     fill: var(--colour-bg);
 }
 
-.parts {
+.parts, .parts > svg > path {
     border-color: var(--colour-parts);
+    fill: var(--colour-parts);
 }
 
 .parts__key {
@@ -208,8 +210,9 @@ main {
     fill: var(--colour-bg);
 }
 
-.fashion {
+.fashion, .fashion > svg > path {
     border-color: var(--colour-fashion);
+    fill: var(--colour-fashion);
 }
 
 .fashion__key {
@@ -222,8 +225,9 @@ main {
     fill: var(--colour-bg);
 }
 
-.zakka {
+.zakka, .zakka > svg > path{
     border-color: var(--colour-zakka);
+    fill: var(--colour-zakka);
 }
 
 .zakka__key {
@@ -236,8 +240,9 @@ main {
     fill: var(--colour-bg);
 }
 
-.other {
+.other, .other > svg > text {
     border-color: var(--colour-other);
+    fill: var(--colour-other);
 }
 
 .other__key {
@@ -257,9 +262,13 @@ main {
 }
 
 .socials {
-    max-width: 50%;
+    max-width: 90%;
 }
 
 footer {
     margin: 2em;
+}
+
+.disabled {
+    pointer-events:none;
 }
