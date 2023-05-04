@@ -285,9 +285,15 @@ input:checked {
 }
 
 .filters {
-    border-radius: 0.3em;
+    border-radius: 0.6em;
     border: 0.5px solid;
     border-color: var(--colour-primary); 
 
     padding: 1.5em;
+}
+
+.product {
+    border-radius: 0.6em;
+    width: 10em;
+    height: 10em;
 }

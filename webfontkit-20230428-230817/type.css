@@ -98,7 +98,7 @@ h4 {
 
 h5 {
     font-family: var(--font-content);
-    color: var(--colour-text);
+    color: var(--colour-secondary);
     font-size: var(--text-md);
 }
 
