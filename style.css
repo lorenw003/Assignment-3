@@ -38,12 +38,6 @@ main {
     justify-content: space-between;
 }
 
-.key:hover {
-    border-width: 2px 2px 2px 0 ;
-    max-width: 97%;
-    max-height: 97%;
-}
-
 .key > h3 {
     align-self: center;
 }
@@ -73,7 +67,7 @@ main {
     align-self: center;
 }
 
-.icon:hover, .icon:hover > svg > path  {
+.search:hover, .search:hover > svg > path  {
     border-color: var(--colour-bg);
     background-color: var(--colour-primary);
     fill: var(--colour-bg);
@@ -103,6 +97,10 @@ main {
     border-color: var(--colour-combo);
 }
 
+.combo__key {
+    border-color: var(--colour-combo);
+}
+
 .combo:hover, .combo:hover > svg > path  {
     border-color: var(--colour-bg);
     background-color: var(--colour-combo);
@@ -110,6 +108,10 @@ main {
 }
 
 .mini {
+    border-color: var(--colour-mini);
+}
+
+.mini__key {
     border-color: var(--colour-mini);
 }
 
@@ -123,6 +125,10 @@ main {
     border-color: var(--colour-keyharp);
 }
 
+.keyHarp__key {
+    border-color: var(--colour-keyharp);
+}
+
 .keyHarp:hover, .keyHarp:hover > svg > path  {
     border-color: var(--colour-bg);
     background-color: var(--colour-keyharp);
@@ -130,6 +136,10 @@ main {
 }
 
 .toy {
+    border-color: var(--colour-toy);
+}
+
+.toy__key {
     border-color: var(--colour-toy);
 }
 
@@ -143,6 +153,10 @@ main {
     border-color: var(--colour-electric);
 }
 
+.electric__key {
+    border-color: var(--colour-electric);
+}
+
 .electric:hover, .electric:hover > svg > g > path  {
     border-color: var(--colour-bg);
     background-color: var(--colour-electric);
@@ -153,6 +167,11 @@ main {
     border-color: var(--colour-headphones);
 }
 
+.headphones__key {
+    border-color: var(--colour-headphones);
+}
+
+
 .headphones:hover, .headphones:hover > svg > path  {
     border-color: var(--colour-bg);
     background-color: var(--colour-headphones);
@@ -160,6 +179,10 @@ main {
 }
 
 .effects {
+    border-color: var(--colour-effects);
+}
+
+.effects__key {
     border-color: var(--colour-effects);
 }
 
@@ -173,6 +196,10 @@ main {
     border-color: var(--colour-parts);
 }
 
+.parts__key {
+    border-color: var(--colour-parts);
+}
+
 .parts:hover, .parts:hover > svg > path  {
     border-color: var(--colour-bg);
     background-color: var(--colour-parts);
@@ -180,6 +207,10 @@ main {
 }
 
 .fashion {
+    border-color: var(--colour-fashion);
+}
+
+.fashion__key {
     border-color: var(--colour-fashion);
 }
 
@@ -193,6 +224,10 @@ main {
     border-color: var(--colour-zakka);
 }
 
+.zakka__key {
+    border-color: var(--colour-zakka);
+}
+
 .zakka:hover, .zakka:hover > svg > path  {
     border-color: var(--colour-bg);
     background-color: var(--colour-zakka);
@@ -203,8 +238,18 @@ main {
     border-color: var(--colour-other);
 }
 
+.other__key {
+    border-color: var(--colour-other);
+}
+
 .other:hover, .other:hover > svg > text  {
     border-color: var(--colour-bg);
     background-color: var(--colour-other);
     fill: var(--colour-bg);
+}
+
+.key:hover {
+    border-width: 2px 2px 2px 0 ;
+    max-width: 97%;
+    max-height: 97%;
 }
