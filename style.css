@@ -42,7 +42,6 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0% 5% 0% 5%;
 }
 
 .nav-icon {
@@ -261,10 +260,6 @@ main {
     max-height: 97%;
 }
 
-footer {
-    margin: 8%;
-}
-
 .disabled {
     pointer-events:none;
 }
@@ -287,4 +282,12 @@ input:checked {
     background-color: var(--colour-primary);
     border: 0.3rem solid var(--colour-bg);
     box-shadow: 0 0 0 1px var(--colour-primary);
-  }
+}
+
+.filters {
+    border-radius: 0.3em;
+    border: 0.5px solid;
+    border-color: var(--colour-primary); 
+
+    padding: 1.5em;
+}
