@@ -129,16 +129,20 @@ p {
 a {
     font-family: var(--font-neutral);
     font-weight: 300;
+    font-size: var(--text-xs);
+
     text-decoration: none;
     color: var(--colour-secondary);
+
     line-height: 1.7em;
-    font-size: var(--text-xs);
 }
 
 label {
     font-family: var(--font-neutral);
     font-weight: 300;
     font-size: var(--text-sm);
+
+    color: var(--colour-primary);
 }
 
 .title {

@@ -268,3 +268,23 @@ footer {
 .disabled {
     pointer-events:none;
 }
+
+input {
+    appearance: none;
+
+    width: 1rem;
+    height: 1rem;
+
+    border-radius: 50%;
+
+    background-color: var(--colour-bg);
+    border: 1px solid var(--colour-primary);
+
+    position:relative;
+}
+
+input:checked {
+    background-color: var(--colour-primary);
+    border: 0.3rem solid var(--colour-bg);
+    box-shadow: 0 0 0 1px var(--colour-primary);
+  }
