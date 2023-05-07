@@ -267,6 +267,17 @@ button:hover, button:hover > h4 {
     fill: var(--colour-bg);
 }
 
+.icon__second, .icon__second > svg > path {
+    border-color: var(--colour-secondary);
+    fill: var(--colour-secondary);
+}
+
+.icon__second:hover, .icon__second:hover > svg > path {
+    border-color: var(--colour-bg);
+    background-color: var(--colour-secondary);
+    fill: var(--colour-bg);
+}
+
 .key:hover {
     border-width: 2px 2px 2px 0 ;
     max-width: 97%;
@@ -298,7 +309,7 @@ input:checked {
 }
 
 .filters {
-    border-radius: 0.6em;
+    border-radius: 0.8em;
     border: 0.5px solid;
     border-color: var(--colour-primary); 
 
@@ -310,4 +321,13 @@ input:checked {
     border-radius: 0.6em;
     width: 10em;
     height: 10em;
+}
+
+hr {
+    border: 0.5px solid var(--colour-primary);
+    padding: 0;
+}
+
+img {
+    border-radius: 0.8em;
 }
