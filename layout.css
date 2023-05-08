@@ -54,10 +54,15 @@
 .stack__logo {
     display: flex;
     flex-direction: column;
+    width:16%
 }
 
 .stack__logo > .title {
-    margin-left: auto;
+    align-self: flex-end;
+}
+
+.stack__logo > .subtitle {
+    align-self: flex-start;
 }
 
 .centre {
@@ -75,6 +80,7 @@
 
 .top {
     margin-bottom: auto;
+    margin-top: 0;
 }
 
 body {
