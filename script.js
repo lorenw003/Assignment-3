@@ -25,3 +25,29 @@ function includeHTML() {
       }
     }
   }
+
+
+let myArr = [
+  {
+    name: "Saxaphone",
+    cost: 88000,
+    image: "1601288220_file2.jpg"
+   },
+   {
+    name: "Saxaphone",
+    cost: 88000,
+    image: "1601288220_file2.jpg"
+   }
+]
+
+function loadElements(array) {
+  for (let i in array) {
+    let newDiv = document.createElement("div");
+    newDiv.innerHTML = "<h5>" + array.name + "</h5><h8>¥" + array.cost + "</h8>";
+    console.log(newDiv.innerHTML);
+  }
+}
+
+function setUp() {
+loadElements(myArr);
+}
