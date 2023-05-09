@@ -21,7 +21,7 @@ button {
     padding: 0 1em 0.2em 1em;
 }
 
-button:hover, button:hover > h4 {
+button:hover, button:hover > h4, button:hover > h5 {
     background-color: var(--colour-primary);
     color: var(--colour-bg);
 }
@@ -77,6 +77,11 @@ button:hover, button:hover > h4 {
     display: flex;
     justify-content: center;
     align-self: center;
+}
+
+.icon__small {
+    width: 2em;
+    height: 2em;
 }
 
 .icon:hover, .icon:hover > svg > path, .icon:hover > svg > g > path  {
@@ -360,10 +365,30 @@ input:checked {
     padding: 1rem;
 }
 
+.box__fit {
+    border-radius: 0.8em;
+    border: 0.5px solid;
+    border-color: var(--colour-primary); 
+
+    padding: 1em;
+    height: fit-content;
+}
+
+/* IMAGE STYLING */
 .product {
     border-radius: 0.6em;
     width: 10em;
     height: 10em;
+}
+
+.product__small {
+    border-radius: 0.6em;
+    width: 5em;
+    height: 5em;
+}
+
+.overflow {
+    overflow: scroll;
 }
 
 /* LINE STYLING */
