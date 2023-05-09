@@ -11,6 +11,7 @@ main {
     min-height: 100vh;
 }
 
+/* BUTTON STYLING */
 button {
     border: 0.5px solid var(--colour-primary);
     border-radius: 0.4em;
@@ -25,6 +26,7 @@ button:hover, button:hover > h4 {
     color: var(--colour-bg);
 }
 
+/* NAV BAR */
 .keyNav {
     flex: 0 0 18vw; 
 
@@ -51,6 +53,7 @@ button:hover, button:hover > h4 {
     align-self: center;
 }
 
+/* ICON NAV */
 .nav {
     display: flex;
     flex-direction: row;
@@ -62,6 +65,7 @@ button:hover, button:hover > h4 {
     flex-direction: row;
 }
 
+/* ICON STYLING */
 .icon {
     border-radius: 50%;
     border: 0.5px solid;
@@ -88,7 +92,7 @@ button:hover, button:hover > h4 {
     align-self: center;
 }
 
-
+/* VARIANTS OF ICON */
 .icon__brown {
     border-color: var(--colour-bg);
     background-color: var(--colour-primary);
@@ -284,11 +288,41 @@ button:hover, button:hover > h4 {
     max-height: 97%;
 }
 
+/* DIASABLED */
 .disabled {
     pointer-events:none;
 }
 
+/* INPUT STYLING */
+select, option {
+    background-color: var(--colour-bg);
+    border: 0.5px solid var(--colour-primary);
+    border-radius: 0.3rem;
+
+    padding: 0.2rem 0;
+}
+
+select:focus-visible {
+    outline: 0.5px solid var(--colour-secondary);
+    border: 1px solid var(--colour-secondary);
+    border-radius: 0.3rem;
+}
+
 input {
+    background-color: var(--colour-bg);
+    border: 0.5px solid var(--colour-primary);
+    border-radius: 0.3rem;
+
+    padding: 0.2rem 0.3rem;
+}
+
+input:focus-visible {
+    outline: 0.5px solid var(--colour-secondary);
+    border: 1px solid var(--colour-secondary);
+    border-radius: 0.3rem;
+}
+
+input[type="radio"] {
     appearance: none;
 
     width: 1rem;
@@ -308,6 +342,7 @@ input:checked {
     box-shadow: 0 0 0 1px var(--colour-primary);
 }
 
+/* SECTION STYLING */
 .filters {
     border-radius: 0.8em;
     border: 0.5px solid;
@@ -317,17 +352,27 @@ input:checked {
     height: fit-content;
 }
 
+.box {
+    border-radius: 0.8em;
+    border: 0.5px solid;
+    border-color: var(--colour-primary); 
+
+    padding: 1rem;
+}
+
 .product {
     border-radius: 0.6em;
     width: 10em;
     height: 10em;
 }
 
+/* LINE STYLING */
 hr {
     border: 0.5px solid var(--colour-primary);
     padding: 0;
 }
 
+/* IMAGE STYLING */
 img {
     border-radius: 0.8em;
 }

@@ -51,6 +51,12 @@
     gap: 1em;
 }
 
+.stack__big {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
 .stack__logo {
     display: flex;
     flex-direction: column;
@@ -89,4 +95,13 @@ body {
 
 .main {
     margin:0;
+}
+
+.columns{
+    display: flex;
+    justify-content: space-around;
+}
+
+.column1 {
+    flex: 0 0 25vw;
 }
