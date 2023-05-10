@@ -80,8 +80,8 @@ button:hover, button:hover > h4, button:hover > h5 {
 }
 
 .icon__small {
-    width: 2em;
-    height: 2em;
+    width: 1.8em;
+    height: 1.8em;
 }
 
 .icon:hover, .icon:hover > svg > path, .icon:hover > svg > g > path  {
@@ -374,6 +374,11 @@ input:checked {
     height: fit-content;
 }
 
+.margins_sides {
+    margin: 8%;
+}
+
+
 /* IMAGE STYLING */
 .product {
     border-radius: 0.6em;
@@ -385,6 +390,11 @@ input:checked {
     border-radius: 0.6em;
     width: 5em;
     height: 5em;
+}
+
+.product__fit {
+    width: 7rem;
+    height: 7rem;
 }
 
 .overflow {

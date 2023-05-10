@@ -2,6 +2,15 @@
 @import url(colours.css);
 @import url(webfontkit-20230428-230817/type.css);
 
+body {
+    margin: 2% 6% 6% 6%;
+}
+
+.main {
+    margin:0;
+}
+
+/* CLUSTER */
 .cluster {
     display: flex;
     justify-content: space-between;
@@ -28,6 +37,7 @@
     margin-left: 0;
 }
 
+/* SIDEBAR */
 .sidebar-container{
     display: flex;
     flex-direction: row;
@@ -45,6 +55,7 @@
     min-width: 50%;
 }
 
+/* STACK */
 .stack{
     display: flex;
     flex-direction: column;
@@ -71,6 +82,7 @@
     align-self: flex-start;
 }
 
+/* ALIGNMENT */
 .centre {
     text-align: center;
     margin-left: auto;
@@ -89,13 +101,27 @@
     margin-top: 0;
 }
 
-body {
-    margin: 2% 6% 6% 6%;
+.bottom {
+    margin-top:auto;
+    margin-bottom: 0;
 }
 
-.main {
-    margin:0;
+.right {
+    margin-left: auto;
+    margin-right: 0;
 }
+
+.left {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.horizontal {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+/* COLUMNS */
 
 .columns{
     display: flex;
@@ -103,5 +129,9 @@ body {
 }
 
 .column1 {
-    flex: 0 0 25vw;
+    flex: 0 0 30vw;
+}
+
+.column2 {
+    flex: 0 0 28vw;
 }
