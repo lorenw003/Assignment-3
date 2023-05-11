@@ -347,6 +347,16 @@ input:checked {
     box-shadow: 0 0 0 1px var(--colour-primary);
 }
 
+input[type="textarea"] {
+    height: 4rem;
+    resize: none;
+}
+
+input[type="textarea"]::placeholder {
+    margin-top: 0;
+    margin-bottom: auto;
+}
+
 /* SECTION STYLING */
 .filters {
     border-radius: 0.8em;
@@ -397,6 +407,7 @@ input:checked {
     height: 7rem;
 }
 
+/* EFFECTS */
 .scroll {
     max-height: 28em;
     overflow: scroll;
@@ -404,6 +415,10 @@ input:checked {
 
 .blur {
     backdrop-filter: blur(10px);
+}
+
+.hidden {
+    visibility: hidden;
 }
 
 /* LINE STYLING */
