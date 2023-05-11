@@ -121,6 +121,10 @@ body {
     margin-bottom: 3em;
 }
 
+.baseline {
+    align-self: baseline;
+}
+
 /* COLUMNS */
 
 .columns{

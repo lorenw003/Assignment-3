@@ -57,12 +57,12 @@
     --colour-text: #8A5037;
 
     /*type scale*/
-    --text-base-size: 1em;
+    --text-base-size: 0.95em;
     --text-scale-ratio: 1.2;
 
 
     --text-xs: calc((var(--text-base-size)/var(--text-scale-ratio)));
-    --text-sm: var(--text-base-size)
+    --text-sm: var(--text-base-size);
     --text-md: calc(var(--text-base-size) * var(--text-scale-ratio));
     --text-lg: calc(var(--text-base-size)* var(--text-scale-ratio) * var(--text-scale-ratio));
     --text-xl: calc(var(--text-base-size) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
@@ -106,13 +106,13 @@ h5 {
 h6 {
     font-family: var(--font-content);
     color: var(--colour-secondary);
-    font-size: var(--text-sm);
+    font-size: var(--text-md);
 }
 
 h7 {
     font-family: var(--font-content);
     color: var(--colour-text);
-    font-size: var(--text-xs);
+    font-size: var(--text-sm);
 }
 
 h8 {
@@ -151,6 +151,7 @@ select, option {
 p {
     font-family: "Hiragino Sans", "ヒラギノ角ゴ", sans-serif;
     color: var(--colour-text);
+    font-size: var(--text-sm);
 }
 
 footer {
@@ -174,6 +175,14 @@ label {
     color: var(--colour-primary);
 }
 
+input {
+    font-size: var(--text-sm);
+}
+
+select, option {
+    font-size: var(--text-sm);
+}
+
 .title {
     color: var(--colour-primary-accent);
 }
@@ -195,6 +204,6 @@ label {
     color: var(--colour-primary);
 }
 
-.secondary {
+.secondary, .secondary > p, .secondary > h7, .secondary > h8 {
     color: var(--colour-secondary);
 }
