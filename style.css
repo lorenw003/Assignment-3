@@ -398,7 +398,7 @@ input:checked {
 }
 
 .scroll {
-    max-height: 60%;
+    max-height: 28em;
     overflow: scroll;
 }
 
