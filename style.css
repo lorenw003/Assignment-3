@@ -343,7 +343,7 @@ input[type="radio"] {
 
 input:checked {
     background-color: var(--colour-primary);
-    border: 0.3rem solid var(--colour-bg);
+    border: 3px solid var(--colour-bg);
     box-shadow: 0 0 0 1px var(--colour-primary);
 }
 
@@ -397,8 +397,13 @@ input:checked {
     height: 7rem;
 }
 
-.overflow {
+.scroll {
+    max-height: 60%;
     overflow: scroll;
+}
+
+.blur {
+    backdrop-filter: blur(10px);
 }
 
 /* LINE STYLING */
