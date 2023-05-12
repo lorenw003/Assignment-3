@@ -68,6 +68,12 @@ body {
     gap: 2em;
 }
 
+.stack__content {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
 .stack__logo {
     display: flex;
     flex-direction: column;
@@ -139,3 +145,22 @@ body {
 .column2 {
     flex: 0 0 28vw;
 }
+
+/* ARRANGMENT */
+
+.square {
+    width: 22em;
+    height: 30em;
+}
+
+/* MARGIN SET */
+.bottom__1{
+    margin-top: 1.5em;
+    margin-bottom: 0;
+}
+
+.top__1{
+    margin-bottom: 1.5em;
+    margin-top: 0;
+}
+
