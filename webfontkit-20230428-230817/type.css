@@ -129,6 +129,21 @@ h9 {
     font-size: var(--text-xs);
 }
 
+.standard {
+    font-family: var(--font-neutral);
+    font-weight: 300;
+    color: var(--colour-primary);
+    font-size: var(--text-sm);
+}
+
+.bold {
+    font-weight: 500;
+}
+
+.light {
+    font-weight: 300;
+}
+
 input::placeholder {
     font-family: var(--font-neutral);
     font-weight: 300;
@@ -162,14 +177,6 @@ p {
     line-height: normal;
     font-weight: 300;
 }
-
-/* footer {
-    font-family: var(--font-neutral);
-    font-weight: 300;
-    font-size: var(--text-xs);
-
-    line-height: 1.7em;
-} */
 
 a {
     text-decoration: none; 
@@ -214,7 +221,10 @@ select, option {
 
 .neutral {
     font-family: var(--font-neutral);
-    font-weight: 300;
+}
+
+.italic {
+    font-family: var(--font-content);
 }
 
 .primary {

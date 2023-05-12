@@ -30,7 +30,7 @@ body {
     gap: var(--spacing-sm);
 }
 
-.cluster_medium {
+.cluster__medium {
     display: flex;
     flex-direction: row;
     gap: var(--spacing-md); 
@@ -181,7 +181,7 @@ body {
 }
 
 .square__column {
-    width: 40vw;
+    width: 50vw;
 }
 
 /* MARGIN SET */
