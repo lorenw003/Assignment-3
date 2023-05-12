@@ -122,6 +122,13 @@ h8 {
     font-size: var(--text-xs);
 }
 
+h9 {
+    font-family: var(--font-neutral);
+    font-weight: 300;
+    color: var(--colour-text);
+    font-size: var(--text-xs);
+}
+
 input::placeholder {
     font-family: var(--font-neutral);
     font-weight: 300;
@@ -152,20 +159,30 @@ p {
     font-family: "Hiragino Sans", "ヒラギノ角ゴ", sans-serif;
     color: var(--colour-text);
     font-size: var(--text-sm);
+    line-height: normal;
+    font-weight: 300;
 }
 
-footer {
+/* footer {
     font-family: var(--font-neutral);
     font-weight: 300;
     font-size: var(--text-xs);
 
     line-height: 1.7em;
-}
+} */
 
 a {
     text-decoration: none; 
     color: var(--colour-secondary);
 }
+
+ul {
+    font-family: var(--font-neutral);
+    font-weight: 300;
+    font-size: var(--text-xs);
+
+    line-height: 1.7em;
+} 
 
 label {
     font-family: var(--font-neutral);

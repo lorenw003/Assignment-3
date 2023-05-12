@@ -62,6 +62,12 @@ body {
     gap: 1em;
 }
 
+.stack__medium {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em; 
+}
+
 .stack__big {
     display: flex;
     flex-direction: column;
@@ -120,6 +126,8 @@ body {
 .left {
     margin-left: 0;
     margin-right: auto;
+
+    text-align: left;
 }
 
 .horizontal {
@@ -153,6 +161,10 @@ body {
     height: 30em;
 }
 
+.square__column {
+    width: 40vw;
+}
+
 /* MARGIN SET */
 .bottom__1{
     margin-top: 1.5em;
@@ -164,3 +176,11 @@ body {
     margin-top: 0;
 }
 
+.left__1 {
+    margin-left: 0.5em;
+    margin-right: auto;
+}
+
+.nomargins {
+    margin: auto 0;
+}

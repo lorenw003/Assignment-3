@@ -98,8 +98,8 @@ button:hover, button:hover > h4, button:hover > h5 {
 }
 
 .icon__small {
-    width: 1.8em;
-    height: 1.8em;
+    width: 1.9em;
+    height: 1.9em;
 }
 
 .icon__big {
@@ -108,7 +108,7 @@ button:hover, button:hover > h4, button:hover > h5 {
 }
 
 .icon:hover, .icon:hover > svg > path, .icon:hover > svg > g > path  {
-    border-color: var(--colour-bg);
+    /* border-color: var(--colour-bg); */
     background-color: var(--colour-primary);
     fill: var(--colour-bg);
 }
@@ -453,4 +453,53 @@ hr {
 /* IMAGE STYLING */
 img {
     border-radius: 0.8em;
+}
+
+/* SEARCH */
+.bar {
+    /* justify-content: end; */
+    height: 2em;
+
+    border: 0.5px solid var(--colour-primary);
+    border-radius: 6em;
+    border-width: 0.5px 0 0.5px 0.5px;
+}
+
+input[type="search"], input[type="search"]:focus, input[type="search"]:focus-visible {
+    margin: 0;
+    height: 2em;
+
+    border: none;
+    border-radius: 6em;
+
+    outline: none;
+    padding: 0.2rem 0.8rem;
+
+}
+
+.bar__icon {
+    width: 2em;
+    height: 2em;
+
+}
+
+.oval {
+    border-radius: 6em;
+    padding: 0.3em 0.8em;
+
+    color: var(--colour-bg);
+    background-color: var(--colour-secondary);
+    border: 0.5px solid var(--colour-secondary);
+}
+
+.oval:hover {
+    background-color: var(--colour-bg);
+}
+
+.oval > h7 {
+    color: var(--colour-bg);
+}
+
+.oval:hover, .oval > h7:hover {
+    color: var(--colour-primary);
 }
