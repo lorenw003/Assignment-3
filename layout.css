@@ -1,5 +1,6 @@
 @import url(reset.css);
 @import url(colours.css);
+@import url(spacing.css);
 @import url(webfontkit-20230428-230817/type.css);
 
 body {
@@ -26,7 +27,25 @@ body {
 .cluster__none {
     display: flex;
     flex-direction: row;
-    gap: 1em;
+    gap: var(--spacing-sm);
+}
+
+.cluster_medium {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-md); 
+}
+
+.cluster__big {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-lg);
+}
+
+.cluster__content {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-xxxxxl);
 }
 
 .cluster > * {
@@ -59,25 +78,25 @@ body {
 .stack{
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: var(--spacing-sm);
 }
 
 .stack__medium {
     display: flex;
     flex-direction: column;
-    gap: 1.5em; 
+    gap: var(--spacing-md); 
 }
 
 .stack__big {
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    gap: var(--spacing-lg);
 }
 
 .stack__content {
     display: flex;
     flex-direction: column;
-    gap: 3em;
+    gap: var(--spacing-xxxxxl);
 }
 
 .stack__logo {
