@@ -184,6 +184,10 @@ body {
     width: 50vw;
 }
 
+.cart {
+    width: 28vw;
+}
+
 /* MARGIN SET */
 .bottom__1{
     margin-top: 1.5em;
@@ -202,4 +206,25 @@ body {
 
 .nomargins {
     margin: auto 0;
+}
+
+/* OVERLAY */
+.overlay {
+    position: absolute;
+    top:3em;
+    left: 3em;;
+
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal {
+    background-color: var(--colour-bg);
+    z-index: 11;
+}
+
+.wrapper {
+    position: relative;
 }
