@@ -89,8 +89,8 @@ button:hover, button:hover > h4, button:hover > h5 {
     border: 0.5px solid;
     border-color: var(--colour-primary); 
 
-    width: 2.5em;
-    height: 2.5em;
+    width: 2.2em;
+    height: 2.2em;
 
     display: flex;
     justify-content: center;
