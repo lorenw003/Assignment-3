@@ -228,3 +228,9 @@ body {
 .wrapper {
     position: relative;
 }
+
+/* KEYS */
+
+.altKey {
+    width: 16vw;
+}
