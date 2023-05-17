@@ -415,9 +415,10 @@ input[type="textarea"]::placeholder {
 /* IMAGE STYLING */
 .product {
     border-radius: 0.6em;
-    width: 10em;
-    height: 10em;
+    width: 10rem;
+    height: 10rem;
 }
+
 
 .product__small {
     border-radius: 0.6em;
@@ -428,6 +429,13 @@ input[type="textarea"]::placeholder {
 .product__fit {
     width: 7rem;
     height: 7rem;
+}
+
+/* CARD */
+
+.card {
+    max-width:10rem;
+    margin-bottom: var(--spacing-xxl);
 }
 
 /* EFFECTS */
