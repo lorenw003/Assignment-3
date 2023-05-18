@@ -22,19 +22,19 @@ body {
     justify-content: space-around;
 }
 
-.cluster__none {
+.cluster__sm {
     display: flex;
     flex-direction: row;
     gap: var(--spacing-sm);
 }
 
-.cluster__medium {
+.cluster__md {
     display: flex;
     flex-direction: row;
     gap: var(--spacing-md); 
 }
 
-.cluster__big {
+.cluster__lg {
     display: flex;
     flex-direction: row;
     gap: var(--spacing-lg);
@@ -52,10 +52,16 @@ body {
     gap: var(--spacing-xxl);
 }
 
-.cluster__content {
+.cluster__xxxxxl {
     display: flex;
     flex-direction: row;
     gap: var(--spacing-xxxxxl);
+}
+
+.cluster__xxxxxxl {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-xxxxxxl);
 }
 
 .cluster__wrap {
@@ -95,13 +101,13 @@ body {
     gap: var(--spacing-sm);
 }
 
-.stack__medium {
+.stack__md {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-md); 
 }
 
-.stack__big {
+.stack__lg {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-lg);
@@ -125,7 +131,7 @@ body {
     gap: var(--spacing-xxxl);
 }
 
-.stack__content {
+.stack__xxxxxl {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-xxxxxl);
@@ -149,10 +155,6 @@ body {
 .centre {
     margin-left: auto;
     margin-right: auto;
-}
-
-.centre__content {
-    min-width: fit-content;
 }
 
 .cover{
@@ -221,6 +223,10 @@ body {
 
 .cart {
     width: 28vw;
+}
+
+.fit__width {
+    min-width:fit-content;
 }
 
 /* MARGIN SET */

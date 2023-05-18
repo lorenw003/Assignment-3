@@ -209,6 +209,7 @@ select, option {
 
 .title {
     color: var(--colour-primary-accent);
+    font-family: var(--font-primary);
 }
 
 .subtitle {
