@@ -14,13 +14,13 @@
 <body class="stack__xxxxxl">
 
     <!-- navigation bar -->
-    <nav class="nav cluster">
-        <a href="index.html" class="cover stack__logo">
+    <nav class="cluster">
+        <a href="index.html" class="cover logo">
             <h7 class="subtitle">retro designed music store</h7>
             <h1 class="title">organ 69</h1>
         </a>
         
-        <div class="nav-icon cluster top">
+        <div class="cluster top">
             <a href="productList.html" class="icon combo">
                 <svg xmlns="http://www.w3.org/2000/svg" width="22.705" height="16.65" viewBox="0 0 22.705 16.65">
                     <path id="_4bd23b1b1baa515ed10d5bd0b18860fc" data-name="4bd23b1b1baa515ed10d5bd0b18860fc" d="M21.434,5H3.27A2.27,2.27,0,0,0,1,7.27V19.38a2.27,2.27,0,0,0,2.27,2.27H21.434a2.27,2.27,0,0,0,2.27-2.27V7.27A2.27,2.27,0,0,0,21.434,5Zm-2.27,1.514v6.055H17.65V6.514ZM7.811,14.082a.757.757,0,0,0,.757-.757V6.514h1.514v6.811a.757.757,0,0,0,.757.757H11.6v6.055H7.055V14.082Zm5.3,0h.757a.757.757,0,0,0,.757-.757V6.514h1.514v6.811a.757.757,0,0,0,.757.757h.757v6.055H13.109Zm0-7.568v6.055H11.6V6.514Zm-6.055,0v6.055H5.541V6.514ZM2.514,19.38V7.27a.757.757,0,0,1,.757-.757h.757v6.811a.757.757,0,0,0,.757.757h.757v6.055H3.27A.757.757,0,0,1,2.514,19.38Zm19.678,0a.757.757,0,0,1-.757.757h-2.27V14.082h.757a.757.757,0,0,0,.757-.757V6.514h.757a.757.757,0,0,1,.757.757Z" transform="translate(-1 -5)" fill="#8a5037"/>
@@ -89,7 +89,7 @@
                     <path id="search" d="M30.664,28.446l-5.311-5.3a12.372,12.372,0,0,0,2.64-7.654,12.5,12.5,0,1,0-12.5,12.5,12.372,12.372,0,0,0,7.654-2.64l5.3,5.311a1.568,1.568,0,1,0,2.218-2.218ZM6.124,15.5A9.372,9.372,0,1,1,15.5,24.869,9.372,9.372,0,0,1,6.124,15.5Z" transform="translate(-3 -3)" fill="#8a5037"/>
                 </svg>                                                    
             </a> 
-            <a href="errorNot.html" class="icon icon__brown">
+            <a href="errorNot.html" class="icon icon__primary">
                 <svg xmlns="http://www.w3.org/2000/svg" width="21.921" height="20" viewBox="0 0 21.921 27.401">
                     <path id="f401fb57911d714838c42cced9b3db2e" d="M24.551,8.85h-4.11V7.48a5.48,5.48,0,1,0-10.96,0V8.85H5.37A1.37,1.37,0,0,0,4,10.22V25.291A4.11,4.11,0,0,0,8.11,29.4h13.7a4.11,4.11,0,0,0,4.11-4.11V10.22A1.37,1.37,0,0,0,24.551,8.85ZM12.22,7.48a2.74,2.74,0,1,1,5.48,0V8.85H12.22Zm10.96,17.811a1.37,1.37,0,0,1-1.37,1.37H8.11a1.37,1.37,0,0,1-1.37-1.37V11.59H9.48v1.37a1.37,1.37,0,0,0,2.74,0V11.59H17.7v1.37a1.37,1.37,0,0,0,2.74,0V11.59h2.74Z" transform="translate(-4 -2)" fill="#faf8ef"/>
                 </svg>
@@ -100,10 +100,11 @@
 
     <!-- main content of page -->
     <main>
-        <section class="sidebar-container cluster__xxxxxl">
+        <section class="sidebar-container cluster__xxxxxl centre square__wide">
 
-        <section class="sidebar filters stack">
-            <div class="cluster__sm">
+        <section class="sidebar box box__filters stack__xxl fit__width">
+            
+            <div class="cluster__lg">
                 <div class="icon">
                     <svg id="Group_477" data-name="Group 477" xmlns="http://www.w3.org/2000/svg" width="22.96" height="19.889" viewBox="0 0 22.96 19.889">
                         <g id="c4067ea13a0109e58cd0c2fc71e6b022" transform="translate(0 0)">
@@ -124,32 +125,30 @@
                     </svg>                  
                 </div>
             </div>
-            
-        </br>
 
-            <form>
-                <fieldset class="stack">
-                    <h5>Sort By</h5>
-                    <div class="stack">
-                        <label for="Featured">
-                            <input type="radio" id="sortChoice1" name="sort" value="Featured" />
-                            Featured
-                        </label>
+            <form class="stack__lg">
+                <h5>Sort By</h5>
+                <fieldset class="stack__sm">
+                    <div class="stack__sm">
+                        <div class="cluster__sm">
+                            <input class="cover" type="radio" id="sortChoice1" name="sort" value="Featured" />
+                            <label class="bottom" for="Featured">Featured</label>
+                        </div>
                         
-                        <label for="New">
+                        <div class="cluster__sm">
                             <input type="radio" id="sortChoice1" name="sort" value="New" />
-                            New Arrivals
-                        </label>
+                            <label class="bottom" for="New">New Arrivals</label>
+                        </div>
 
-                        <label for="Low">
+                        <div class="cluster__sm">
                             <input type="radio" id="sortChoice1" name="sort" value="Low" />
-                            Price: Low to High
-                        </label>
+                            <label class="bottom" for="Low">Price: Low to High</label>
+                        </div>
 
-                        <label for="High">
+                        <div class="cluster__sm">
                             <input type="radio" id="sortChoice1" name="sort" value="High" />
-                            Price: High to Low
-                        </label>
+                            <label class="bottom" for="High">Price: High to Low</label>
+                        </div>
                     </div>
                 </fieldset>
             </form>
@@ -157,9 +156,9 @@
         
         <section class="not-sidebar stack__xxxxxl">
             <h2 class="italic">Combo Organ</h2>
-            <div class="cluster__xxl cluster__wrap">
-                <div class="card stack__xl">
-                    <img class="product" src="https://organ69.net/img/items/1681205112_file1.jpg"/>
+            <div class="products cluster cluster__wrap">
+                <div class="stack__xl">
+                    <img src="https://organ69.net/img/items/1681205112_file1.jpg"/>
                     <div class="stack__md">
                         <h7 class="secondary light">Ace Tone TOP-6</h7>
                         <div class="cluster">
@@ -171,8 +170,8 @@
                     </div>
                 </div>
 
-                <div class="card stack__xl">
-                    <img class="product" src="https://organ69.net/img/items/m2_1672297502_file1.jpg"/>
+                <div class="stack__xl">
+                    <img src="https://organ69.net/img/items/m2_1672297502_file1.jpg"/>
                     <div class="stack__md">
                         <h7 class="secondary light">Philips Philicorda GM752</h7>
                         <div class="cluster bottom">
@@ -184,8 +183,8 @@
                     </div>
                 </div>
 
-                <div class="card stack__xl">
-                    <img class="product" src="https://organ69.net/img/items/m2_1612424215_file1.jpg"/>
+                <div class="stack__xl">
+                    <img src="https://organ69.net/img/items/m2_1612424215_file1.jpg"/>
                     <div class="stack__md">
                         <h7 class="secondary light">Farfisa Transicord Custom</h7>
                         <div class="cluster">
@@ -197,8 +196,8 @@
                     </div>
                 </div>
 
-                <div class="card stack__xl">
-                    <img class="product" src="https://organ69.net/img/items/m2_1601288220_file2.jpg"/>
+                <a href="product.html" class="stack__xl">
+                    <img src="https://organ69.net/img/items/m2_1601288220_file2.jpg"/>
                     <div class="stack__md">
                         <h7 class="secondary light">CRB Elettronica Tanzanite</h7>
                         <div class="cluster">
@@ -208,10 +207,10 @@
                             </svg>  
                         </div>
                     </div>
-                </div>
+                </a>
 
-                <div class="card stack__xl">
-                    <img class="product" src="https://organ69.net/img/items/m2_1667549082_file1.jpg"/>
+                <div class="stack__xl">
+                    <img src="https://organ69.net/img/items/m2_1667549082_file1.jpg"/>
                     <div class="stack__md">
                         <h7 class="secondary light">Farfisa Transicord Class2 Custom</h7>
                         <div class="cluster">
@@ -223,8 +222,8 @@
                     </div>
                 </div>
 
-                <div class="card stack__xl">
-                    <img class="product" src="https://organ69.net/img/items/m2_1660092603_file1.jpg"/>
+                <div class="stack__xl">
+                    <img src="https://organ69.net/img/items/m2_1660092603_file1.jpg"/>
                     <div class="stack__md">
                         <h7 class="secondary light">Yamaha YC-10 ivory</h7>
                         <div class="cluster">
@@ -236,12 +235,25 @@
                     </div>
                 </div>
 
-                <div class="card stack__xl">
-                    <img class="product" src="https://organ69.net/img/items/m2_1601288220_file2.jpg"/>
+                <div class="stack__xl">
+                    <img src="https://organ69.net/img/items/m2_1366940734_file1.jpg"/>
                     <div class="stack__md">
-                        <h7 class="secondary light">CRB Elettronica Tanzanite</h7>
+                        <h7 class="secondary light">VOX Jaguar V304 E2</h7>
                         <div class="cluster">
-                            <h8 class="neutral">¥98,000</h8>
+                            <h8 class="neutral">¥298,000</h8>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18.268" height="14.268" viewBox="0 0 18.268 18.268">
+                                <path id="_510c44a574f3765bd8912da01a80fbd4" data-name="510c44a574f3765bd8912da01a80fbd4" d="M21.126,11.992h-6.85V5.142a1.142,1.142,0,1,0-2.283,0v6.85H5.142a1.142,1.142,0,1,0,0,2.283h6.85v6.85a1.142,1.142,0,1,0,2.283,0v-6.85h6.85a1.142,1.142,0,1,0,0-2.283Z" transform="translate(-4 -4)" fill="#8a5037"/>
+                            </svg>  
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stack__xl">
+                    <img src="https://organ69.net/img/items/m2_1424957508_file1.jpg"/>
+                    <div class="stack__md">
+                        <h7 class="secondary light">Hohner Symphonic 30N</h7>
+                        <div class="cluster">
+                            <h8 class="neutral">¥178,000</h8>
                             <svg xmlns="http://www.w3.org/2000/svg" width="18.268" height="14.268" viewBox="0 0 18.268 18.268">
                                 <path id="_510c44a574f3765bd8912da01a80fbd4" data-name="510c44a574f3765bd8912da01a80fbd4" d="M21.126,11.992h-6.85V5.142a1.142,1.142,0,1,0-2.283,0v6.85H5.142a1.142,1.142,0,1,0,0,2.283h6.85v6.85a1.142,1.142,0,1,0,2.283,0v-6.85h6.85a1.142,1.142,0,1,0,0-2.283Z" transform="translate(-4 -4)" fill="#8a5037"/>
                             </svg>  
@@ -249,6 +261,8 @@
                     </div>
                 </div>
             </div>
+
+            <button class="centre" >Load More</button>
         </section>
 
         </section>
@@ -256,7 +270,7 @@
 
     <!-- footer section -->
     <footer class="cluster">
-        <div class="stack">
+        <div class="stack__sm">
             <h8>PRODUCTS</h8>
             <ul>
                 <li><a href="">Combo Organ</a></li>
@@ -275,7 +289,7 @@
                 <li><a href="errorNot.html">Retro Advertising Collection</a></li>
             </ul>
         </div>
-        <div class="stack">
+        <div class="stack__sm">
             <h8>COMPANY</h8>
             <ul>
                 <li><a href="errorNot.html">Blog</a></li>
@@ -290,7 +304,7 @@
                 <li><a href="errorNot.html">20th Century Heights</a></li>
             </ul>
         </div>
-        <div class="stack">
+        <div class="stack__sm">
             <h8>SUPPORT</h8>
             <ul>
                 <li><a href="errorNot.html">Shipping Cost</a></li>

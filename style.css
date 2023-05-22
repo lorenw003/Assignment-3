@@ -1,7 +1,7 @@
 @import url(reset.css);
-@import url(colours.css);
 @import url(webfontkit-20230428-230817/type.css);
 @import url(layout.css);
+@import url(colours.css);
 
 :root{
     background-color: var(--colour-bg);
@@ -12,14 +12,14 @@ main {
 }
 
 /* BUTTON STYLING */
-button {
+/* button {
     border: 0.5px solid var(--colour-primary);
     border-radius: 0.4em;
 
     background-color: var(--colour-bg);
 
     padding: 0.5em 1em;
-}
+} */
 
 button:hover, button:hover > h4, button:hover > h5 {
     background-color: var(--colour-primary);
@@ -47,9 +47,6 @@ button:hover, button:hover > h4, button:hover > h5 {
 /* NAV BAR */
 .keyNav {
     flex: 0 0 18vw; 
-
-    justify-content: space-around;
-    gap: 0rem;
 }
 
 .key {
@@ -72,7 +69,7 @@ button:hover, button:hover > h4, button:hover > h5 {
 }
 
 /* ICON NAV */
-.nav {
+/* .nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -81,10 +78,10 @@ button:hover, button:hover > h4, button:hover > h5 {
 .nav-icon {
     display: flex;
     flex-direction: row;
-}
+} */
 
 /* ICON STYLING */
-.icon {
+/* .icon {
     border-radius: 50%;
     border: 0.5px solid;
     border-color: var(--colour-primary); 
@@ -94,8 +91,7 @@ button:hover, button:hover > h4, button:hover > h5 {
 
     display: flex;
     justify-content: center;
-    align-self: center;
-}
+} */
 
 .icon__small {
     width: 1.9em;
@@ -107,11 +103,10 @@ button:hover, button:hover > h4, button:hover > h5 {
     height:8em;
 }
 
-.icon:hover, .icon:hover > svg > path, .icon:hover > svg > g > path  {
-    /* border-color: var(--colour-bg); */
+/* .icon:hover, .icon:hover > svg > path, .icon:hover > svg > g > path  {
     background-color: var(--colour-primary);
     fill: var(--colour-bg);
-}
+} */
 
 .icon > svg {
     max-width: 65%;
@@ -122,7 +117,6 @@ button:hover, button:hover > h4, button:hover > h5 {
 
 /* VARIANTS OF ICON */
 .icon__brown {
-    border-color: var(--colour-bg);
     background-color: var(--colour-primary);
 }
 
@@ -132,181 +126,157 @@ button:hover, button:hover > h4, button:hover > h5 {
     fill: var(--colour-primary);
 }
 
-
-.combo, .combo > svg > path {
-    border-color: var(--colour-combo);
-    fill: var(--colour-combo);
-}
-
-.combo__key {
-    border-color: var(--colour-combo);
-}
-
-.combo:hover, .combo:hover > svg > path  {
-    border-color: var(--colour-bg);
-    background-color: var(--colour-combo);
-    fill: var(--colour-bg);
-}
-
-.mini, .mini > svg > path {
-    border-color: var(--colour-mini);
-    fill: var(--colour-mini);
-}
-
-.mini__key {
-    border-color: var(--colour-mini);
-}
-
-.mini:hover, .mini:hover > svg > path  {
-    border-color: var(--colour-bg);
-    background-color: var(--colour-mini);
-    fill: var(--colour-bg);
-}
-
-.keyHarp, .keyHarp > svg > path {
-    border-color: var(--colour-keyharp);
-    fill: var(--colour-keyharp);
-}
-
-.keyHarp__key {
-    border-color: var(--colour-keyharp);
-}
-
-.keyHarp:hover, .keyHarp:hover > svg > path  {
-    border-color: var(--colour-bg);
-    background-color: var(--colour-keyharp);
-    fill: var(--colour-bg);
-}
-
-.toy, .toy > svg > path {
-    border-color: var(--colour-toy);
-    fill: var(--colour-toy);
-}
-
-.toy__key {
-    border-color: var(--colour-toy);
-}
-
-.toy:hover, .toy:hover > svg > path  {
-    border-color: var(--colour-bg);
-    background-color: var(--colour-toy);
-    fill: var(--colour-bg);
-}
-
-.electric, .electric > svg > g > path {
-    border-color: var(--colour-electric);
-    fill: var(--colour-electric);
-}
-
-.electric__key {
-    border-color: var(--colour-electric);
-}
-
-.electric:hover, .electric:hover > svg > g > path  {
-    border-color: var(--colour-bg);
-    background-color: var(--colour-electric);
-    fill: var(--colour-bg);
-}
-
-.headphones, .headphones > svg > path {
-    border-color: var(--colour-headphones);
-    fill: var(--colour-headphones);
-}
-
-.headphones__key {
-    border-color: var(--colour-headphones);
-}
-
-
-.headphones:hover, .headphones:hover > svg > path  {
-    border-color: var(--colour-bg);
-    background-color: var(--colour-headphones);
-    fill: var(--colour-bg);
-}
-
-.effects, .effects > svg > g > path {
-    border-color: var(--colour-effects);
-    fill: var(--colour-effects);
-}
-
-.effects__key {
-    border-color: var(--colour-effects);
-}
-
-.effects:hover, .effects:hover > svg > g > path, .effects:hover > svg > g > ellipse  {
-    border-color: var(--colour-bg);
-    background-color: var(--colour-effects);
-    fill: var(--colour-bg);
-}
-
-.parts, .parts > svg > path {
-    border-color: var(--colour-parts);
-    fill: var(--colour-parts);
-}
-
-.parts__key {
-    border-color: var(--colour-parts);
-}
-
-.parts:hover, .parts:hover > svg > path  {
-    border-color: var(--colour-bg);
-    background-color: var(--colour-parts);
-    fill: var(--colour-bg);
-}
-
-.fashion, .fashion > svg > path {
-    border-color: var(--colour-fashion);
-    fill: var(--colour-fashion);
-}
-
-.fashion__key {
-    border-color: var(--colour-fashion);
-}
-
-.fashion:hover, .fashion:hover > svg > path  {
-    border-color: var(--colour-bg);
-    background-color: var(--colour-fashion);
-    fill: var(--colour-bg);
-}
-
-.zakka, .zakka > svg > path{
-    border-color: var(--colour-zakka);
-    fill: var(--colour-zakka);
-}
-
-.zakka__key {
-    border-color: var(--colour-zakka);
-}
-
-.zakka:hover, .zakka:hover > svg > path  {
-    border-color: var(--colour-bg);
-    background-color: var(--colour-zakka);
-    fill: var(--colour-bg);
-}
-
-.other, .other > svg > text {
-    border-color: var(--colour-other);
-    fill: var(--colour-other);
-}
-
-.other__key {
-    border-color: var(--colour-other);
-}
-
-.other:hover, .other:hover > svg > text  {
-    border-color: var(--colour-bg);
-    background-color: var(--colour-other);
-    fill: var(--colour-bg);
-}
-
 .icon__second, .icon__second > svg > path {
     border-color: var(--colour-secondary);
     fill: var(--colour-secondary);
 }
 
 .icon__second:hover, .icon__second:hover > svg > path {
-    border-color: var(--colour-bg);
     background-color: var(--colour-secondary);
+    fill: var(--colour-bg);
+}
+
+.combo {
+    border-color: var(--colour-combo);
+}
+
+.combo > svg > path {
+    fill: var(--colour-combo);
+}
+
+.combo.icon:hover, .combo.icon:hover > svg > path  {
+    background-color: var(--colour-combo);
+    fill: var(--colour-bg);
+}
+
+.mini {
+    border-color: var(--colour-mini);
+}
+
+.mini > svg > path {
+    fill: var(--colour-mini);
+}
+
+.mini.icon:hover, .mini.icon:hover > svg > path  {
+    background-color: var(--colour-mini);
+    fill: var(--colour-bg);
+}
+
+.keyHarp {
+    border-color: var(--colour-keyharp);
+}
+
+.keyHarp > svg > path {
+    fill: var(--colour-keyharp);
+}
+
+.keyHarp.icon:hover, .keyHarp.icon:hover > svg > path  {
+    background-color: var(--colour-keyharp);
+    fill: var(--colour-bg);
+}
+
+.toy {
+    border-color: var(--colour-toy);
+    fill: var(--colour-toy);
+}
+
+.toy > svg > path {
+    fill:var(--colour-toy)
+}
+
+.toy.icon:hover, .toy.icon:hover > svg > path  {
+    background-color: var(--colour-toy);
+    fill: var(--colour-bg);
+}
+
+.electric {
+    border-color: var(--colour-electric);
+}
+
+.electric > svg > g > path {
+    fill: var(--colour-electric);
+}
+
+.electric.icon:hover, .electric.icon:hover > svg > g > path  {
+    background-color: var(--colour-electric);
+    fill: var(--colour-bg);
+}
+
+.headphones {
+    border-color: var(--colour-headphones);
+}
+
+.headphones > svg > path {
+    fill:var(--colour-headphones)
+}
+
+.headphones.icon:hover, .headphones.icon:hover > svg > path  {
+    background-color: var(--colour-headphones);
+    fill: var(--colour-bg);
+}
+
+.effects {
+    border-color: var(--colour-effects);
+}
+
+.effects > svg > g > path {
+    fill: var(--colour-effects);
+}
+
+.effects.icon:hover, .effects.icon:hover > svg > g > path, .effects.icon:hover > svg > g > ellipse  {
+    background-color: var(--colour-effects);
+    fill: var(--colour-bg);
+}
+
+.parts {
+    border-color: var(--colour-parts);
+}
+
+.parts > svg > path {
+    fill: var(--colour-parts);
+}
+
+.parts.icon:hover, .parts.icon:hover > svg > path  {
+    background-color: var(--colour-parts);
+    fill: var(--colour-bg);
+}
+
+.fashion {
+    border-color: var(--colour-fashion);
+}
+
+.fashion > svg > path {
+    fill: var(--colour-fashion);
+}
+
+.fashion.icon:hover, .fashion.icon:hover > svg > path  {
+    background-color: var(--colour-fashion);
+    fill: var(--colour-bg);
+}
+
+.zakka {
+    border-color: var(--colour-zakka);
+}
+
+.zakka > svg > path {
+    fill: var(--colour-zakka);
+}
+
+.zakka.icon:hover, .zakka.icon:hover > svg > path  {
+    background-color: var(--colour-zakka);
+    fill: var(--colour-bg);
+}
+
+.other {
+    border-color: var(--colour-other);
+}
+
+.other > svg > text {
+    fill: var(--colour-other);
+}
+
+.other.icon:hover, .other.icon:hover > svg > text  {
+    background-color: var(--colour-other);
     fill: var(--colour-bg);
 }
 
@@ -333,7 +303,6 @@ select, option {
 select:focus-visible {
     outline: 0.5px solid var(--colour-secondary);
     border: 1px solid var(--colour-secondary);
-    border-radius: 0.3rem;
 }
 
 input {
@@ -386,17 +355,17 @@ input[type="textarea"]::placeholder {
     border: 0.5px solid;
     border-color: var(--colour-primary); 
 
-    padding: 1.5em;
+    padding: 2em;
     height: fit-content;
 }
 
-.box {
+/* .box {
     border-radius: 0.8em;
     border: 0.5px solid;
     border-color: var(--colour-primary); 
 
     padding: 1rem;
-}
+} */
 
 .box__fit {
     border-radius: 0.8em;
@@ -434,8 +403,8 @@ input[type="textarea"]::placeholder {
 /* CARD */
 
 .card {
-    max-width:10rem;
-    margin-bottom: var(--spacing-xxl);
+    max-width: 10rem;
+    /* margin-bottom: var(--spacing-xxl); */
 }
 
 /* EFFECTS */
@@ -488,10 +457,9 @@ input[type="search"], input[type="search"]:focus, input[type="search"]:focus-vis
 .bar__icon {
     width: 2em;
     height: 2em;
-
 }
 
-.oval {
+.search-item {
     border-radius: 6em;
     padding: 0.3em 0.8em;
 
@@ -500,14 +468,14 @@ input[type="search"], input[type="search"]:focus, input[type="search"]:focus-vis
     border: 0.5px solid var(--colour-secondary);
 }
 
-.oval:hover {
+.search-item:hover {
     background-color: var(--colour-bg);
 }
 
-.oval > h7 {
+.search-item > h7 {
     color: var(--colour-bg);
 }
 
-.oval:hover, .oval > h7:hover {
+.search-item:hover, .search-item > h7:hover {
     color: var(--colour-primary);
 }

@@ -7,9 +7,76 @@ body {
     margin: 2% 6% 6% 6%;
 }
 
-.main {
-    margin:0;
+
+
+/* BUTTONS */
+button {
+    border-radius: 0.4em;
+    width: 25em;
+    padding: 0.3em;
 }
+
+.btn {
+    border-radius: 0.4em;
+
+    padding: 0.5em 1em;
+}
+
+.button__margins {
+    margin: 0 2em;
+}
+
+
+
+
+/* DISABLED */
+.disabled {
+    pointer-events:none;
+}
+
+
+
+
+/* INPUT */
+select, option {
+    border-radius: 0.3rem;
+    padding: 0.2rem 0;
+}
+
+input {
+    border-radius: 0.3rem;
+    padding: 0.2rem 0.3rem;
+}
+
+input[type="radio"] {
+    appearance: none;
+
+    width: 1rem;
+    height: 1rem;
+
+    border-radius: 50%;
+
+    position:relative;
+}
+
+input:checked {
+    background-color: var(--colour-primary);
+    border: 3px solid var(--colour-bg);
+    box-shadow: 0 0 0 1px var(--colour-primary);
+}
+
+input[type="textarea"] {
+    height: 4rem;
+    resize: none;
+}
+
+input[type="textarea"]::placeholder {
+    margin-top: 0;
+    margin-bottom: auto;
+}
+
+
+
 
 /* CLUSTER */
 .cluster {
@@ -18,8 +85,22 @@ body {
     justify-content: space-between;
 }
 
+.cluster__wrap {
+    flex-wrap: wrap;
+}
+
 .cluster__around {
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
+}
+
+.cluster > .icon {
+    margin: 0.5rem;
+}
+
+.cluster > .keyNav {
+    margin-left: 0;
 }
 
 .cluster__sm {
@@ -64,17 +145,97 @@ body {
     gap: var(--spacing-xxxxxxl);
 }
 
-.cluster__wrap {
-    flex-wrap: wrap;
+
+
+/* NAV */
+.altKey {
+    width: 16vw;
 }
 
-.cluster > .icon {
-    margin: 0.5rem;
+.keyNav {
+    flex: 0 0 18vw; 
 }
 
-.cluster > .keyNav {
-    margin-left: 0;
+.key {
+    border-radius: 0 80px 80px 0;
+    border: solid;
+    border-width: 2px 2px 5.5px 0;
+
+    padding: 0.3em 0.3em 0.3em 0.8em;
+    
+    text-align: center;
+
+    display: flex;
+    justify-content: space-between;
 }
+
+.key > h3 {
+    align-self: center;
+}
+
+.key:hover {
+    border-width: 2px 2px 2px 0 ;
+    max-width: 97%;
+    max-height: 97%;
+}
+
+
+
+/* ICONS */
+.icon {
+    border-radius: 50%;
+
+    width: 2.2em;
+    height: 2.2em;
+
+    display: flex;
+    justify-content: center;
+}
+
+.icon__small {
+    width: 1.9em;
+    height: 1.9em;
+}
+
+.icon__big {
+    width:8em;
+    height:8em;
+}
+
+.icon > svg {
+    max-width: 65%;
+    max-height: 65%;
+
+    align-self: center;
+}
+
+.icon__search {
+    width: 2em;
+    height: 2em;
+}
+
+
+
+/* LOGO */
+.logo {
+    display: flex;
+    flex-direction: column;
+    width:16%;
+}
+
+.logo__lg {
+    width: 22em;
+}
+
+.logo > .title {
+    align-self: flex-end;
+}
+
+.logo > .subtitle {
+    align-self: flex-start;
+}
+
+
 
 /* SIDEBAR */
 .sidebar-container{
@@ -84,18 +245,34 @@ body {
 }
 
 .sidebar{
-    flex-basis: 12rem;
+    flex-basis: 18em;
     flex-grow: 0;
+    flex-shrink: 2;
 }
 
 .not-sidebar{
-    flex-basis: 0;
+    flex-basis: 20vw;
     flex-grow: 10;
-    max-width: fit-content;
+    flex-shrink: 10;
 }
 
+
+
+
 /* STACK */
-.stack{
+.stack {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.stack__around {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.stack__sm {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-sm);
@@ -137,19 +314,7 @@ body {
     gap: var(--spacing-xxxxxl);
 }
 
-.stack__logo {
-    display: flex;
-    flex-direction: column;
-    width:16%
-}
 
-.stack__logo > .title {
-    align-self: flex-end;
-}
-
-.stack__logo > .subtitle {
-    align-self: flex-start;
-}
 
 /* ALIGNMENT */
 .centre {
@@ -195,8 +360,10 @@ body {
     align-self: baseline;
 }
 
-/* COLUMNS */
 
+
+
+/* COLUMNS */
 .columns{
     display: flex;
     justify-content: space-around;
@@ -210,8 +377,14 @@ body {
     flex: 0 0 28vw;
 }
 
-/* ARRANGMENT */
+.column3 {
+    flex: 1;
+}
 
+
+
+
+/* ARRANGMENT */
 .square {
     width: 22em;
     height: 30em;
@@ -221,13 +394,47 @@ body {
     width: 50vw;
 }
 
+.square__wide {
+    max-width: 72vw;
+}
+
 .cart {
     width: 28vw;
 }
 
 .fit__width {
-    min-width:fit-content;
+    max-width:fit-content;
 }
+
+
+
+
+/* SECTION STYLING */
+.filters {
+    border-radius: 0.8em;
+    border: 0.5px solid;
+    border-color: var(--colour-primary); 
+
+    padding: 2em;
+    height: fit-content;
+}
+
+.box {
+    border-radius: 0.8em;
+    padding: 1rem;
+}
+
+.box__filters {
+    padding: var(--spacing-xxxl);
+    height: 80vh;
+}
+
+.box__fit {
+    height: fit-content;
+}
+
+
+
 
 /* MARGIN SET */
 .bottom__1{
@@ -248,6 +455,96 @@ body {
 .nomargins {
     margin: auto 0;
 }
+
+.margin__sm {
+    margin: var(--spacing-sm);
+}
+
+
+
+
+/* IMAGES */
+img {
+    border-radius: 0.6em;
+    width: 10rem;
+    height: 10rem;
+}
+
+.img__small {
+    width: 5em;
+    height: 5em;
+}
+
+.img__fit {
+    width: 7rem;
+    height: 7rem;
+}
+
+
+
+
+/* SEMANTIC:PRODUCTS */
+.product {
+    max-width: 10rem;
+    /* margin-bottom: var(--spacing-xxl); */
+}
+
+.products {
+    row-gap: var(--spacing-xxxxxl);
+    /* column-gap: var(--spacing-lg); */
+}
+
+.products > * {
+    max-width: 10em;
+    flex: 1 0 24;
+    margin-left: var(--spacing-lg);
+}
+
+
+
+
+/* EFFECTS */
+.scroll {
+    max-height: 28em;
+    overflow: scroll;
+}
+
+.blur {
+    backdrop-filter: blur(10px);
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+
+
+/* SEARCH */
+.search {
+    border-radius: 6em;
+    border-width: 0.5px 0 0.5px 0.5px;
+
+    height: 2em;
+}
+
+input[type="search"], input[type="search"]:focus, input[type="search"]:focus-visible {
+    margin: 0;
+    height: 2em;
+
+    border: none;
+    border-radius: 6em;
+
+    outline: none;
+    padding: 0.2rem 0.8rem;
+}
+
+.search-item {
+    border-radius: 6em;
+    padding: 0.3em 0.8em;
+}
+
+
+
 
 /* OVERLAY */
 .overlay {
@@ -270,8 +567,56 @@ body {
     position: relative;
 }
 
-/* KEYS */
 
-.altKey {
-    width: 16vw;
+
+/* MEDIA QUERY */
+@media only screen 
+    and (device-width: 375px)  { 
+
+        body {
+            max-width: 100vh;
+            max-height: 100vh;
+        }
+
+        .nomargins {
+            margin-right: 1em;
+        }
+
+        .keyNav > * {
+            width: 12em;
+        }
+
+        .altKey {
+            width: 11em;
+        }
+    
+        .logo {
+            width: 10rem;
+        }
+
+        .icon {
+            width: 1.9em;
+            height: 1.9em; 
+        }
+
+        main.cluster__xxxxxl {
+            gap: 0em;
+            justify-content: space-between;
+        }
+
+        .cluster.column3 {
+            flex-direction: column;
+            justify-content: center;
+
+            max-width: min-content;
+        }
+
+        .column3 > * {
+            margin: 0.5em 0;
+        }
+
+        .column3 > .margin__sm {
+            margin-right: 0;
+            margin-left: auto;
+        }
 }

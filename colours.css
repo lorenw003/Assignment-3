@@ -1,3 +1,7 @@
+@import url(reset.css);
+@import url(webfontkit-20230428-230817/type.css);
+@import url(layout.css);
+
 :root {
     /*background*/
     --colour-bg-links:#9b3417;
@@ -39,4 +43,317 @@
     --colour-fashion:#D89854;
     --colour-other:#9C956A;
 
+    background-color: var(--colour-bg);
+
+}
+
+
+
+/* BUTTONS */
+button {
+    background-color: var(--colour-bg);
+    color: var(--colour-primary);
+
+    border: 0.5px solid var(--colour-primary-accent);
+}
+
+button:hover, button:hover > h4, button:hover > h5 {
+    background-color: var(--colour-primary);
+    color: var(--colour-bg);
+}
+
+.btn {
+    background-color: var(--colour-bg);
+    color: var(--colour-primary);
+
+    border: 0.5px solid var(--colour-primary);
+}
+
+.btn:hover, .btn:hover > h4, .btn:hover > h5 {
+    background-color: var(--colour-primary);
+    color: var(--colour-bg);
+}
+
+.btn__secondary {
+    background-color: var(--colour-primary);
+    color: var(--colour-bg);
+
+    border: 0.5px solid var(--colour-primary);
+}
+
+.btn__secondary:hover {
+    background-color: var(--colour-secondary);
+    color: var(--colour-bg);
+}
+
+
+
+/* NAVIGATION KEYS */
+.key {
+    background-color: var(--colour-bg);
+}
+
+
+
+/* ICON */
+.icon {
+    border: 0.5px solid var(--colour-primary); 
+}
+
+.icon > svg > path, .icon > svg > g > path {
+    fill: var(--colour-primary);
+}
+
+.icon:hover, .icon:hover > svg > path, .icon:hover > svg > g > path  {
+    background-color: var(--colour-primary);
+    fill: var(--colour-bg);
+}
+
+
+
+
+/* ICON COLOURS */
+.icon__primary, .icon__primary > svg > path {
+    background-color: var(--colour-primary);
+    fill: var(--colour-bg);
+}
+
+.icon__primary:hover, .icon__primary:hover > svg > path  {
+    border-color: var(--colour-primary);
+    background-color: var(--colour-bg);
+    fill: var(--colour-primary);
+}
+
+.icon__second, .icon__second > svg > path {
+    border-color: var(--colour-secondary);
+    fill: var(--colour-secondary);
+}
+
+.icon__second:hover, .icon__second:hover > svg > path {
+    background-color: var(--colour-secondary);
+    fill: var(--colour-bg);
+}
+
+
+/* PRODUCT COLOURS */
+
+.combo {
+    border-color: var(--colour-combo);
+}
+
+.combo > svg > path {
+    fill: var(--colour-combo);
+}
+
+.combo.icon:hover, .combo.icon:hover > svg > path  {
+    background-color: var(--colour-combo);
+    fill: var(--colour-bg);
+}
+
+.mini {
+    border-color: var(--colour-mini);
+}
+
+.mini > svg > path {
+    fill: var(--colour-mini);
+}
+
+.mini.icon:hover, .mini.icon:hover > svg > path  {
+    background-color: var(--colour-mini);
+    fill: var(--colour-bg);
+}
+
+.keyHarp {
+    border-color: var(--colour-keyharp);
+}
+
+.keyHarp > svg > path {
+    fill: var(--colour-keyharp);
+}
+
+.keyHarp.icon:hover, .keyHarp.icon:hover > svg > path  {
+    background-color: var(--colour-keyharp);
+    fill: var(--colour-bg);
+}
+
+.toy {
+    border-color: var(--colour-toy);
+    fill: var(--colour-toy);
+}
+
+.toy > svg > path {
+    fill:var(--colour-toy)
+}
+
+.toy.icon:hover, .toy.icon:hover > svg > path  {
+    background-color: var(--colour-toy);
+    fill: var(--colour-bg);
+}
+
+.electric {
+    border-color: var(--colour-electric);
+}
+
+.electric > svg > g > path {
+    fill: var(--colour-electric);
+}
+
+.electric.icon:hover, .electric.icon:hover > svg > g > path  {
+    background-color: var(--colour-electric);
+    fill: var(--colour-bg);
+}
+
+.headphones {
+    border-color: var(--colour-headphones);
+}
+
+.headphones > svg > path {
+    fill:var(--colour-headphones)
+}
+
+.headphones.icon:hover, .headphones.icon:hover > svg > path  {
+    background-color: var(--colour-headphones);
+    fill: var(--colour-bg);
+}
+
+.effects {
+    border-color: var(--colour-effects);
+}
+
+.effects > svg > g > path {
+    fill: var(--colour-effects);
+}
+
+.effects.icon:hover, .effects.icon:hover > svg > g > path, .effects.icon:hover > svg > g > ellipse  {
+    background-color: var(--colour-effects);
+    fill: var(--colour-bg);
+}
+
+.parts {
+    border-color: var(--colour-parts);
+}
+
+.parts > svg > path {
+    fill: var(--colour-parts);
+}
+
+.parts.icon:hover, .parts.icon:hover > svg > path  {
+    background-color: var(--colour-parts);
+    fill: var(--colour-bg);
+}
+
+.fashion {
+    border-color: var(--colour-fashion);
+}
+
+.fashion > svg > path {
+    fill: var(--colour-fashion);
+}
+
+.fashion.icon:hover, .fashion.icon:hover > svg > path  {
+    background-color: var(--colour-fashion);
+    fill: var(--colour-bg);
+}
+
+.zakka {
+    border-color: var(--colour-zakka);
+}
+
+.zakka > svg > path {
+    fill: var(--colour-zakka);
+}
+
+.zakka.icon:hover, .zakka.icon:hover > svg > path  {
+    background-color: var(--colour-zakka);
+    fill: var(--colour-bg);
+}
+
+.other {
+    border-color: var(--colour-other);
+}
+
+.other > svg > text {
+    fill: var(--colour-other);
+}
+
+.other.icon:hover, .other.icon:hover > svg > text  {
+    background-color: var(--colour-other);
+    fill: var(--colour-bg);
+}
+
+
+/* INPUTS */
+
+select, option {
+    background-color: var(--colour-bg);
+    border: 0.5px solid var(--colour-primary);
+    color: var(--colour-secondary);
+}
+
+select:focus-visible {
+    outline: 0.5px solid var(--colour-secondary);
+    border: 1px solid var(--colour-secondary);
+    color: var(--colour-secondary);
+}
+
+input::placeholder {
+    color: var(--colour-secondary);
+}
+
+input {
+    background-color: var(--colour-bg);
+    border: 0.5px solid var(--colour-primary);
+    color: var(--colour-secondary);
+}
+
+input:focus-visible {
+    outline: 0.5px solid var(--colour-secondary);
+    border: 1px solid var(--colour-secondary);
+    color: var(--colour-secondary);
+}
+
+input[type="radio"] {
+    background-color: var(--colour-bg);
+    border: 1px solid var(--colour-primary);
+}
+
+input:checked {
+    background-color: var(--colour-primary);
+    border: 3px solid var(--colour-bg);
+    box-shadow: 0 0 0 1px var(--colour-primary);
+}
+
+
+
+/*SECTION*/
+.box {
+    border: 0.5px solid var(--colour-primary); 
+}
+
+
+
+/* DIVIDER */
+hr {
+    border: 0.5px solid var(--colour-primary);
+}
+
+
+
+/* SEARCH */
+.search {
+    border: 0.5px solid var(--colour-primary);
+}
+
+.search-item {
+    color: var(--colour-bg);
+    background-color: var(--colour-secondary);
+    border: 0.5px solid var(--colour-secondary);
+}
+
+.search-item > h7 {
+    color: var(--colour-bg);
+}
+
+.search-item:hover, .search-item > h7:hover {
+    color: var(--colour-primary);
 }
