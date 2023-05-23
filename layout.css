@@ -262,6 +262,12 @@ input[type="textarea"]::placeholder {
     justify-content: space-between;
 }
 
+.stack__evenly {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
 .stack__around {
     display: flex;
     flex-direction: column;
@@ -441,7 +447,8 @@ input[type="textarea"]::placeholder {
 }
 
 .body {
-    min-height: 138vh;
+    height: 140vh;
+
 }
 
 

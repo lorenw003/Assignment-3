@@ -6,27 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Error 404</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="colours.css">
+    <link rel="stylesheet" href="type.css">
 
-    <script src="script.js"></script>
 
 </head>
-<body>
-    <main class="stack__big centre cover square">
-        <div class="right cluster__none">
-            <svg class="bottom__1" xmlns="http://www.w3.org/2000/svg" width="33.564" height="50.356" viewBox="0 0 33.564 50.356">
-                <path id="Path_76" data-name="Path 76" d="M22.781,8.595V32.512a11.008,11.008,0,0,0-9.315-.9A11.19,11.19,0,0,0,19,53.212a11.481,11.481,0,0,0,9.371-11.469V14.189h5.595A5.595,5.595,0,1,0,33.971,3H28.376A5.611,5.611,0,0,0,22.781,8.595Z" transform="translate(-6.001 -3)" fill="#f4ae55"/>
-            </svg>
-            <svg class="top__1" xmlns="http://www.w3.org/2000/svg" width="73.781" height="60" viewBox="0 0 73.781 76.187">
-                <path id="_7e744c8524fbb52ff2d336df62735f83" data-name="7e744c8524fbb52ff2d336df62735f83" d="M29.939,4.414a6.124,6.124,0,0,0-5.766,6.115V59.874H13.4A11.434,11.434,0,0,0,2.6,69.061c-.894,5.074,2.493,9.187,7.567,9.187H19.35a11.434,11.434,0,0,0,10.807-9.187,9.312,9.312,0,0,0,.116-1.525l.028-.006V25.963a3.062,3.062,0,0,1,2.826-3.053l33.685-2.591a3.062,3.062,0,0,1,3.3,3.053V50.687H59.337A11.434,11.434,0,0,0,48.53,59.874c-.894,5.074,2.493,9.187,7.567,9.187h9.187A11.434,11.434,0,0,0,76.09,59.874a9.311,9.311,0,0,0,.116-1.525l.028-.006V8.186a6.124,6.124,0,0,0-6.483-6.115L29.939,4.414Z" transform="translate(-2.453 -2.061)" fill="#bf6b3f"/>
-            </svg>  
-        </div>                  
-        <h1>Lost connection must be unplugged!</h1>
-        <br>
-        <h7 class="neutral secondary">ERROR 404</h7>
-        <a href="productList.html" class="btn button__margins">
-            <h5>Return to Shopping</h5>
-        </a>
+<body class="stack body" onload="includeHTML()">
+
+    
+    <nav class="nav" w3-include-html="navigation.html"></nav>
+
+    <main class="square centre centre__text">
+        <div class="stack__lg flex__fill cover">
+            <div class="right cluster__none">
+                <svg class="bottom__1" xmlns="http://www.w3.org/2000/svg" width="33.564" height="50.356" viewBox="0 0 33.564 50.356">
+                    <path id="Path_76" data-name="Path 76" d="M22.781,8.595V32.512a11.008,11.008,0,0,0-9.315-.9A11.19,11.19,0,0,0,19,53.212a11.481,11.481,0,0,0,9.371-11.469V14.189h5.595A5.595,5.595,0,1,0,33.971,3H28.376A5.611,5.611,0,0,0,22.781,8.595Z" transform="translate(-6.001 -3)" fill="#f4ae55"/>
+                </svg>
+                <svg class="top__1" xmlns="http://www.w3.org/2000/svg" width="73.781" height="60" viewBox="0 0 73.781 76.187">
+                    <path id="_7e744c8524fbb52ff2d336df62735f83" data-name="7e744c8524fbb52ff2d336df62735f83" d="M29.939,4.414a6.124,6.124,0,0,0-5.766,6.115V59.874H13.4A11.434,11.434,0,0,0,2.6,69.061c-.894,5.074,2.493,9.187,7.567,9.187H19.35a11.434,11.434,0,0,0,10.807-9.187,9.312,9.312,0,0,0,.116-1.525l.028-.006V25.963a3.062,3.062,0,0,1,2.826-3.053l33.685-2.591a3.062,3.062,0,0,1,3.3,3.053V50.687H59.337A11.434,11.434,0,0,0,48.53,59.874c-.894,5.074,2.493,9.187,7.567,9.187h9.187A11.434,11.434,0,0,0,76.09,59.874a9.311,9.311,0,0,0,.116-1.525l.028-.006V8.186a6.124,6.124,0,0,0-6.483-6.115L29.939,4.414Z" transform="translate(-2.453 -2.061)" fill="#bf6b3f"/>
+                </svg>  
+            </div>                  
+            <h1>Lost connection, must be unplugged!</h1>
+            <br>
+            <h7 class="neutral secondary">ERROR 405</h7>
+            <a href="productList.html" class="btn button__margins">Return to Shopping</a>
+        </div>
     </main>
+
+
+    <footer w3-include-html="footer.html"></footer>
 </body>
 </html>
+
+<script src="script.js"></script>

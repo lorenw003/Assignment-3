@@ -7,11 +7,24 @@
     
     <link rel="stylesheet" href="style.css">
 
-    <script src="script.js"></script>
+    <script>
+        $(function () {
+    var includes = $('[data-include]')
+    $.each(includes, function () {
+      var file = $(this).data('include') + '.html'
+      $(this).load(file)
+      console.log($(this).data('include') + '.html')
+    })
+})
+    </script>
     
     <title>Document</title>
 </head>
-<body>
+<body class="stack body" onloadstart="">
+
+    <nav data-include="navigation"></nav>
+
+
     <main>
         <section class="stack__lg square__column centre">
             <div class="cluster__sm">
@@ -58,5 +71,7 @@
             </div>
         </section>
     </main>
+
+    <footer w3-include-html="footer.html"></footer>
 </body>
 </html>
