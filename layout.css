@@ -259,7 +259,7 @@ input[type="textarea"]::placeholder {
 .stack {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .stack__around {
@@ -438,6 +438,10 @@ input[type="textarea"]::placeholder {
 
 .box__fit {
     height: fit-content;
+}
+
+.body {
+    min-height: 138vh;
 }
 
 
