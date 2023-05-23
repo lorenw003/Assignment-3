@@ -156,10 +156,13 @@ a {
 button {
     font-family: var(--font-content);
     font-size: var(--text-sm);
+    text-align: center;
 }
 
 .btn {
+    font-family: var(--font-content);
     font-size: var(--text-lg);
+    text-align: center;
 }
 
 .btn__h5 {

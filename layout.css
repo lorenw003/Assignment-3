@@ -220,7 +220,7 @@ input[type="textarea"]::placeholder {
 .logo {
     display: flex;
     flex-direction: column;
-    width:16%;
+    min-width: max-content;
 }
 
 .logo__lg {
@@ -228,11 +228,7 @@ input[type="textarea"]::placeholder {
 }
 
 .logo > .title {
-    align-self: flex-end;
-}
-
-.logo > .subtitle {
-    align-self: flex-start;
+    margin-left: 1em;
 }
 
 
@@ -322,6 +318,10 @@ input[type="textarea"]::placeholder {
     margin-right: auto;
 }
 
+.centre__text {
+    text-align: center;
+}
+
 .cover{
     display: flex;
     flex-direction: column;
@@ -387,7 +387,6 @@ input[type="textarea"]::placeholder {
 /* ARRANGMENT */
 .square {
     width: 22em;
-    height: 30em;
 }
 
 .square__column {
@@ -404,6 +403,14 @@ input[type="textarea"]::placeholder {
 
 .fit__width {
     max-width:fit-content;
+}
+
+.flex__fill {
+    flex: 1;
+}
+
+.main {
+    height:  100vh;
 }
 
 

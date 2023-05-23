@@ -7,10 +7,6 @@
     background-color: var(--colour-bg);
 }
 
-main {
-    min-height: 100vh;
-}
-
 /* BUTTON STYLING */
 /* button {
     border: 0.5px solid var(--colour-primary);
