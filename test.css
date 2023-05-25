@@ -1,0 +1,51 @@
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  /* Modal Content/Box */
+.modal-content {
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: #fefefe;
+    margin: 0; /* 15% from the top and centered */
+    padding: 2rem 3rem;
+    border: 0px;
+    width: 30%; /* Could be more or less, depending on screen size */
+    height: 100%;
+}
+
+.modal-content > section > button {
+   width: auto;
+}
+
+.cart {
+  width: 16em;
+}
+
+.modal-content > section:not(.cart) {
+  border-top: ;
+}
+
+.
+
+
+
+  
+  /* The Close Button */
+  .close {
+    float: right;
+  }
+  
+  .close:hover,
+  .close:focus {
+    cursor: pointer;
+  }

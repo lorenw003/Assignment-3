@@ -403,10 +403,6 @@ input[type="textarea"]::placeholder {
     max-width: 72vw;
 }
 
-.cart {
-    width: 28vw;
-}
-
 .fit__width {
     max-width:fit-content;
 }
@@ -516,6 +512,15 @@ img {
     max-width: 10em;
     flex: 1 0 24;
     margin-left: var(--spacing-lg);
+}
+
+.product__cart {
+    height: 8em;
+}
+
+.product__cart > img {
+    height: 6em;
+    width: 6em;
 }
 
 
