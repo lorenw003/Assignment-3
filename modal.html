@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="layout.css">
     <link rel="stylesheet" href="colours.css">
-    <link rel="stylesheet" href="test.css">
     
 </head>
-<body>
+<body onload="includeHTML()">
     <!-- navigation bar -->
+    <nav w3-include-html="navigation.html"></nav>
+
     <nav class="cluster">
         <a href="index.html" class="cover logo">
             <h7 class="subtitle">retro designed music store</h7>
@@ -88,7 +89,7 @@
                     <path id="search" d="M30.664,28.446l-5.311-5.3a12.372,12.372,0,0,0,2.64-7.654,12.5,12.5,0,1,0-12.5,12.5,12.372,12.372,0,0,0,7.654-2.64l5.3,5.311a1.568,1.568,0,1,0,2.218-2.218ZM6.124,15.5A9.372,9.372,0,1,1,15.5,24.869,9.372,9.372,0,0,1,6.124,15.5Z" transform="translate(-3 -3)" fill="#8a5037"/>
                 </svg>                                                    
             </a> 
-            <a  id="cartBtn" class="icon icon__primary">
+            <a id="cartBtn" class="icon icon__primary">
                 <svg xmlns="http://www.w3.org/2000/svg" width="21.921" height="20" viewBox="0 0 21.921 27.401">
                     <path id="f401fb57911d714838c42cced9b3db2e" d="M24.551,8.85h-4.11V7.48a5.48,5.48,0,1,0-10.96,0V8.85H5.37A1.37,1.37,0,0,0,4,10.22V25.291A4.11,4.11,0,0,0,8.11,29.4h13.7a4.11,4.11,0,0,0,4.11-4.11V10.22A1.37,1.37,0,0,0,24.551,8.85ZM12.22,7.48a2.74,2.74,0,1,1,5.48,0V8.85H12.22Zm10.96,17.811a1.37,1.37,0,0,1-1.37,1.37H8.11a1.37,1.37,0,0,1-1.37-1.37V11.59H9.48v1.37a1.37,1.37,0,0,0,2.74,0V11.59H17.7v1.37a1.37,1.37,0,0,0,2.74,0V11.59h2.74Z" transform="translate(-4 -2)" fill="#faf8ef"/>
                 </svg>
@@ -100,14 +101,14 @@
     <div id="cartModal" class="modal">
 
         <!-- Modal content -->
-        <div class="modal-content stack__none">
+        <div class="modal-content cart stack__none">
             <span class="icon close">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="18.569" viewBox="0 0 18.569 18.569">
                     <path id="_9577754bcbdcd0ef3e21a4a055922c6e" data-name="9577754bcbdcd0ef3e21a4a055922c6e" d="M11.055,9.784l7.751-7.751A.9.9,0,0,0,17.535.763L9.784,8.514,2.034.763A.9.9,0,0,0,.763,2.034L8.514,9.784.763,17.535a.9.9,0,1,0,1.271,1.271l7.751-7.751,7.751,7.751a.9.9,0,1,0,1.271-1.271Z" transform="translate(-0.5 -0.5)" fill="#8a5037"/>
                 </svg>    
             </span>
         
-          <section class="cart centre stack__xl scroll">
+          <section class="cart-products centre stack__xl scroll">
             <div class="cluster__sm box product__cart">
                 <img class="cover" src="https://organ69.net/img/items/1681205112_file1.jpg"/>
                 <div class="stack">
@@ -254,7 +255,7 @@
                 <h8 class="secondary">¥88,000</h8>
             </div>
 
-            <a href="details.html" class="btn">Request</a>
+            <a href="details.html" class="btn btn__accent">Request</a>
          </section>
       
     </div>

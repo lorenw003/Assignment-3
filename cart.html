@@ -6,44 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="style.css">
-
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="colours.css">
 
 </head>
-<body class="wrapper nomargins">
-    <main class="stack__big centre cover square">
-        <div class="right cluster__none">
-            <svg class="bottom__1" xmlns="http://www.w3.org/2000/svg" width="33.564" height="50.356" viewBox="0 0 33.564 50.356">
-                <path id="Path_76" data-name="Path 76" d="M22.781,8.595V32.512a11.008,11.008,0,0,0-9.315-.9A11.19,11.19,0,0,0,19,53.212a11.481,11.481,0,0,0,9.371-11.469V14.189h5.595A5.595,5.595,0,1,0,33.971,3H28.376A5.611,5.611,0,0,0,22.781,8.595Z" transform="translate(-6.001 -3)" fill="#f4ae55"/>
-            </svg>
-            <svg class="top__1" xmlns="http://www.w3.org/2000/svg" width="73.781" height="60" viewBox="0 0 73.781 76.187">
-                <path id="_7e744c8524fbb52ff2d336df62735f83" data-name="7e744c8524fbb52ff2d336df62735f83" d="M29.939,4.414a6.124,6.124,0,0,0-5.766,6.115V59.874H13.4A11.434,11.434,0,0,0,2.6,69.061c-.894,5.074,2.493,9.187,7.567,9.187H19.35a11.434,11.434,0,0,0,10.807-9.187,9.312,9.312,0,0,0,.116-1.525l.028-.006V25.963a3.062,3.062,0,0,1,2.826-3.053l33.685-2.591a3.062,3.062,0,0,1,3.3,3.053V50.687H59.337A11.434,11.434,0,0,0,48.53,59.874c-.894,5.074,2.493,9.187,7.567,9.187h9.187A11.434,11.434,0,0,0,76.09,59.874a9.311,9.311,0,0,0,.116-1.525l.028-.006V8.186a6.124,6.124,0,0,0-6.483-6.115L29.939,4.414Z" transform="translate(-2.453 -2.061)" fill="#bf6b3f"/>
-            </svg>  
-        </div>                  
-        <h1>Seems like you hit the wrong note!</h1>
-        <br>
-        <h7 class="neutral secondary">ERROR 404</h7>
-        <a href="productList.html" class="btn button__margins">
-            <h5>Return to Shopping</h5>
-        </a>
-    </main>
-   <div class="modal stack right">
-        <div>
-        <div class="cluster blur">
-            <h5>Your Order</h5>
-            <h8 class="secondary">6</h8>
-        </div>
+<body>
+    <div id="cartModal" class="modal">
 
-        <!-- OVERFLOW -->
-        <div class="stack cover horizontal margins_sides box__fixed scroll">
-            <div class="cluster box__fit">
-                <img class="product__fit cover" src="https://organ69.net/img/items/1681205112_file1.jpg"/>
+        <!-- Modal content -->
+        <div class="modal-content cart stack__none">
+            <span class="icon close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="18.569" viewBox="0 0 18.569 18.569">
+                    <path id="_9577754bcbdcd0ef3e21a4a055922c6e" data-name="9577754bcbdcd0ef3e21a4a055922c6e" d="M11.055,9.784l7.751-7.751A.9.9,0,0,0,17.535.763L9.784,8.514,2.034.763A.9.9,0,0,0,.763,2.034L8.514,9.784.763,17.535a.9.9,0,1,0,1.271,1.271l7.751-7.751,7.751,7.751a.9.9,0,1,0,1.271-1.271Z" transform="translate(-0.5 -0.5)" fill="#8a5037"/>
+                </svg>    
+            </span>
+        
+          <section class="cart-products centre stack__xl scroll">
+            <div class="cluster__sm box product__cart">
+                <img class="cover" src="https://organ69.net/img/items/1681205112_file1.jpg"/>
                 <div class="stack">
                     <h7>Suzuki Melodion OHP-25</h7>
                     <h8 class="secondary">¥15,800</h8>
 
-                    <div class="cluster__none right">
+                    <div class="cluster__sm right">
                         <div class="icon icon__small">
                             <svg xmlns="http://www.w3.org/2000/svg" width="8.519" height="13.593" viewBox="0 0 8.519 13.593">
                                 <g id="Group_647" data-name="Group 647" transform="translate(-5.963 -3.407)">
@@ -52,7 +37,7 @@
                                 </g>
                               </svg>                                                                           
                         </div>
-                        <div class="icon icon__brown icon__small">
+                        <div class="icon icon__primary icon__small">
                             <svg xmlns="http://www.w3.org/2000/svg" width="10.063" height="13.123" viewBox="0 0 10.063 13.123">
                                 <path id="da086273b974cb595139babd4da17772" d="M15.842,8.009l-.211,6.4a2.107,2.107,0,0,1-2.114,2.038H9.5a2.107,2.107,0,0,1-2.114-2.036l-.211-6.4a.529.529,0,0,1,1.057-.035l.211,6.4A1.057,1.057,0,0,0,9.5,15.389h4.016a1.057,1.057,0,0,0,1.057-1.018l.211-6.4a.529.529,0,0,1,1.057.035Zm.7-2.129a.528.528,0,0,1-.528.528H7.006a.528.528,0,1,1,0-1.057H8.644a.674.674,0,0,0,.673-.607,1.58,1.58,0,0,1,1.577-1.423h1.231A1.58,1.58,0,0,1,13.7,4.745a.674.674,0,0,0,.673.607h1.638a.528.528,0,0,1,.528.528Zm-6.307-.528h2.551a1.744,1.744,0,0,1-.135-.5.528.528,0,0,0-.525-.476H10.894a.528.528,0,0,0-.525.476,1.744,1.744,0,0,1-.135.5Zm.532,8.006v-4.5a.528.528,0,1,0-1.057,0v4.5a.528.528,0,1,0,1.057,0Zm2.544,0v-4.5a.528.528,0,1,0-1.057,0v4.5a.528.528,0,1,0,1.057,0Z" transform="translate(-6.478 -3.322)" fill="#fff"/>
                             </svg>                                                                        
@@ -60,14 +45,13 @@
                     </div>
                 </div>
             </div>
-
-            <div class="cluster box__fit">
-                <img class="product__fit" src="https://organ69.net/img/items/1681205112_file1.jpg"/>
+            <div class="cluster__sm box product__cart">
+                <img class="cover" src="https://organ69.net/img/items/1681205112_file1.jpg"/>
                 <div class="stack">
                     <h7>Suzuki Melodion OHP-25</h7>
                     <h8 class="secondary">¥15,800</h8>
 
-                    <div class="cluster__none right bottom">
+                    <div class="cluster__sm right">
                         <div class="icon icon__small">
                             <svg xmlns="http://www.w3.org/2000/svg" width="8.519" height="13.593" viewBox="0 0 8.519 13.593">
                                 <g id="Group_647" data-name="Group 647" transform="translate(-5.963 -3.407)">
@@ -76,7 +60,7 @@
                                 </g>
                               </svg>                                                                           
                         </div>
-                        <div class="icon icon__brown icon__small">
+                        <div class="icon icon__primary icon__small">
                             <svg xmlns="http://www.w3.org/2000/svg" width="10.063" height="13.123" viewBox="0 0 10.063 13.123">
                                 <path id="da086273b974cb595139babd4da17772" d="M15.842,8.009l-.211,6.4a2.107,2.107,0,0,1-2.114,2.038H9.5a2.107,2.107,0,0,1-2.114-2.036l-.211-6.4a.529.529,0,0,1,1.057-.035l.211,6.4A1.057,1.057,0,0,0,9.5,15.389h4.016a1.057,1.057,0,0,0,1.057-1.018l.211-6.4a.529.529,0,0,1,1.057.035Zm.7-2.129a.528.528,0,0,1-.528.528H7.006a.528.528,0,1,1,0-1.057H8.644a.674.674,0,0,0,.673-.607,1.58,1.58,0,0,1,1.577-1.423h1.231A1.58,1.58,0,0,1,13.7,4.745a.674.674,0,0,0,.673.607h1.638a.528.528,0,0,1,.528.528Zm-6.307-.528h2.551a1.744,1.744,0,0,1-.135-.5.528.528,0,0,0-.525-.476H10.894a.528.528,0,0,0-.525.476,1.744,1.744,0,0,1-.135.5Zm.532,8.006v-4.5a.528.528,0,1,0-1.057,0v4.5a.528.528,0,1,0,1.057,0Zm2.544,0v-4.5a.528.528,0,1,0-1.057,0v4.5a.528.528,0,1,0,1.057,0Z" transform="translate(-6.478 -3.322)" fill="#fff"/>
                             </svg>                                                                        
@@ -84,14 +68,13 @@
                     </div>
                 </div>
             </div>
-
-            <div class="cluster box__fit">
-                <img class="product__fit cover" src="https://organ69.net/img/items/1681205112_file1.jpg"/>
+            <div class="cluster__sm box product__cart">
+                <img class="cover" src="https://organ69.net/img/items/1681205112_file1.jpg"/>
                 <div class="stack">
                     <h7>Suzuki Melodion OHP-25</h7>
                     <h8 class="secondary">¥15,800</h8>
 
-                    <div class="cluster__none right">
+                    <div class="cluster__sm right">
                         <div class="icon icon__small">
                             <svg xmlns="http://www.w3.org/2000/svg" width="8.519" height="13.593" viewBox="0 0 8.519 13.593">
                                 <g id="Group_647" data-name="Group 647" transform="translate(-5.963 -3.407)">
@@ -100,7 +83,7 @@
                                 </g>
                               </svg>                                                                           
                         </div>
-                        <div class="icon icon__brown icon__small">
+                        <div class="icon icon__primary icon__small">
                             <svg xmlns="http://www.w3.org/2000/svg" width="10.063" height="13.123" viewBox="0 0 10.063 13.123">
                                 <path id="da086273b974cb595139babd4da17772" d="M15.842,8.009l-.211,6.4a2.107,2.107,0,0,1-2.114,2.038H9.5a2.107,2.107,0,0,1-2.114-2.036l-.211-6.4a.529.529,0,0,1,1.057-.035l.211,6.4A1.057,1.057,0,0,0,9.5,15.389h4.016a1.057,1.057,0,0,0,1.057-1.018l.211-6.4a.529.529,0,0,1,1.057.035Zm.7-2.129a.528.528,0,0,1-.528.528H7.006a.528.528,0,1,1,0-1.057H8.644a.674.674,0,0,0,.673-.607,1.58,1.58,0,0,1,1.577-1.423h1.231A1.58,1.58,0,0,1,13.7,4.745a.674.674,0,0,0,.673.607h1.638a.528.528,0,0,1,.528.528Zm-6.307-.528h2.551a1.744,1.744,0,0,1-.135-.5.528.528,0,0,0-.525-.476H10.894a.528.528,0,0,0-.525.476,1.744,1.744,0,0,1-.135.5Zm.532,8.006v-4.5a.528.528,0,1,0-1.057,0v4.5a.528.528,0,1,0,1.057,0Zm2.544,0v-4.5a.528.528,0,1,0-1.057,0v4.5a.528.528,0,1,0,1.057,0Z" transform="translate(-6.478 -3.322)" fill="#fff"/>
                             </svg>                                                                        
@@ -108,14 +91,13 @@
                     </div>
                 </div>
             </div>
-
-            <div class="cluster box__fit">
-                <img class="product__fit" src="https://organ69.net/img/items/1681205112_file1.jpg"/>
+            <div class="cluster__sm box product__cart">
+                <img class="cover" src="https://organ69.net/img/items/1681205112_file1.jpg"/>
                 <div class="stack">
                     <h7>Suzuki Melodion OHP-25</h7>
                     <h8 class="secondary">¥15,800</h8>
 
-                    <div class="cluster__none right bottom">
+                    <div class="cluster__sm right">
                         <div class="icon icon__small">
                             <svg xmlns="http://www.w3.org/2000/svg" width="8.519" height="13.593" viewBox="0 0 8.519 13.593">
                                 <g id="Group_647" data-name="Group 647" transform="translate(-5.963 -3.407)">
@@ -124,7 +106,7 @@
                                 </g>
                               </svg>                                                                           
                         </div>
-                        <div class="icon icon__brown icon__small">
+                        <div class="icon icon__primary icon__small">
                             <svg xmlns="http://www.w3.org/2000/svg" width="10.063" height="13.123" viewBox="0 0 10.063 13.123">
                                 <path id="da086273b974cb595139babd4da17772" d="M15.842,8.009l-.211,6.4a2.107,2.107,0,0,1-2.114,2.038H9.5a2.107,2.107,0,0,1-2.114-2.036l-.211-6.4a.529.529,0,0,1,1.057-.035l.211,6.4A1.057,1.057,0,0,0,9.5,15.389h4.016a1.057,1.057,0,0,0,1.057-1.018l.211-6.4a.529.529,0,0,1,1.057.035Zm.7-2.129a.528.528,0,0,1-.528.528H7.006a.528.528,0,1,1,0-1.057H8.644a.674.674,0,0,0,.673-.607,1.58,1.58,0,0,1,1.577-1.423h1.231A1.58,1.58,0,0,1,13.7,4.745a.674.674,0,0,0,.673.607h1.638a.528.528,0,0,1,.528.528Zm-6.307-.528h2.551a1.744,1.744,0,0,1-.135-.5.528.528,0,0,0-.525-.476H10.894a.528.528,0,0,0-.525.476,1.744,1.744,0,0,1-.135.5Zm.532,8.006v-4.5a.528.528,0,1,0-1.057,0v4.5a.528.528,0,1,0,1.057,0Zm2.544,0v-4.5a.528.528,0,1,0-1.057,0v4.5a.528.528,0,1,0,1.057,0Z" transform="translate(-6.478 -3.322)" fill="#fff"/>
                             </svg>                                                                        
@@ -132,28 +114,65 @@
                     </div>
                 </div>
             </div>
+            <div class="cluster__sm box product__cart">
+                <img class="cover" src="https://organ69.net/img/items/1681205112_file1.jpg"/>
+                <div class="stack">
+                    <h7>Suzuki Melodion OHP-25</h7>
+                    <h8 class="secondary">¥15,800</h8>
 
-        </div>
+                    <div class="cluster__sm right">
+                        <div class="icon icon__small">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="8.519" height="13.593" viewBox="0 0 8.519 13.593">
+                                <g id="Group_647" data-name="Group 647" transform="translate(-5.963 -3.407)">
+                                  <path id="Path_74" data-name="Path 74" d="M15.519,8.259A4.259,4.259,0,1,0,7,8.259a.852.852,0,1,0,1.7,0,2.556,2.556,0,1,1,2.556,2.556.852.852,0,0,0-.852.852v1.7a.852.852,0,0,0,1.7,0v-.937A4.259,4.259,0,0,0,15.519,8.259Z" transform="translate(-1.037 -0.593)" fill="#8a5037"/>
+                                  <circle id="Ellipse_36" data-name="Ellipse 36" cx="1" cy="1" r="1" transform="translate(9 15)" fill="#8a5037"/>
+                                </g>
+                              </svg>                                                                           
+                        </div>
+                        <div class="icon icon__primary icon__small">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10.063" height="13.123" viewBox="0 0 10.063 13.123">
+                                <path id="da086273b974cb595139babd4da17772" d="M15.842,8.009l-.211,6.4a2.107,2.107,0,0,1-2.114,2.038H9.5a2.107,2.107,0,0,1-2.114-2.036l-.211-6.4a.529.529,0,0,1,1.057-.035l.211,6.4A1.057,1.057,0,0,0,9.5,15.389h4.016a1.057,1.057,0,0,0,1.057-1.018l.211-6.4a.529.529,0,0,1,1.057.035Zm.7-2.129a.528.528,0,0,1-.528.528H7.006a.528.528,0,1,1,0-1.057H8.644a.674.674,0,0,0,.673-.607,1.58,1.58,0,0,1,1.577-1.423h1.231A1.58,1.58,0,0,1,13.7,4.745a.674.674,0,0,0,.673.607h1.638a.528.528,0,0,1,.528.528Zm-6.307-.528h2.551a1.744,1.744,0,0,1-.135-.5.528.528,0,0,0-.525-.476H10.894a.528.528,0,0,0-.525.476,1.744,1.744,0,0,1-.135.5Zm.532,8.006v-4.5a.528.528,0,1,0-1.057,0v4.5a.528.528,0,1,0,1.057,0Zm2.544,0v-4.5a.528.528,0,1,0-1.057,0v4.5a.528.528,0,1,0,1.057,0Z" transform="translate(-6.478 -3.322)" fill="#fff"/>
+                            </svg>                                                                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cluster__sm box product__cart">
+                <img class="cover" src="https://organ69.net/img/items/1681205112_file1.jpg"/>
+                <div class="stack">
+                    <h7>Suzuki Melodion OHP-25</h7>
+                    <h8 class="secondary">¥15,800</h8>
 
-        <div>
-            <div class="cluster secondary">
-                <h7>Subtotal</h7>
-                <h8>¥80,000</h8>
+                    <div class="cluster__sm right">
+                        <div class="icon icon__small">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="8.519" height="13.593" viewBox="0 0 8.519 13.593">
+                                <g id="Group_647" data-name="Group 647" transform="translate(-5.963 -3.407)">
+                                  <path id="Path_74" data-name="Path 74" d="M15.519,8.259A4.259,4.259,0,1,0,7,8.259a.852.852,0,1,0,1.7,0,2.556,2.556,0,1,1,2.556,2.556.852.852,0,0,0-.852.852v1.7a.852.852,0,0,0,1.7,0v-.937A4.259,4.259,0,0,0,15.519,8.259Z" transform="translate(-1.037 -0.593)" fill="#8a5037"/>
+                                  <circle id="Ellipse_36" data-name="Ellipse 36" cx="1" cy="1" r="1" transform="translate(9 15)" fill="#8a5037"/>
+                                </g>
+                              </svg>                                                                           
+                        </div>
+                        <div class="icon icon__primary icon__small">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10.063" height="13.123" viewBox="0 0 10.063 13.123">
+                                <path id="da086273b974cb595139babd4da17772" d="M15.842,8.009l-.211,6.4a2.107,2.107,0,0,1-2.114,2.038H9.5a2.107,2.107,0,0,1-2.114-2.036l-.211-6.4a.529.529,0,0,1,1.057-.035l.211,6.4A1.057,1.057,0,0,0,9.5,15.389h4.016a1.057,1.057,0,0,0,1.057-1.018l.211-6.4a.529.529,0,0,1,1.057.035Zm.7-2.129a.528.528,0,0,1-.528.528H7.006a.528.528,0,1,1,0-1.057H8.644a.674.674,0,0,0,.673-.607,1.58,1.58,0,0,1,1.577-1.423h1.231A1.58,1.58,0,0,1,13.7,4.745a.674.674,0,0,0,.673.607h1.638a.528.528,0,0,1,.528.528Zm-6.307-.528h2.551a1.744,1.744,0,0,1-.135-.5.528.528,0,0,0-.525-.476H10.894a.528.528,0,0,0-.525.476,1.744,1.744,0,0,1-.135.5Zm.532,8.006v-4.5a.528.528,0,1,0-1.057,0v4.5a.528.528,0,1,0,1.057,0Zm2.544,0v-4.5a.528.528,0,1,0-1.057,0v4.5a.528.528,0,1,0,1.057,0Z" transform="translate(-6.478 -3.322)" fill="#fff"/>
+                            </svg>                                                                        
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="cluster secondary">
-                <h7>Shipping</h7>
-                <h8>¥800</h8>
-            </div>
+          </section>
+
+          <section class="stack__sm bottom">
             <div class="cluster">
                 <h5>Total</h5>
-                <h8>¥88,000</h8>
+                <h8 class="secondary">¥88,000</h8>
             </div>
 
-            <div class="centre">
-                <button>
-                    <h5>Continue to Payment Method</h5>
-                </button>
-        </div>
-   </div>
+            <a href="details.html" class="btn btn__accent">Request</a>
+         </section>
+      
+    </div>
 </body>
 </html>
+
+<script src="script.js"></script>
