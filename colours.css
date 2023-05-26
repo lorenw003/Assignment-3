@@ -66,7 +66,7 @@ button:hover, button:hover > h4, button:hover > h5 {
     background-color: var(--colour-bg);
     color: var(--colour-primary);
 
-    border: 0.5px solid var(--colour-primary);
+    border: 0.5px solid var(--colour-primary-accent);
 }
 
 .btn:hover, .btn:hover > h4, .btn:hover > h5 {
@@ -332,11 +332,15 @@ input:checked {
 
 
 
-/* DIVIDER */
-hr {
-    border-top: 1px solid red;
+/* SCROLL*/
+::-webkit-scrollbar-track {
+    background: var(--colour-bg);
+    opacity: 100%;
 }
 
+::-webkit-scrollbar-thumb:hover {
+    background: var(--colour-primary);
+}
 
 
 /* SEARCH */

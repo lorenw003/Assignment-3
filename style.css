@@ -21,7 +21,7 @@ button:hover, button:hover > h4, button:hover > h5 {
     background-color: var(--colour-primary);
     color: var(--colour-bg);
 }
-
+/* 
 .btn {
     border: 0.5px solid var(--colour-primary);
     border-radius: 0.4em;
@@ -34,7 +34,7 @@ button:hover, button:hover > h4, button:hover > h5 {
 .btn:hover, .btn:hover > h4, .btn:hover > h5 {
     background-color: var(--colour-primary);
     color: var(--colour-bg);
-}
+} */
 
 .button__margins {
     margin: 0 2em;
@@ -405,7 +405,7 @@ input[type="textarea"]::placeholder {
 
 /* EFFECTS */
 .scroll {
-    max-height: 28em;
+    max-height: 80vh;
     overflow: scroll;
 }
 

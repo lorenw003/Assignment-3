@@ -15,27 +15,43 @@
     position: fixed;
     right: 0;
     top: 0;
-    background-color: #fefefe;
-    margin: 0; /* 15% from the top and centered */
-    padding: 2rem 3rem;
+    background-color: var(--colour-bg);
+    padding: 2em 0;
     border: 0px;
-    width: 30%; /* Could be more or less, depending on screen size */
-    height: 100%;
+    width: 28%; /* Could be more or less, depending on screen size */
+    min-height: 100%;
 }
 
 .modal-content > section > button {
    width: auto;
 }
 
-.cart {
-  width: 16em;
-}
-
 .modal-content > section:not(.cart) {
-  border-top: ;
+  border-top: 0.5px solid var(--colour-primary);
 }
 
-.
+.modal-content > section:not(.cart) > *,  .modal-content > .icon {
+  margin: 0em 2em;
+}
+
+.modal-content > *:not(.icon, .cart) {
+  padding: 2em 0;
+
+}
+
+.cart {
+  margin: 5% 15% 0 15%;
+}
+
+.cart > * {
+  padding: 1em;
+  min-width: fit-content;
+}
+
+.cart > * > img {
+  height: 6em;
+  width: 6em;
+}
 
 
 
@@ -49,3 +65,15 @@
   .close:focus {
     cursor: pointer;
   }
+
+/* MEDIA QUERY */
+@media only screen 
+    and (device-width < 500px) { 
+      .modal-content { 
+        width: 100%;
+      } 
+
+      .modal { 
+        display: none;
+      } 
+}
