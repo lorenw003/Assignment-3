@@ -11,8 +11,12 @@
     <script src="script.js"></script>
 
 </head>
-<body>
-    <main class="stack__lg centre centre__text cover square">
+<body class="stack__xxxxxl"onload="includeHTML()">
+
+    
+    <nav class="nav" w3-include-html="navigation.html"></nav>
+
+    <main class="main stack__lg centre centre__text cover square">
         <div class="cluster__sm icon icon__big disabled centre">
             <svg xmlns="http://www.w3.org/2000/svg" width="57.934" height="40.348" viewBox="0 0 57.934 46.348">
                 <path id="Path_98" data-name="Path 98" d="M62.264,6.727a6.039,6.039,0,0,1,0,8.34L28.852,49.62a5.571,5.571,0,0,1-8.065,0L7.67,36.056a6.041,6.041,0,0,1,0-8.34,5.571,5.571,0,0,1,8.065,0l9.084,9.394L54.2,6.727A5.57,5.57,0,0,1,62.264,6.727Z" transform="translate(-6 -5)" fill="#8a5037"/>
@@ -24,5 +28,9 @@
             <h5>Return to Shopping</h5>
         </a>
     </main>
+
+    <footer w3-include-html="footer.html"></footer>
+
+    <section w3-include-html="cart.html"></section>
 </body>
 </html>

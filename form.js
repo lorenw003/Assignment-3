@@ -11,9 +11,8 @@ let shipping = [];
 
 let vars = window.location.search.replace(/%40/g, '@').replace('?', '').replaceAll('+', ' ').replaceAll('%2B', '+').split('&')
 personal.push(vars[0], vars[1], vars[2], vars[3]);
-console.log(personal);
-shipping.push(vars[4], vars[5], vars[6], vars[7], vars[8]);
-payment
+shipping.push(vars[4], vars[5], vars[6], vars[7]);
+
 
 
 
@@ -45,15 +44,16 @@ shipping.forEach( (v) => {
 const method = document.getElementById("payment")
 
 if (method) {
-    paymethod.forEach( (v) => {
-        let inputName = v.split("=")[0];
-        let inputValue = v.split("=")[1]
-        
-        let newP = document.createElement('input');
-        newP.readOnly = true;
-        newP.value = inputValue;
-        newP.name = inputName;
-        document.querySelector('#payment').appendChild(newP);
-    })
+    let paymethod = vars[8]
+
+    let inputName = paymethod.split("=")[0];
+    let inputValue = paymethod.split("=")[1]
+    
+    let newP = document.createElement('input');
+    newP.readOnly = true;
+    newP.value = inputValue;
+    newP.name = inputName;
+    document.querySelector('#payment').appendChild(newP);
+    
 }
 
