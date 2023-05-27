@@ -11,32 +11,64 @@
 
     <title>Search Results</title>
 </head>
-<body>
-    <main>
-        <section class="stack__big square__column centre">
-            <div class="cluster">
-                <h3 class="nomargins italic">Search</h3>
-                <div class="cluster bar">
-                    <input class="bar__input" type="search" placeholder="Search">
-                    <a href="errorNot.html" class="icon search bar__icon right">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="21.921" height="20" viewBox="0 0 28.126 28.126">
-                            <path id="search" d="M30.664,28.446l-5.311-5.3a12.372,12.372,0,0,0,2.64-7.654,12.5,12.5,0,1,0-12.5,12.5,12.372,12.372,0,0,0,7.654-2.64l5.3,5.311a1.568,1.568,0,1,0,2.218-2.218ZM6.124,15.5A9.372,9.372,0,1,1,15.5,24.869,9.372,9.372,0,0,1,6.124,15.5Z" transform="translate(-3 -3)" fill="#8a5037"/>
-                        </svg>                                                    
-                    </a> 
-                </div>
-            </div>
+<body class="stack__xxxxxl body" onload="includeHTML()">
 
-            <div class="stack__big left">
-                <h7 class="neutral secondary bold">SEARCH RESULTS</h7>
-                <div class="cluster__none left__1">
-                    <img class="product__small" src="https://organ69.net/img/items/1681205112_file1.jpg"/>
-                    <div class="stack">
+    <nav class="nav" w3-include-html="navigation.html"></nav>
+
+
+    <main class="main stack__lg square__column centre">
+        <section class="cluster">
+            <h3 class="italic">Search</h3>
+            <div class="cluster__sm bar">
+                <input class="bar__input" type="search" placeholder="Search">
+                <a href="errorNot.html" class="icon search bar__icon right">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21.921" height="20" viewBox="0 0 28.126 28.126">
+                        <path id="search" d="M30.664,28.446l-5.311-5.3a12.372,12.372,0,0,0,2.64-7.654,12.5,12.5,0,1,0-12.5,12.5,12.372,12.372,0,0,0,7.654-2.64l5.3,5.311a1.568,1.568,0,1,0,2.218-2.218ZM6.124,15.5A9.372,9.372,0,1,1,15.5,24.869,9.372,9.372,0,0,1,6.124,15.5Z" transform="translate(-3 -3)" fill="#8a5037"/>
+                    </svg>                                                    
+                </a> 
+            </div>
+        </section>
+
+        <section class="stack__xl">
+            <h9 class="neutral secondary bold">SEARCH RESULTS</h9>
+            <div class="stack__lg">
+                <div class="cluster__sm">
+                    <img class="img__fit" src="https://organ69.net/img/items/m2_1678336473_file1.jpg"/>
+                    <div class="stack__xs">
                         <h5>Casio Casiotone MT-40</h5>
                         <p class="secondary light">The digital reggae rhythm Slenten was born from this MT-40</p>
                     </div>
                 </div>
+
+                <div class="cluster__sm">
+                    <img class="img__fit" src="https://organ69.net/img/items/m2_1668402895_file1.jpg"/>
+                    <div class="stack__xs">
+                        <h5>Casio Casiotone MT-60</h5>
+                        <p class="secondary light">The simple panel notation and matte design.</p>
+                    </div>
+                </div>
+
+                <div class="cluster__sm">
+                    <img class="img__fit" src="https://organ69.net/img/items/m2_1550990820_file1.jpg"/>
+                    <div class="stack__xs">
+                        <h5>Casio Casiotone MT-50</h5>
+                        <p class="secondary light">A simple and slender model with an automatic accompaniment function</p>
+                    </div>
+                </div>
+
+                <div class="cluster__sm">
+                    <img class="img__fit" src="https://organ69.net/img/items/m2_1397984338_file1.jpg"/>
+                    <div class="stack__xs">
+                        <h5>Casio Tone Bank SA-1</h5>
+                        <p class="secondary light">It is a masterpiece SA-1 of the 80’s Casio keyboard</p>
+                    </div>
+                </div>
             </div>
         </section>
+    
     </main>
+
+
+    <footer w3-include-html="footer.html"></footer>
 </body>
 </html>

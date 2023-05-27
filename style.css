@@ -404,10 +404,10 @@ input[type="textarea"]::placeholder {
 }
 
 /* EFFECTS */
-.scroll {
+/* .scroll {
     max-height: 80vh;
     overflow: scroll;
-}
+} */
 
 .blur {
     backdrop-filter: blur(10px);
