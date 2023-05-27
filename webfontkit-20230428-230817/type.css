@@ -132,7 +132,7 @@ h9 {
 p {
     font-family: "Hiragino Sans", "ヒラギノ角ゴ", sans-serif;
     color: var(--colour-text);
-    font-size: var(--text-sm);
+    font-size: var(--text-xs);
     line-height: normal;
     font-weight: 300;
 }
@@ -182,7 +182,7 @@ label {
 }
 
 input {
-    font-size: var(--text-sm);
+    font-size: var(--text-xs);
 
     font-family: var(--font-neutral);
     font-weight: 300;
@@ -201,7 +201,7 @@ input::placeholder {
 }
 
 select, option {
-    font-size: var(--text-sm);
+    font-size: var(--text-xs);
 
     font-family: var(--font-neutral);
     font-weight: 300;

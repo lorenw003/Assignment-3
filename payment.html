@@ -10,8 +10,10 @@
 
     <script src="script.js"></script>
 </head>
-<body>
-    <main class="columns">
+<body class="stack__xxxxxl" onload="includeHTML()">
+    <nav class="nav" w3-include-html="navigation.html"></nav>
+
+    <form action="confirm.html" class="main columns">
         <section class="column1 stack__xxxl">
             <div class="cluster__around">
                 <div class="icon disabled">
@@ -25,38 +27,29 @@
                 </div>
             </div>
 
-            <div class="stack box">
+            <div class="stack__md box">
                 <div class="cluster__sm">
                     <h5>Personal Details</h5>
                     <svg class="cover" xmlns="http://www.w3.org/2000/svg" width="20.153" height="10" viewBox="0 0 20.153 11.076">
                         <path id="_05d672bf2ec15f434a544f7a2214100f" data-name="05d672bf2ec15f434a544f7a2214100f" d="M25.824,11.5l-8.662,8.662L8.5,11.5" transform="translate(-7.086 -10.086)" fill="none" stroke="#8a5037" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
                     </svg> 
                 </div>
-                <div class="stack hidden">
-                    <p>First Name</p>
-                    <p>Last Name</p>
-                    <p>Email Address</p>
-                    <p>Phone Number</p>
+                <div id="personal" class="stack">
                 </div>
             </div>
 
-            <div class="stack box">
+            <div class="stack__md box">
                 <div class="cluster__sm">
                     <h5>Shipping Details</h5>
                     <svg class="cover" xmlns="http://www.w3.org/2000/svg" width="20.153" height="10" viewBox="0 0 20.153 11.076">
                         <path id="_05d672bf2ec15f434a544f7a2214100f" data-name="05d672bf2ec15f434a544f7a2214100f" d="M25.824,11.5l-8.662,8.662L8.5,11.5" transform="translate(-7.086 -10.086)" fill="none" stroke="#8a5037" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
                     </svg>                      
                 </div>
-                <div class="stack hidden">
-                    <p>Shipping Address</p>
-                    <p>City</p>
-                    <p>Prefecture</p>
-                    <p>Zip Code</p>
-                    <p>Notes</p>
+                <div id="shipping"  class="stack">
                 </div>
             </div>
 
-            <form class="box">
+            <div class="box">
                 <fieldset class="stack__md">
                     <h5>Payment Method</h5>
                     <div class="stack__sm">
@@ -81,7 +74,7 @@
                         </label>
                     </div>
                 </fieldset>
-            </form>
+            </div>
 
         </section>
 
@@ -246,10 +239,14 @@
                     <h8 class="secondary">¥88,000</h8>
                 </div>
 
-                <a href="details.html" class="btn btn__accent">Continue to Payment Method</a>
+                <button type="submit" class="btn__accent">Continue to Payment Method</button>
             </section>
         
         </section>
-    </main>
+    </form>
+
+    <footer class="nav" w3-include-html="footer.html"></footer>
 </body>
 </html>
+
+<script src="form.js"></script>

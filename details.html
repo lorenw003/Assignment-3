@@ -10,8 +10,11 @@
 
     <script src="script.js"></script>
 </head>
-<body>
-    <main class="columns">
+<body class="stack__xxxxxl" onload="includeHTML()">
+
+    <nav class="nav" w3-include-html="navigation.html"></nav>
+    
+    <form action="payment.html" class="main columns">
         <section class="column1 stack__xl">
             <div class="cluster__around">
                 <div class="icon disabled">
@@ -27,26 +30,26 @@
 
             <div class="stack__sm box">
                 <h5>Personal Details</h5>
-                <input type="text" placeholder="First Name" required>
-                <input type="text" placeholder="Last Name" required>
-                <input type="email" placeholder="Email Address" required>
-                <input type="tel" placeholder="Phone Number" required>
+                <input type="text" name="fname" placeholder="First Name" required>
+                <input type="text" name="lname" placeholder="Last Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="tel" name="phone" placeholder="Phone Number" required>
             </div>
 
             <div class="stack__sm box">
                 <h5>Shipping Details</h5>
-                <input type="text" placeholder="Shipping Address">
-                <input type="text" placeholder="City">
+                <input type="text" name="address" placeholder="Shipping Address">
+                <input type="text" name="city" placeholder="City">
                 <select id="options" name="Prefecture" placeholder="Prefecture">
-                    <option value="value1">Hokkaido</option>
-                    <option value="value2">Aomori</option>
-                    <option value="value3">Iwate</option>
-                    <option value="value3">Miyagi</option>
-                    <option value="value3">Akita</option>
-                    <option value="value3">Hokkaido</option>
+                    <option value="Hokkaido">Hokkaido</option>
+                    <option value="Aomori">Aomori</option>
+                    <option value="Iwate">Iwate</option>
+                    <option value="Miyagi">Miyagi</option>
+                    <option value="Akita">Akita</option>
+                    <option value="Hokkaido">Hokkaido</option>
                 </select>
-                <input type="number" placeholder="Zip Code">
-                <input type="textarea" placeholder="Notes">
+                <input type="number" name="zip" placeholder="Zip Code">
+                <input type="textarea" name="notes" placeholder="Notes" rows="3" cols="33">
             </div>
         </section>
 
@@ -211,10 +214,13 @@
                     <h8 class="secondary">¥88,000</h8>
                 </div>
 
-                <a href="details.html" class="btn btn__accent">Continue to Payment Method</a>
+                <button type="submit" class="btn__accent">Continue to Payment Method</button>
             </section>
         
         </section>
-    </main>
+    </form>
+
+    <footer class="nav" w3-include-html="footer.html"></footer>
+
 </body>
 </html>

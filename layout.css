@@ -17,6 +17,10 @@ button {
     padding: 0.3em;
 }
 
+* > button {
+    width: auto;
+}
+
 .btn {
     border-radius: 0.4em;
 
@@ -67,15 +71,14 @@ input:checked {
 }
 
 input[type="textarea"] {
-    height: 4rem;
-    resize: none;
+    resize: vertical;
 }
 
-input[type="textarea"]::placeholder {
-    margin-top: 0;
-    margin-bottom: auto;
+input:read-only, input:read-only:focus-visible  {
+    border: none;
+    box-shadow: none;
+    outline: none;
 }
-
 
 
 
@@ -199,8 +202,8 @@ input[type="textarea"]::placeholder {
 }
 
 .icon__big {
-    width:8em;
-    height:8em;
+    width:6em;
+    height:6em;
 }
 
 .icon > svg {
@@ -354,6 +357,12 @@ input[type="textarea"]::placeholder {
     margin-bottom: auto;
 }
 
+.cover-error {
+    max-height: min-content;
+    margin-top: 20vh;
+    margin-bottom: auto;
+}
+
 .top {
     margin-bottom: auto;
     margin-top: 0;
@@ -433,12 +442,12 @@ input[type="textarea"]::placeholder {
     flex: 1;
 }
 
-/* .main {
-    height:  100vh;
-} */
+.main.square {
+    max-height:  80vh;
+} 
 
 .nav + .main {
-    height:  100vh;
+    height: 100vh;
 }
 
 
@@ -487,7 +496,7 @@ input[type="textarea"]::placeholder {
 }
 
 .cart.box {
-    max-height: 95vh;
+    max-height: 75vh;
 }
 
 .cart-products {

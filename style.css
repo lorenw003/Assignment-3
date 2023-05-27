@@ -94,10 +94,10 @@ button:hover, button:hover > h4, button:hover > h5 {
     height: 1.9em;
 }
 
-.icon__big {
+/* .icon__big {
     width:8em;
     height:8em;
-}
+} */
 
 /* .icon:hover, .icon:hover > svg > path, .icon:hover > svg > g > path  {
     background-color: var(--colour-primary);
@@ -335,7 +335,7 @@ input:checked {
     box-shadow: 0 0 0 1px var(--colour-primary);
 }
 
-input[type="textarea"] {
+/* input[type="textarea"] {
     height: 4rem;
     resize: none;
 }
@@ -343,7 +343,7 @@ input[type="textarea"] {
 input[type="textarea"]::placeholder {
     margin-top: 0;
     margin-bottom: auto;
-}
+} */
 
 /* SECTION STYLING */
 .filters {
