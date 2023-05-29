@@ -17,13 +17,9 @@
 function getCart () {
   var modal = document.getElementById("cartModal");
 
-  var btn = document.getElementById("cartBtn");
-
   var span = document.getElementsByClassName("close")[0];
-
-  document.getElementById("cartBtn").onclick = function() {
-    modal.style.display = "block";
-  }
+ 
+  modal.style.display = "block";
 
   span.onclick = function() {
     modal.style.display = "none";
