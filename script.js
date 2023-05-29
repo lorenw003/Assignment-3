@@ -81,6 +81,8 @@ function checkText () {
 
   if (x.includes("Tanzanite")) {
     document.getElementById("info").classList.add("active__secondary");
+    let y = document.getElementById("info").classList;
+    console.log("y")
     document.getElementById("care").classList.remove("active__secondary");
     document.getElementById("condition").classList.remove("active__secondary");
   } else if (x.includes("Maintenance")) {
