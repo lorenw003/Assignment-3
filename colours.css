@@ -328,13 +328,13 @@ input:focus-visible {
 
 input[type="radio"] {
     background-color: var(--colour-bg);
-    border: 1px solid var(--colour-primary);
+    border: 1px solid var(--colour-secondary);
 }
 
 input:checked {
-    background-color: var(--colour-primary);
-    border: 3px solid var(--colour-bg);
-    box-shadow: 0 0 0 1px var(--colour-primary);
+    background-color: var(--colour-secondary);
+    border: 2px solid var(--colour-bg);
+    box-shadow: 0 0 0 1px var(--colour-secondary);
 }
 
 
