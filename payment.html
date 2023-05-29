@@ -27,51 +27,57 @@
                 </div>
             </div>
 
-            <div class="stack__md box">
-                <div class="cluster__sm">
+            <div class="stack__md box dropdown">
+                <div onclick="getDropdown(icon, 0)" class="cluster__sm">
                     <h5>Personal Details</h5>
-                    <svg class="cover" xmlns="http://www.w3.org/2000/svg" width="20.153" height="10" viewBox="0 0 20.153 11.076">
+                    <svg id="icon" class="cover" xmlns="http://www.w3.org/2000/svg" width="20.153" height="8" viewBox="0 0 20.153 11.076">
                         <path id="_05d672bf2ec15f434a544f7a2214100f" data-name="05d672bf2ec15f434a544f7a2214100f" d="M25.824,11.5l-8.662,8.662L8.5,11.5" transform="translate(-7.086 -10.086)" fill="none" stroke="#8a5037" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
                     </svg> 
                 </div>
-                <div id="personal" class="stack">
+                <div id="personal" class="stack dropdown-content">
                 </div>
             </div>
 
-            <div class="stack__md box">
-                <div class="cluster__sm">
+            <div class="stack__md box dropdown">
+                <div onclick="getDropdown(icon2, 1)" class="cluster__sm">
                     <h5>Shipping Details</h5>
-                    <svg class="cover" xmlns="http://www.w3.org/2000/svg" width="20.153" height="10" viewBox="0 0 20.153 11.076">
+                    <svg id="icon2" class="cover" xmlns="http://www.w3.org/2000/svg" width="20.153" height="8" viewBox="0 0 20.153 11.076">
                         <path id="_05d672bf2ec15f434a544f7a2214100f" data-name="05d672bf2ec15f434a544f7a2214100f" d="M25.824,11.5l-8.662,8.662L8.5,11.5" transform="translate(-7.086 -10.086)" fill="none" stroke="#8a5037" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
                     </svg>                      
                 </div>
-                <div id="shipping"  class="stack">
+                <div id="shipping"  class="stack dropdown-content">
                 </div>
             </div>
 
             <div class="box">
-                <fieldset class="stack__md">
+                <fieldset class="stack__md" onclick="checkDrop()">
                     <h5>Payment Method</h5>
                     <div class="stack__sm">
-                        <label for="Bank">
-                            <input type="radio" id="sortChoice1" name="sort" value="Bank Transfer" />
-                            Bank Transfer
-                        </label>
+                        <div class="dropdown">
+                            <div class="cluster__sm dropdown-btn">
+                                <input type="radio" id="sortChoice1" name="sort" value="Bank Transfer" />
+                                <label for="Bank">Bank Transfer</label>
+                            </div>
+                        </div>
+                        <p class="dropdown-content description secondary">Lump sum payment, Mitsubishi UFJ Bank and Sumitomo Mitsui Banking Corporation can be used as transfer destinations</p>
                         
-                        <label for="Postal">
+                        <div class="cluster__sm">
                             <input type="radio" id="sortChoice1" name="sort" value="Postal Transfer" />
-                            Postal Transfer
-                        </label>
-
-                        <label for="Card">
+                            <label for="Postal">Postal Transfer</label>
+                        </div>
+                        <p class="dropdown-content description secondary">Postal transfers are to be completed through the Japan Post Bank</p>
+        
+                        <div class="cluster__sm">
                             <input type="radio" id="sortChoice1" name="sort" value="Card" />
-                            Card
-                        </label>
-
-                        <label for="Cash">
+                            <label for="Card">Card</label>
+                        </div>
+                        <p class="dropdown-content description secondary">Details will be requested upon approval of request</p>
+        
+                        <div class="cluster__sm">
                             <input type="radio" id="sortChoice1" name="sort" value="Cash on Delivery" />
-                            Cash on Delivery
-                        </label>
+                            <label for="Card">Cash on Delivery</label>
+                        </div>
+                        <p class="dropdown-content description secondary">The payment amount includes the product price, shipping fee, and cash-on-delivery charge. See here for details</p>
                     </div>
                 </fieldset>
             </div>

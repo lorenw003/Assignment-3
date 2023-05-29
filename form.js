@@ -57,3 +57,15 @@ if (method) {
     
 }
 
+function checkDrop () {
+    arr = document.querySelectorAll("input[type='radio']")
+    labels = document.getElementsByClassName("description")
+    for (var i = 0; i < arr.length; i++) {
+      if (arr[i].checked) {
+        labels[i].style.display = "block"
+      } else {
+        labels[i].style.display = "none"
+      }
+    }
+  }
+
