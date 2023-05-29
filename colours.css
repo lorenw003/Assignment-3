@@ -145,6 +145,13 @@ button:hover, button:hover > h4, button:hover > h5 {
     fill: var(--colour-bg);
 }
 
+.active__secondary, .active__secondary > svg > path {
+    background-color: var(--colour-secondary);
+    fill: var(--colour-bg);
+}
+
+
+
 
 
 

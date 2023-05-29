@@ -76,6 +76,24 @@ function getDropdown(icon, i) {
   icon.classList.toggle("rotate");
 }
 
+function checkText () {
+  let x = document.getElementById("details").innerText
+
+  if (x.includes("Tanzanite")) {
+    document.getElementById("info").classList.add("active__secondary");
+    document.getElementById("care").classList.remove("active__secondary");
+    document.getElementById("condition").classList.remove("active__secondary");
+  } else if (x.includes("Maintenance")) {
+    document.getElementById("info").classList.remove("active__secondary");
+    document.getElementById("care").classList.remove ("active__secondary");
+    document.getElementById("condition").classList.add("active__secondary");
+  } else {
+    document.getElementById("info").classList.remove("active__secondary");
+    document.getElementById("care").classList.add ("active__secondary");
+    document.getElementById("condition").classList.remove("active__secondary");
+  }
+}
+
 
 
 // $(function () {
