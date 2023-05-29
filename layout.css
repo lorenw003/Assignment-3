@@ -128,13 +128,22 @@ input:read-only, input:read-only:focus-visible  {
 .cluster__lg {
     display: flex;
     flex-direction: row;
-    gap: var(--spacing-lg);
+    justify-content: space-evenly;
+    /* gap: var(--spacing-lg); */
+}
+
+.cluster__lg > *:not(:first-child) {
+    margin-left: var(--spacing-lg);
 }
 
 .cluster__xl {
     display: flex;
     flex-direction: row;
     gap: var(--spacing-xl);
+}
+
+.cluster__xl > *:not(:first-child) {
+    margin-left: var(--spacing-xl);
 }
 
 .cluster__xxl {
