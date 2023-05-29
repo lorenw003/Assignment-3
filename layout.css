@@ -14,7 +14,7 @@ body {
 button {
     border-radius: 0.4em;
     width: 25em;
-    padding: 0.3em;
+    padding: 0.3em 1.5em;
 }
 
 *:not(.not-sidebar) > button {
@@ -331,6 +331,12 @@ input:read-only, input:read-only:focus-visible  {
     gap: var(--spacing-xxxl);
 }
 
+.stack__xxxxl {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xxxxl); 
+}
+
 .stack__xxxxxl {
     display: flex;
     flex-direction: column;
@@ -546,7 +552,6 @@ width: 6em;
 
 .box {
     border-radius: 0.8em;
-    padding: 1rem;
 }
 
 .box.cart {
@@ -558,13 +563,16 @@ width: 6em;
     height: 80vh;
 }
 
+/* .box-margins {
+    margin: var(--spacing-xxxl);
+} */
+
 .box__fit {
     height: fit-content;
 }
 
 .body {
     height: 140vh;
-
 }
 
 
@@ -614,6 +622,10 @@ img {
     height: 7rem;
 }
 
+.img__large {
+    width: 25rem;
+    height: 25rem;
+}
 
 
 
@@ -637,10 +649,44 @@ img {
 
 
 
+.info.box {
+    max-width: 20em;
+    min-height: 70vh;
+    max-height: 75vh;
+}
+
+.info.box > div {
+    padding: 1.5em 2em;
+}
+
+.info.box > .stack__lg {
+    padding-bottom: 0;
+}
+
+.info.box > div > button {
+    padding: 0.3em 2em;
+}
+
+.image-stack {
+    min-width: 25vw;
+}
+
+.image-stack > img {
+    width: 13em;
+    height: 13em;
+}
+
+
+
+
 /* EFFECTS */
 .scroll {
     max-height: 70vh;
     overflow: scroll;
+}
+
+.info > div > .scroll {
+    max-height: 30vh;
 }
 
 ::-webkit-scrollbar {

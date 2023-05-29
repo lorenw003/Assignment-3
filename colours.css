@@ -82,8 +82,8 @@ button:hover, button:hover > h4, button:hover > h5 {
 }
 
 .btn__secondary:hover {
-    background-color: var(--colour-secondary);
-    color: var(--colour-bg);
+    background-color: var(--colour-bg);
+    color: var(--colour-primary);
 }
 
 .btn__accent {
@@ -97,7 +97,6 @@ button:hover, button:hover > h4, button:hover > h5 {
     background-color: var(--colour-bg);
     color: var(--colour-primary);
 }
-
 
 
 /* NAVIGATION KEYS */
@@ -354,8 +353,13 @@ input:checked {
     background-color: var(--colour-bg);
 }
   
-.cart > section:not(.cart-products) {
+/* .cart > section:not(.cart-products) {
 border-top: 0.5px solid var(--colour-primary);
+} */
+
+
+.border-top {
+    border-top: 0.5px solid var(--colour-primary);
 }
 
 
@@ -378,6 +382,8 @@ border-top: 0.5px solid var(--colour-primary);
 ::-webkit-scrollbar-thumb:hover {
     background: var(--colour-primary);
 }
+
+
 
 
 /* SEARCH */

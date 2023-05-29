@@ -11,7 +11,7 @@
     --spacing-xl: calc(var(--spacing-base-size) * var(--spacing-scale-ratio) * var(--spacing-scale-ratio) * var(--spacing-scale-ratio));
     --spacing-xxl: calc(var(--spacing-base-size) * var(--spacing-scale-ratio) * var(--spacing-scale-ratio) * var(--spacing-scale-ratio) * var(--spacing-scale-ratio));
     --spacing-xxxl: calc(var(--spacing-base-size) * var(--spacing-scale-ratio) * var(--spacing-scale-ratio) * var(--spacing-scale-ratio) * var(--spacing-scale-ratio) * var(--spacing-scale-ratio));
-    --spacing-xxxxl: calc(var(--spacing-base-size) * var(--spacing-scale-ratio) * var(--spacing-scale-ratio) * var(--spacing-scale-ratio) * var(--spacing-scale-ratio) * var(--spacing-scale-ratioo) * var(--spacing-scale-ratio));
+    --spacing-xxxxl: calc(var(--spacing-base-size) * var(--spacing-scale-ratio) * var(--spacing-scale-ratio) * var(--spacing-scale-ratio) * var(--spacing-scale-ratio) * var(--spacing-scale-ratio) * var(--spacing-scale-ratio));
     --spacing-xxxxxl: calc(var(--spacing-base-size) * var(--spacing-scale-ratio) * var(--spacing-scale-ratio) * var(--spacing-scale-ratio) * var(--spacing-scale-ratio) * var(--spacing-scale-ratio) * var(--spacing-scale-ratio) * var(--spacing-scale-ratio));
     --spacing-xxxxxxl: calc(var(--spacing-base-size) * var(--spacing-scale-ratio) * var(--spacing-scale-ratio) * var(--spacing-scale-ratio) * var(--spacing-scale-ratio) * var(--spacing-scale-ratio) * var(--spacing-scale-ratio) * var(--spacing-scale-ratio) * var(--spacing-scale-ratio));
 }
