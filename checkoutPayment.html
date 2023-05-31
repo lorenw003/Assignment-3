@@ -4,18 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout-Details</title>
+    <title>Checkout-Payment</title>
 
     <link rel="stylesheet" href="style.css">
 
     <script src="script.js"></script>
 </head>
 <body class="stack__xxxxxl" onload="includeHTML()">
-
     <nav class="nav" w3-include-html="navigation.html"></nav>
-    
-    <form action="payment.html" class="main columns">
-        <section class="column1 stack__xl">
+
+    <form action="checkoutConfirm.html" class="main columns">
+        <section class="column1 stack__xxxl">
             <div class="cluster__around">
                 <div class="icon disabled">
                     <h5 class="cover centre neutral primary">1</h5>
@@ -28,29 +27,70 @@
                 </div>
             </div>
 
-            <div class="stack__sm box">
-                <h5>Personal Details</h5>
-                <input type="text" name="fname" placeholder="First Name" required>
-                <input type="text" name="lname" placeholder="Last Name" required>
-                <input type="email" name="email" placeholder="Email Address" required>
-                <input type="tel" name="phone" placeholder="Phone Number" required>
+            <div class="stack__md box dropdown">
+                <div onclick="getDropdown(icon, 0)" class="cluster__sm">
+                    <h5>Personal Details</h5>
+                    <svg id="icon" class="cover" xmlns="http://www.w3.org/2000/svg" width="20.153" height="8" viewBox="0 0 20.153 11.076">
+                        <path id="_05d672bf2ec15f434a544f7a2214100f" data-name="05d672bf2ec15f434a544f7a2214100f" d="M25.824,11.5l-8.662,8.662L8.5,11.5" transform="translate(-7.086 -10.086)" fill="none" stroke="#8a5037" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+                    </svg> 
+                </div>
+                <div id="personal" class="stack dropdown-content">
+                </div>
             </div>
 
-            <div class="stack__sm box">
-                <h5>Shipping Details</h5>
-                <input type="text" name="address" placeholder="Shipping Address">
-                <input type="text" name="city" placeholder="City">
-                <select id="options" name="Prefecture" placeholder="Prefecture">
-                    <option value="Hokkaido">Hokkaido</option>
-                    <option value="Aomori">Aomori</option>
-                    <option value="Iwate">Iwate</option>
-                    <option value="Miyagi">Miyagi</option>
-                    <option value="Akita">Akita</option>
-                    <option value="Hokkaido">Hokkaido</option>
-                </select>
-                <input type="number" name="zip" placeholder="Zip Code">
-                <input type="textarea" name="notes" placeholder="Notes" value="" rows="3" cols="33">
+            <div class="stack__md box dropdown">
+                <div onclick="getDropdown(icon2, 1)" class="cluster__sm">
+                    <h5>Shipping Details</h5>
+                    <svg id="icon2" class="cover" xmlns="http://www.w3.org/2000/svg" width="20.153" height="8" viewBox="0 0 20.153 11.076">
+                        <path id="_05d672bf2ec15f434a544f7a2214100f" data-name="05d672bf2ec15f434a544f7a2214100f" d="M25.824,11.5l-8.662,8.662L8.5,11.5" transform="translate(-7.086 -10.086)" fill="none" stroke="#8a5037" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+                    </svg>                      
+                </div>
+                <div id="shipping"  class="stack dropdown-content">
+                </div>
             </div>
+
+            <div class="box">
+                <fieldset class="stack__md" onclick="checkDrop()">
+                    <h5>Payment Method</h5>
+                    <div class="stack__sm">
+                        <div class="dropdown">
+                            <div class="cluster__sm dropdown-btn">
+                                <input type="radio" id="sortChoice1" name="sort" value="Bank Transfer" />
+                                <div class="stack__sm">
+                                    <label for="Bank">Bank Transfer</label>
+                                    <p class="dropdown-content description secondary">Lump sum payment, Mitsubishi UFJ Bank and Sumitomo Mitsui Banking Corporation can be used as transfer destinations</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="cluster__sm">
+                            <input type="radio" id="sortChoice1" name="sort" value="Postal Transfer" />
+                            <div class="stack__sm">
+                                <label for="Postal">Postal Transfer</label>
+                                <p class="dropdown-content description secondary">Postal transfers are to be completed through the Japan Post Bank</p>
+                            </div>
+                        </div>
+                        
+        
+                        <div class="cluster__sm">
+                            <input type="radio" id="sortChoice1" name="sort" value="Card" />
+                            <div class="stack__sm">
+                                <label for="Card">Card</label>
+                                <p class="dropdown-content description secondary">Details will be requested upon approval of request</p>
+                            </div>
+                        </div>
+        
+                        <div class="cluster__sm">
+                            <input type="radio" id="sortChoice1" name="sort" value="Cash on Delivery" />
+                            <div class="stack__sm bottom">
+                                <label for="Card">Cash on Delivery</label>
+                                <p class="dropdown-content description secondary">The payment amount includes the product price, shipping fee, and cash-on-delivery charge. See here for details</p>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+
         </section>
 
         <section class="column2 box cart stack__none">
@@ -221,6 +261,7 @@
     </form>
 
     <footer class="nav" w3-include-html="footer.html"></footer>
-
 </body>
 </html>
+
+<script src="form.js"></script>
