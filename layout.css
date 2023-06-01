@@ -5,6 +5,7 @@
 
 body {
     margin: 2% 6% 6% 6%;
+    min-height: fit-content;
     overflow-x: hidden; /* Hide vertical scrollbar */
 }
 
@@ -237,6 +238,10 @@ input:read-only, input:read-only:focus-visible  {
     cursor: pointer;
 }
 
+.icon.back {
+    border: none;
+}
+
 
 
 /* LOGO */
@@ -264,7 +269,7 @@ input:read-only, input:read-only:focus-visible  {
 }
 
 .sidebar{
-    flex-basis: 18em;
+    flex-basis: 18vw;
     flex-grow: 0;
     flex-shrink: 2;
 }
@@ -517,7 +522,7 @@ input:read-only, input:read-only:focus-visible  {
     background-color: var(--colour-bg);
     padding: 2em 0;
     width: 28%; 
-  }
+}
   
 
 .cart > section:not(.cart-products) > *, .cart > span {
@@ -677,13 +682,12 @@ img {
 
 .products {
     row-gap: var(--spacing-xxxxxl);
-    /* column-gap: var(--spacing-lg); */
 }
 
 .products > * {
     max-width: 10em;
     flex: 1 0 24;
-    margin-left: var(--spacing-lg);
+    margin-left: var(--spacing-md);
 }
 
 
@@ -803,14 +807,69 @@ input[type="search"], input[type="search"]:focus, input[type="search"]:focus-vis
 
 
 
+
+.responsive {
+    display: none;
+}
+
+
+
 /* MEDIA QUERY */
 @media only screen 
-    and (device-width: 375px)  { 
+    and (device-width <= 500px)  { 
 
         body {
             max-width: 100vh;
             max-height: 100vh;
         }
+
+        .unresponsive {
+            display:none;
+        }
+
+        .cluster.top:not(.responsive) {
+            display:none;
+        }
+
+        .responsive {
+            display:flex;
+        }
+
+        footer.cluster {
+            flex-direction: column;
+            gap: var(--spacing-xxxxl);
+        }
+
+        .sidebar-container {
+            display: content;
+        }
+
+        .logo:not(.logo.logo__lg) {
+            display: none;
+        }
+
+        .box.box__filters {
+            display:none;
+        }
+
+        .cluster.top {
+            min-width: fit-content;
+            overflow: scroll;
+        }
+
+        img {
+            width: 8em;
+            height: 8em;
+        }
+
+        .products.cluster {
+            justify-content: space-around;
+        }
+
+        .products > * {
+            max-width: 8em;
+            margin-left: 0;
+        } 
 
         .nomargins {
             margin-right: 1em;
@@ -828,7 +887,7 @@ input[type="search"], input[type="search"]:focus, input[type="search"]:focus-vis
             width: 10rem;
         }
 
-        .icon {
+        .keyNav > .icon {
             width: 1.9em;
             height: 1.9em; 
         }

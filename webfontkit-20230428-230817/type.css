@@ -267,7 +267,7 @@ select, option {
 
 /* MEDIA QUERY */
 @media only screen 
-    and (device-width: 375px)  {
+    and (device-width <= 500px)  {
     .title__big {
         font-size: var(--text-xxxl);
     }
