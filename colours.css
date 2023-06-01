@@ -422,7 +422,7 @@ border-top: 0.5px solid var(--colour-primary);
 /* MEDIA QUERY */
 @media only screen 
     and (device-width <= 500px)  { 
-        .box {
+        .box:not(.product__cart) {
             border:none;
         }
 

@@ -268,12 +268,21 @@ select, option {
 /* MEDIA QUERY */
 @media only screen 
     and (device-width <= 500px)  {
+    :root {
+        --text-base-size: 1em;
+        --text-scale-ratio: 1.15;
+    }
+
+    button {
+        font-size: var(--text-md);
+    }
+
     .title__big {
-        font-size: var(--text-xxxl);
+        font-size: var(--text-xxxxl);
     }
 
     .subtitle {
-        font-size: var(--text-xs);
+        font-size: var(--text-sm);
     }
 
     h1 {
@@ -281,6 +290,19 @@ select, option {
     }
 
     h4 {
+        font-size: var(--text-md);
+    }
+
+    h7 {
+        font-size: var(--text-md);
+        line-height: 1.25em;
+    }
+
+    p {
+        font-size: var(--text-md);
+    }
+
+    footer > * > * > *, footer > * > * > * > * {
         font-size: var(--text-sm);
     }
 }

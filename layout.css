@@ -245,10 +245,6 @@ input:read-only, input:read-only:focus-visible  {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.nav > .cluster.top > .cluster__sm.bar{
-    justify-content: ;
-}
-
 
 
 /* LOGO */
@@ -877,6 +873,7 @@ input[type="search"], input[type="search"]:focus, input[type="search"]:focus-vis
         }
 
 
+
         /* NAV BAR */
 
         .nav {
@@ -896,12 +893,35 @@ input[type="search"], input[type="search"]:focus, input[type="search"]:focus-vis
             display: none;
         }
 
+        .icon {
+            width: 2.5em;
+            height: 2.5em;
+        }
+
+
+
 
         /* FOOTER */
 
         footer.cluster {
             flex-direction: column;
             gap: var(--spacing-xxxxl);
+        }
+
+
+
+        /* CART MODAL */
+        .cart {
+            width: 100%; 
+        }
+
+        .scroll {
+            max-height: 75vh;
+        }
+
+        .product__cart > * > * > .icon {
+            width: 1.9em;
+            height: 1.9em;
         }
 
 
@@ -922,8 +942,8 @@ input[type="search"], input[type="search"]:focus, input[type="search"]:focus-vis
         }
 
         img {
-            width: 8em;
-            height: 8em;
+            width: 9em;
+            height: 9em;
         }
 
         .products.cluster {
@@ -931,7 +951,7 @@ input[type="search"], input[type="search"]:focus, input[type="search"]:focus-vis
         }
 
         .products > * {
-            max-width: 8em;
+            max-width: 9em;
             margin-left: 0;
         } 
 
@@ -939,7 +959,7 @@ input[type="search"], input[type="search"]:focus, input[type="search"]:focus-vis
 
         /* HOMEPAGE */
         .nomargins {
-            margin-right: 1em;
+            margin-right: 2em;
         }
 
         .keyNav {
@@ -958,11 +978,10 @@ input[type="search"], input[type="search"]:focus, input[type="search"]:focus-vis
             width: 10rem;
         }
 
-        .keyNav > .icon {
+        .keyNav > .key > .icon {
             width: 1.9em;
             height: 1.9em; 
         }
-
 
         main.cluster__xxxxxl {
             gap: 0em;
@@ -1041,6 +1060,21 @@ input[type="search"], input[type="search"]:focus, input[type="search"]:focus-vis
         .square__column.results {
             min-width: 70vw;
         }
+
+
+        .search-item {
+            padding: 0.2em 0.6em;
+        }
+
+        .bar {
+            height: 2.5em;
+        }
+
+        input[type="search"], input[type="search"]:focus, input[type="search"]:focus-visible {
+            height:2.5em;
+        }
+
+
 
 
 

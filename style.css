@@ -455,14 +455,14 @@ img {
     height: 2em;
 }
 
-.search-item {
+/* .search-item {
     border-radius: 6em;
     padding: 0.3em 0.8em;
 
     color: var(--colour-bg);
     background-color: var(--colour-secondary);
     border: 0.5px solid var(--colour-secondary);
-}
+} */
 
 .search-item:hover {
     background-color: var(--colour-bg);
