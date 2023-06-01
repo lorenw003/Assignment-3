@@ -13,10 +13,9 @@
 // document.getElementById('care').onclick = onClick;
 // document.getElementById('condition').onclick = onClick;
 
-$(window).on('resize', function(){
-  var win = $(this); //this = window
-  if (win.width()< 500) { $('#sidebar').removeClass('sidebar-container'); }
-});
+function goBack() {
+  window.history.back()
+}
 
 function getCart () {
   var modal = document.getElementById("cartModal");
