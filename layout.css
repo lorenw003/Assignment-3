@@ -787,6 +787,7 @@ input[type="search"], input[type="search"]:focus, input[type="search"]:focus-vis
 .search-item {
     border-radius: 6em;
     padding: 0.3em 0.8em;
+    min-width:max-content;
 }
 
 
@@ -862,7 +863,7 @@ input[type="search"], input[type="search"]:focus, input[type="search"]:focus-vis
             height: fit-content;
         }
 
-        .cluster.top:not(.responsive) {
+        .cluster.top > *:not(.responsive) {
             display:none;
         }
 
@@ -992,6 +993,12 @@ input[type="search"], input[type="search"]:focus, input[type="search"]:focus-vis
             margin: 0 8rem;
         }
 
+        .nav + .square.main {
+            height: 100vh;
+        }
+
+
+        /* SEARCH */
         .nav + .square.main {
             height: 100vh;
         }

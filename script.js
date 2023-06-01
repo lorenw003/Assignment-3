@@ -16,6 +16,9 @@
 function goBack() {
   if (window.history.length = 1) {
     window.location.assign('index.html')
+  } else if (window.location.href.includes("productList")) {
+    window.location.assign('index.html')
+    console.log(window.location.href);
   } else {
     window.history.back()
   }
