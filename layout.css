@@ -396,6 +396,11 @@ input:read-only, input:read-only:focus-visible  {
     margin-bottom: auto;
 }
 
+.cover__set {
+    margin-top: 12vh;
+    margin-bottom: 20vh;
+}
+
 .top {
     margin-bottom: auto;
     margin-top: 0;
@@ -457,6 +462,7 @@ input:read-only, input:read-only:focus-visible  {
 /* ARRANGMENT */
 .square {
     width: 22em;
+    height: fit-content;
 }
 
 .square__column {
@@ -852,6 +858,12 @@ input[type="search"], input[type="search"]:focus, input[type="search"]:focus-vis
             gap:var(--spacing-xxl);
         }
 
+        .cover__set {
+            margin-top: 20vh;
+            margin-bottom: 20vh;
+        }
+        
+
         .unresponsive {
             display:none;
         }
@@ -981,7 +993,7 @@ input[type="search"], input[type="search"]:focus, input[type="search"]:focus-vis
         }
 
         .nav + .square.main, .nav + .main.full {
-            height: 100vh;
+            min-height: 100vh;
         }
 
 
