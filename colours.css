@@ -429,4 +429,8 @@ border-top: 0.5px solid var(--colour-primary);
         .info.box > div.border-top {
             border-top: none;
         }
+
+        .cart-dropdown {
+            border-bottom: 0.5px solid var(--colour-primary);
+        }
     }

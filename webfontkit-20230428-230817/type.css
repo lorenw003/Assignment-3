@@ -293,6 +293,10 @@ select, option {
         font-size: var(--text-md);
     }
 
+    h5 {
+        font-size: var(--text-lg);
+    }
+
     h7 {
         font-size: var(--text-md);
         line-height: 1.25em;
@@ -304,6 +308,10 @@ select, option {
 
     footer > * > * > *, footer > * > * > * > * {
         font-size: var(--text-sm);
+    }
+
+    input::placeholder {
+        font-size: var(--text-md);
     }
 }
 
