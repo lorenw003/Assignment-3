@@ -14,7 +14,12 @@
 // document.getElementById('condition').onclick = onClick;
 
 function goBack() {
-  window.history.back()
+  if (window.history.length = 1) {
+    window.location.assign('index.html')
+  } else {
+    window.history.back()
+  }
+  console.log(window.history.back())
 }
 
 function getCart () {

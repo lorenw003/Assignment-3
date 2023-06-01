@@ -831,9 +831,9 @@ input[type="search"], input[type="search"]:focus, input[type="search"]:focus-vis
         }
 
         body.productList {
-            margin: 0;
+            margin: 2% 0 6% 0;
         }
-        
+
         body.productList > * > *:not(section.stack__xl.mobile), section.stack__xl.mobile > h2 {
             margin: 0 6%;
         }
