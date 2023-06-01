@@ -413,9 +413,9 @@ input[type="textarea"]::placeholder {
     backdrop-filter: blur(10px);
 }
 
-.hidden {
+/* .hidden {
     visibility: hidden;
-}
+} */
 
 /* LINE STYLING */
 /* hr {

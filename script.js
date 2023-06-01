@@ -25,6 +25,17 @@ function goBack() {
   console.log(window.history.back())
 }
 
+function getNav() {
+  let x = document.getElementById("hiddenNav");
+
+  console.log(x)
+  if (x.style.display === "none" || x.style.display === "") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }
+}
+
 function getCart () {
   var modal = document.getElementById("cartModal");
 
