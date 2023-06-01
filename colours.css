@@ -343,6 +343,12 @@ input:checked {
     box-shadow: 0 0 0 1px var(--colour-secondary);
 }
 
+.bar {
+    border: 0.5px solid var(--colour-primary);
+    border-radius: 6em;
+    border-width: 0.5px 0 0.5px 0.5px;
+}
+
 
 
 

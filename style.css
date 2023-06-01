@@ -429,14 +429,14 @@ img {
 }
 
 /* SEARCH */
-.bar {
-    /* justify-content: end; */
+/* .bar {
+    justify-content: end;
     height: 2em;
 
     border: 0.5px solid var(--colour-primary);
     border-radius: 6em;
     border-width: 0.5px 0 0.5px 0.5px;
-}
+} */
 
 /* input[type="search"], input[type="search"]:focus, input[type="search"]:focus-visible {
     margin: 0;
