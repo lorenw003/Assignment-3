@@ -276,6 +276,10 @@ select, option {
         font-size: var(--text-xs);
     }
 
+    h1 {
+        font-size: var(--text-xxxl);
+    }
+
     h4 {
         font-size: var(--text-sm);
     }

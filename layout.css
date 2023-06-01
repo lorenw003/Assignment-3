@@ -6,7 +6,6 @@
 body {
     margin: 2% 6% 6% 6%;
     min-height: fit-content;
-    overflow-x: hidden; /* Hide vertical scrollbar */
 }
 
 
@@ -240,6 +239,10 @@ input:read-only, input:read-only:focus-visible  {
 
 .icon.back {
     border: none;
+}
+
+.icon.sort {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 
@@ -716,7 +719,7 @@ img {
 
 
 
-/* EFFECTS */
+/* SCROLL */
 .scroll {
     max-height: 70vh;
     overflow: scroll;
@@ -741,6 +744,11 @@ img {
     display:block;
     border-radius: 3em;
 }
+
+
+
+
+/* EFFECT */
 
 ::-webkit-scrollbar:horizontal{
     height: 0;
@@ -806,9 +814,7 @@ input[type="search"], input[type="search"]:focus, input[type="search"]:focus-vis
 }
 
 
-
-
-.responsive {
+.mobile {
     display: none;
 }
 
@@ -819,9 +825,17 @@ input[type="search"], input[type="search"]:focus, input[type="search"]:focus-vis
     and (device-width <= 500px)  { 
 
         /* applies to all pages */
-        body {
+        body {         
             max-width: 100vh;
             max-height: max-content;
+        }
+
+        body.productList {
+            margin: 0;
+        }
+        
+        body.productList > * > *:not(section.stack__xl.mobile), section.stack__xl.mobile > h2 {
+            margin: 0 6%;
         }
 
         .unresponsive {
@@ -829,6 +843,10 @@ input[type="search"], input[type="search"]:focus, input[type="search"]:focus-vis
         }
 
         .responsive {
+            display:flex;
+        }
+
+        .mobile {
             display:flex;
         }
 
@@ -864,9 +882,14 @@ input[type="search"], input[type="search"]:focus, input[type="search"]:focus-vis
 
         /* PRODUCT LIST */
 
-        .sidebar-container {
-            display: content;
-        }
+       .cluster.mobile {
+        min-width: fit-content;
+        overflow-x: scroll;
+       }
+
+       nav.scroll {
+        margin-left: 6%;
+       }
 
         .box.box__filters {
             display:none;
@@ -932,8 +955,8 @@ input[type="search"], input[type="search"]:focus, input[type="search"]:focus-vis
         }
 
 
-        /* PRODUCT PAGE */
 
+        /* PRODUCT PAGE */
         section.cluster__xl {
             flex-direction: column;
         }
@@ -965,8 +988,8 @@ input[type="search"], input[type="search"]:focus, input[type="search"]:focus-vis
 
 
         /* ERROR PAGES */
-        .square > div {
-            margin: 0 3rem;
+        .square > div.centre__text.centre {
+            margin: 0 8rem;
         }
 
         .nav + .square.main {
