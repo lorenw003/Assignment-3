@@ -11,53 +11,39 @@
     <script src="script.js"></script>
 </head>
 <body class="stack__xxxxl checkout" onload="includeHTML()">
-    <section class="mobile cluster nav cart-dropdown">
-        <div class="cluster__lg">
-            <svg class="cover" xmlns="http://www.w3.org/2000/svg" width="14.546" height="20" viewBox="0 0 14.546 18.183">
-                <path id="f401fb57911d714838c42cced9b3db2e" d="M17.637,6.546H14.91V5.637a3.637,3.637,0,1,0-7.273,0v.909H4.909A.909.909,0,0,0,4,7.455v10a2.727,2.727,0,0,0,2.727,2.727h9.091a2.727,2.727,0,0,0,2.727-2.727v-10A.909.909,0,0,0,17.637,6.546ZM9.455,5.637a1.818,1.818,0,1,1,3.637,0v.909H9.455Zm7.273,11.819a.909.909,0,0,1-.909.909H6.727a.909.909,0,0,1-.909-.909V8.364H7.637v.909a.909.909,0,1,0,1.818,0V8.364h3.637v.909a.909.909,0,0,0,1.818,0V8.364h1.818Z" transform="translate(-4 -2)" fill="#8a5037"/>
-            </svg>   
-            <div class="cluster__sm">
-                <h7 class="light neutral">Cart</h7> 
-                <h7 class="neutral secondary">6</h7>
-            </div>
-            <svg class="cover" xmlns="http://www.w3.org/2000/svg" width="14.828" height="8.414" viewBox="0 0 14.828 8.414">
-                <path id="_05d672bf2ec15f434a544f7a2214100f" data-name="05d672bf2ec15f434a544f7a2214100f" d="M20.5,11.5l-6,6-6-6" transform="translate(-7.086 -10.086)" fill="none" stroke="#8a5037" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
-            </svg>
-        </div>
-        <h78 class="bold neutral primary cover">¥88,000</h8>
-    </section>
+    <nav class="mobile cluster__sm nav cart-dropdown">
+        <svg class="top" xmlns="http://www.w3.org/2000/svg" width="14.546" height="20" viewBox="0 0 14.546 18.183">
+            <path id="f401fb57911d714838c42cced9b3db2e" d="M17.637,6.546H14.91V5.637a3.637,3.637,0,1,0-7.273,0v.909H4.909A.909.909,0,0,0,4,7.455v10a2.727,2.727,0,0,0,2.727,2.727h9.091a2.727,2.727,0,0,0,2.727-2.727v-10A.909.909,0,0,0,17.637,6.546ZM9.455,5.637a1.818,1.818,0,1,1,3.637,0v.909H9.455Zm7.273,11.819a.909.909,0,0,1-.909.909H6.727a.909.909,0,0,1-.909-.909V8.364H7.637v.909a.909.909,0,1,0,1.818,0V8.364h3.637v.909a.909.909,0,0,0,1.818,0V8.364h1.818Z" transform="translate(-4 -2)" fill="#8a5037"/>
+        </svg> 
 
-    <form class="mobile stack__xxxxl main full">
-        <div class="cluster__around">
-            <div class="icon disabled">
-                <h5 class="cover centre neutral primary">1</h5>
+        <section class="stack__sm flex__fill">
+            <div class="cluster" onclick="getCartDrop(toggle)">
+                <div class="cluster__sm">
+                    <h7 class="light neutral">Cart</h7> 
+                    <h7 class="neutral secondary">6</h7>
+                <svg class="cover" id="toggle" xmlns="http://www.w3.org/2000/svg" width="14.828" height="8.414" viewBox="0 0 14.828 8.414">
+                    <path id="_05d672bf2ec15f434a544f7a2214100f" data-name="05d672bf2ec15f434a544f7a2214100f" d="M20.5,11.5l-6,6-6-6" transform="translate(-7.086 -10.086)" fill="none" stroke="#8a5037" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+                </svg>
+                </div>
+                <h8 class="bold neutral primary cover">¥88,000</h8>
             </div>
-            <div class="icon disabled">
-                <h5 class="cover centre neutral primary">2</h5>
+            <div id="cartDropdown" class="hidden stack__xl"></div>
+            <div class="stack__xs hidden" id="shippingDropdown">
+                <div class="cluster">
+                    <h7 class="standard light neutral">Shipping</h7> 
+                    <h8 class="bold neutral primary cover">¥88,000</h8>
+                </div>
+                <div class="cluster">
+                    <h8 class="standard light neutral">Total</h8> 
+                    <h8 class="bold neutral primary cover">¥88,000</h8>
+                </div>
             </div>
-            <div class="icon disabled">
-                <h5 class="cover centre neutral primary">3</h5>
-            </div>
-        </div>
-
-        <div class="stack__md box">
-            <h5>Personal Details</h5>
-            <input type="text" name="fname" placeholder="First Name" required>
-            <input type="text" name="lname" placeholder="Last Name" required>
-            <input type="email" name="email" placeholder="Email Address" required>
-            <input type="tel" name="phone" placeholder="Phone Number" required>
-        </div>
-
-        <div class="stack__md">
-            <button class="btn__accent">Continue to Shipping</button>
-            <button>Return to Shopping</button>
-        </div>
-    </form>
-
+        </section>
+    </nav>
 
     <nav class="nav unresponsive" w3-include-html="navigation.html"></nav>
     
-    <form action="checkoutPayment.html" class="main full columns unresponsive">
+    <form action="checkoutPayment.html" class="main full columns unresponsive" method="get" id="form1">
         <section class="column1 stack__xl">
             <div class="cluster__around">
                 <div class="icon disabled">
@@ -71,28 +57,42 @@
                 </div>
             </div>
 
-            <div class="stack__sm box">
-                <h5>Personal Details</h5>
-                <input type="text" name="fname" placeholder="First Name" required>
-                <input type="text" name="lname" placeholder="Last Name" required>
-                <input type="email" name="email" placeholder="Email Address" required>
-                <input type="tel" name="phone" placeholder="Phone Number" required>
+            <div id="div1" class="stack__xxxxl box">
+                <div class="stack__sm">
+                    <h5>Personal Details</h5>
+                    <input type="text" name="fname" placeholder="First Name" required>
+                    <input type="text" name="lname" placeholder="Last Name" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    <input type="tel" name="phone" placeholder="Phone Number" required>
+                </div>
+
+                <div class="mobile stack__sm">
+                    <button class="btn__accent" type="button" value="next" onclick="Next();">Next</button>
+                    <a href="productList.html" class="btn">Return to Shopping</a>
+                </div>
             </div>
 
-            <div class="stack__sm box">
-                <h5>Shipping Details</h5>
-                <input type="text" name="address" placeholder="Shipping Address">
-                <input type="text" name="city" placeholder="City">
-                <select id="options" name="Prefecture" placeholder="Prefecture">
-                    <option value="Hokkaido">Hokkaido</option>
-                    <option value="Aomori">Aomori</option>
-                    <option value="Iwate">Iwate</option>
-                    <option value="Miyagi">Miyagi</option>
-                    <option value="Akita">Akita</option>
-                    <option value="Hokkaido">Hokkaido</option>
-                </select>
-                <input type="number" name="zip" placeholder="Zip Code">
-                <input type="textarea" name="notes" placeholder="Notes" value="" rows="3" cols="33">
+            <div id="div2" class="stack__xxxxl box">
+                <div class="stack__sm">
+                    <h5>Shipping Details</h5>
+                    <input type="text" name="address" placeholder="Shipping Address">
+                    <input type="text" name="city" placeholder="City">
+                    <select id="options" name="Prefecture" placeholder="Prefecture">
+                        <option value="Hokkaido">Hokkaido</option>
+                        <option value="Aomori">Aomori</option>
+                        <option value="Iwate">Iwate</option>
+                        <option value="Miyagi">Miyagi</option>
+                        <option value="Akita">Akita</option>
+                        <option value="Hokkaido">Hokkaido</option>
+                    </select>
+                    <input type="number" name="zip" placeholder="Zip Code">
+                    <input type="textarea" name="notes" placeholder="Notes" value="" rows="3" cols="33">
+                </div>
+
+                <div class="mobile stack__sm">
+                    <button class="btn__accent" type="submit">Continue to Payment</button>
+                    <button onclick="goBack()">Back</button>
+                </div>
             </div>
         </section>
 
@@ -263,7 +263,29 @@
         </section>
     </form>
 
-    <footer class="nav" w3-include-html="footer.html"></footer>
+    <footer class="nav unresponsive" w3-include-html="footer.html"></footer>
+
+    <section w3-include-html="cart.html"></section>
 
 </body>
 </html>
+
+<script>
+    function Next() {
+    var blnNext = true;
+    var form = document.getElementById('form1');
+    var div = document.getElementById('div1');
+    var inputs = div.querySelectorAll('input[type="text"]');
+    for (index = 0; index < inputs.length; ++index) {
+        if (!inputs[index].validity.valid) {
+            blnNext = false;
+            form.querySelectorAll('input[type="submit"]')[0].click(); //Force the form to try and submit so we get error messages
+        }
+    }
+    if (blnNext) {
+        document.getElementById('div1').style.display = 'none';
+        document.getElementById('div2').style.display = 'flex';
+        document.getElementById('shippingDropdown').style.display = 'flex';
+    }
+    }
+</script>

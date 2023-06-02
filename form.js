@@ -1,3 +1,15 @@
+
+let w = window.innerWidth;
+let h = window.innerHeight;
+
+if (w >= 500) {
+  
+} else {
+  console.log("desktop")
+}
+
+
+
 let personal = [];
 let shipping = [];
 

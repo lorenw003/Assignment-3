@@ -10,12 +10,41 @@
 
     <script src="script.js"></script>
 </head>
-<body class="stack__xxxxxl" onload="includeHTML()">
-    <nav class="nav" w3-include-html="navigation.html"></nav>
+<body class="stack__xxxxxl checkout" onload="includeHTML()">
+    <nav class="mobile cluster__sm nav cart-dropdown">
+        <svg class="top" xmlns="http://www.w3.org/2000/svg" width="14.546" height="20" viewBox="0 0 14.546 18.183">
+            <path id="f401fb57911d714838c42cced9b3db2e" d="M17.637,6.546H14.91V5.637a3.637,3.637,0,1,0-7.273,0v.909H4.909A.909.909,0,0,0,4,7.455v10a2.727,2.727,0,0,0,2.727,2.727h9.091a2.727,2.727,0,0,0,2.727-2.727v-10A.909.909,0,0,0,17.637,6.546ZM9.455,5.637a1.818,1.818,0,1,1,3.637,0v.909H9.455Zm7.273,11.819a.909.909,0,0,1-.909.909H6.727a.909.909,0,0,1-.909-.909V8.364H7.637v.909a.909.909,0,1,0,1.818,0V8.364h3.637v.909a.909.909,0,0,0,1.818,0V8.364h1.818Z" transform="translate(-4 -2)" fill="#8a5037"/>
+        </svg> 
+
+        <section class="stack__sm flex__fill">
+            <div class="cluster">
+                <div class="cluster__sm">
+                    <h7 class="light neutral">Cart</h7> 
+                    <h7 class="neutral secondary">6</h7>
+                <svg class="cover" xmlns="http://www.w3.org/2000/svg" width="14.828" height="8.414" viewBox="0 0 14.828 8.414">
+                    <path id="_05d672bf2ec15f434a544f7a2214100f" data-name="05d672bf2ec15f434a544f7a2214100f" d="M20.5,11.5l-6,6-6-6" transform="translate(-7.086 -10.086)" fill="none" stroke="#8a5037" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+                </svg>
+                </div>
+                <h8 class="bold neutral primary cover">¥88,000</h8>
+            </div>
+            <div class="stack__xs">
+                <div class="cluster">
+                    <h7 class="standard light neutral">Shipping</h7> 
+                    <h8 class="bold neutral primary cover">¥88,000</h8>
+                </div>
+                <div class="cluster">
+                    <h8 class="standard light neutral">Total</h8> 
+                    <h8 class="bold neutral primary cover">¥88,000</h8>
+                </div>
+            </div>
+        </section>
+    </nav>
+
+    <nav class="nav unresponsive" w3-include-html="navigation.html"></nav>
 
     <main class="main columns">
-        <section class="column1 stack__xxxl">
-            <div class="cluster__around">
+        <section class="column1 stack__xxl">
+            <div class="cluster__around unresponsive">
                 <div class="icon disabled">
                     <h5 class="cover centre neutral primary">1</h5>
                 </div>
@@ -50,9 +79,15 @@
                 <div id="payment">
                 </div>
             </div>
+
+
+            <div class="stack__sm mobile">
+                <a class="btn btn__accent" href="confirmation.html">Request Items</a>
+                <button onclick="goBack()">Back</button>
+            </div>
         </section>
 
-        <section class="column2 box cart stack__none">
+        <section class="column2 box cart stack__none unresponsive">
             <span class="cluster">
                 <h5>Your Order</h5>
                 <h8 class="secondary">6</h8>   
@@ -219,7 +254,9 @@
         </section>
     </main>
     
-    <footer class="nav" w3-include-html="footer.html"></footer>
+    <footer class="nav unresponsive" w3-include-html="footer.html"></footer>
+
+    <section w3-include-html="cart.html"></section>
 </body>
 </html>
 

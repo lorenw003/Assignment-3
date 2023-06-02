@@ -55,6 +55,18 @@ function getCart () {
 }
 
 
+// function checkWindow () {
+//   let w = window.innerWidth;
+
+//   let div = document.getElementById("div2");
+
+//   if (w <= 500) {
+//     div.style.display = "none";
+//   } else {
+//     div.style.display = "flex";
+//   }
+// }
+
 function includeHTML() {
   var z, i, elmnt, file, xhttp;
   /* Loop through a collection of all HTML elements: */
@@ -96,6 +108,20 @@ function getDropdown(icon, i) {
     x.style.display = "none";
   }
   
+  icon.classList.toggle("rotate");
+}
+
+function getCartDrop(icon) {
+  let content = document.getElementById("cartContent");
+  let x = document.getElementById('cartDropdown');
+
+  if (x.style.display === "none" || x.style.display === "") {
+    x.innerHTML = document.getElementById("cartContent").innerHTML;
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }
+
   icon.classList.toggle("rotate");
 }
 

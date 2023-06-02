@@ -1123,19 +1123,47 @@ input[type="search"], input[type="search"]:focus, input[type="search"]:focus-vis
 
 
         /* CHECKOUT */
-        form.mobile > .box {
-            padding: 0;
-        }
-
-        form.mobile {
-            margin: 0 2.5em;
-        }
 
         .cart-dropdown {
-            padding: var(--spacing-xl);
+            padding: var(--spacing-lg) var(--spacing-xl);
 
             border-bottom: 0.5px solid var(--colour-primary);
         }
+
+        .columns {
+            display: block;
+        }
+
+        #div2 {
+            display:none;
+        }
+
+        .cluster__around > .icon.disabled {
+            width: 3.5em;
+            height: 3.5em;
+        }
+
+        fieldset > div.stack__sm {
+            gap: var(--spacing-xxl);
+        }
+
+        form > * > *:not(.cluster__around), main.columns > * > *:not(.cluster__around) {
+            margin: 0 2em;
+        }
+
+        #cartDropdown {
+            margin: 0 1em;
+            min-height: min-content;
+            max-height: min-content;
+        }
+
+        #cartDropdown > * > img {
+            width: 7em;
+            height: 7em;
+        }
+
+
+
 
 
 

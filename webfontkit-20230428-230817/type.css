@@ -275,6 +275,12 @@ select, option {
 
     button {
         font-size: var(--text-md);
+        text-align: center;
+    }
+
+    .btn {
+        font-size: var(--text-md);
+        text-align: center;
     }
 
     .title__big {
@@ -311,7 +317,28 @@ select, option {
     }
 
     input::placeholder {
+        font-size: var(--text-sm);
+    }
+
+    input {
         font-size: var(--text-md);
+    }
+    
+
+    select, option {
+        font-size: var(--text-md);
+    }
+
+    label {
+        font-size: var(--text-md); 
+    }
+
+    p.dropdown-content {
+        font-size: var(--text-sm); 
+    }
+
+    form > * > * > * > h5, fieldset > h5 {
+        font-size: var(--text-xl);
     }
 }
 
