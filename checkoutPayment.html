@@ -17,16 +17,17 @@
         </svg> 
 
         <section class="stack__sm flex__fill">
-            <div class="cluster">
+            <div class="cluster" onclick="getCartDrop(toggle)">
                 <div class="cluster__sm">
                     <h7 class="light neutral">Cart</h7> 
                     <h7 class="neutral secondary">6</h7>
-                <svg class="cover" xmlns="http://www.w3.org/2000/svg" width="14.828" height="8.414" viewBox="0 0 14.828 8.414">
+                <svg class="cover" id="toggle" xmlns="http://www.w3.org/2000/svg" width="14.828" height="8.414" viewBox="0 0 14.828 8.414">
                     <path id="_05d672bf2ec15f434a544f7a2214100f" data-name="05d672bf2ec15f434a544f7a2214100f" d="M20.5,11.5l-6,6-6-6" transform="translate(-7.086 -10.086)" fill="none" stroke="#8a5037" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
                 </svg>
                 </div>
                 <h8 class="bold neutral primary cover">¥88,000</h8>
             </div>
+            <div id="cartDropdown" class="hidden stack__xl"></div>
             <div class="stack__xs">
                 <div class="cluster">
                     <h7 class="standard light neutral">Shipping</h7> 
@@ -294,6 +295,8 @@
     </form>
 
     <footer class="nav unresponsive" w3-include-html="footer.html"></footer>
+
+    <section w3-include-html="cart.html"></section>
 </body>
 </html>
 
