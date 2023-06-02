@@ -169,13 +169,17 @@ function getProducts() {
 
 function addToCart() {
   let z = document.getElementById("cartContent");
-  let vars = z.getElementsByClassName("product__cart")
+  let vars = z.getElementsByClassName("product__cart").id;
+  let product = document.getElementById("addedProduct");
 
-  console.log(vars)
-  
-  for (i = 0; i < vars.length; i++) {
-    console.log(vars[i].id);
+  if (vars = "undefined") {
+    z.appendChild(product);
+    product.style.display = "flex";
+  } else {
+    console.log("added")
   }
+  
+  
   
 }
 

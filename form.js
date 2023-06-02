@@ -23,7 +23,7 @@ let shipping = [];
 
 let vars = window.location.search.replace(/%40/g, '@').replace('?', '').replaceAll('+', ' ').replaceAll('%2B', '+').split('&')
 personal.push(vars[0], vars[1], vars[2], vars[3]);
-shipping.push(vars[4], vars[5], vars[6], vars[7]);
+shipping.push(vars[4], vars[5], vars[6], vars[7], vars[8]);
 
 
 
@@ -56,7 +56,7 @@ shipping.forEach( (v) => {
 const method = document.getElementById("payment")
 
 if (method) {
-    let paymethod = vars[8]
+    let paymethod = vars[9]
 
     let inputName = paymethod.split("=")[0];
     let inputValue = paymethod.split("=")[1]
