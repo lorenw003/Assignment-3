@@ -179,8 +179,34 @@ function addToCart() {
   
 }
 
-
 function loadProducts() {
-  document.getElementById("loadButton").style.display= "none";
-  document.getElementById("animation").style.display = "block";
+  document.getElementById('loadButton1').style.display= "none";
+  document.getElementById('loadButton').style.display= "none";
+  document.getElementById('animationLoad1').style.display = "flex";
+  document.getElementById('animationLoad').style.display = "flex";
+
+
+  let x = document.getElementById("list1");
+  let list1 = x.getElementsByClassName("stack__xl");
+
+  let y = document.getElementById("list2");
+  let list2 = y.getElementsByClassName("stack__xl");
+
+  console.log(document.getElementsByClassName("products"));
+
+  setTimeout(function() {
+    document.getElementById('animationLoad1').style.display = "none";
+    document.getElementById('animationLoad').style.display = "none";
+
+    for (i = 0; i < list1.length; i++) {
+      console.log(list1[i].id);
+      list1[i].style.display = "flex";
+    }
+
+    for (i = 0; i < list2.length; i++) {
+      console.log(list2[i].id);
+      list2[i].style.display = "flex";
+    }
+    
+  }, 1500);
 }

@@ -12,6 +12,7 @@
 
     --colour-primary: #8A5037;
     --colour-secondary: #AB7D5B;
+    --colour-secondary-light: #caae9a;
 
 
     /* text */
@@ -156,7 +157,7 @@ button:hover, button:hover > h4, button:hover > h5 {
 
 
 /* PRODUCT COLOURS */
-.combo {
+.combo, .combo.key {
     border-color: var(--colour-combo);
 }
 
@@ -169,7 +170,7 @@ button:hover, button:hover > h4, button:hover > h5 {
     fill: var(--colour-bg);
 }
 
-.mini {
+.mini, .mini.key {
     border-color: var(--colour-mini);
 }
 
@@ -182,7 +183,7 @@ button:hover, button:hover > h4, button:hover > h5 {
     fill: var(--colour-bg);
 }
 
-.keyHarp {
+.keyHarp, .keyHarp.key{
     border-color: var(--colour-keyharp);
 }
 
@@ -195,7 +196,7 @@ button:hover, button:hover > h4, button:hover > h5 {
     fill: var(--colour-bg);
 }
 
-.toy {
+.toy, .toy.key {
     border-color: var(--colour-toy);
     fill: var(--colour-toy);
 }
@@ -209,7 +210,7 @@ button:hover, button:hover > h4, button:hover > h5 {
     fill: var(--colour-bg);
 }
 
-.electric {
+.electric, .electric.key {
     border-color: var(--colour-electric);
 }
 
@@ -222,7 +223,7 @@ button:hover, button:hover > h4, button:hover > h5 {
     fill: var(--colour-bg);
 }
 
-.headphones {
+.headphones, .headphones.key {
     border-color: var(--colour-headphones);
 }
 
@@ -235,7 +236,7 @@ button:hover, button:hover > h4, button:hover > h5 {
     fill: var(--colour-bg);
 }
 
-.effects {
+.effects, .effects.key {
     border-color: var(--colour-effects);
 }
 
@@ -248,7 +249,7 @@ button:hover, button:hover > h4, button:hover > h5 {
     fill: var(--colour-bg);
 }
 
-.parts {
+.parts, .parts.key {
     border-color: var(--colour-parts);
 }
 
@@ -261,7 +262,7 @@ button:hover, button:hover > h4, button:hover > h5 {
     fill: var(--colour-bg);
 }
 
-.fashion {
+.fashion, .fashion.key {
     border-color: var(--colour-fashion);
 }
 
@@ -274,7 +275,7 @@ button:hover, button:hover > h4, button:hover > h5 {
     fill: var(--colour-bg);
 }
 
-.zakka {
+.zakka, .zakka.key {
     border-color: var(--colour-zakka);
 }
 
@@ -287,7 +288,7 @@ button:hover, button:hover > h4, button:hover > h5 {
     fill: var(--colour-bg);
 }
 
-.other {
+.other, .other.key {
     border-color: var(--colour-other);
 }
 
@@ -355,7 +356,7 @@ input:checked {
 /* MODAL */
 .modal {
     background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.4); 
+    background-color: rgba(0,0,0,0.4);
 }
 
 
@@ -416,6 +417,13 @@ border-top: 0.5px solid var(--colour-primary);
 
 .search-item:hover, .search-item > h7:hover {
     color: var(--colour-primary);
+}
+
+
+/* ANIMATION */
+.loader {
+    border: 2px solid var(--colour-secondary-light);    
+    border-top: 2px solid var(--colour-primary); 
 }
 
 
