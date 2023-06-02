@@ -340,6 +340,17 @@ select, option {
     form > * > * > * > h5, fieldset > h5 {
         font-size: var(--text-xl);
     }
+
+
+
+    /* FILTER MODAL */
+    .sidebar.modal-content > * > h5 {
+         font-size: var(--text-xl);
+    }
+
+    .sidebar.modal-content > form > fieldset > div {
+     margin-left: 0 ;
+    }
 }
 
 /* 

@@ -54,6 +54,24 @@ function getCart () {
   }
 }
 
+function getFilter () {
+  var modal = document.getElementById("filterModal");
+
+  var span = document.getElementById("close");
+
+  modal.style.display = "block";
+
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+}
+
 
 // function checkWindow () {
 //   let w = window.innerWidth;
@@ -111,6 +129,7 @@ function getDropdown(icon, i) {
   icon.classList.toggle("rotate");
 }
 
+
 function getCartDrop(icon) {
   let content = document.getElementById("cartContent");
   let x = document.getElementById('cartDropdown');
@@ -143,6 +162,25 @@ function checkText () {
     document.getElementById("care").classList.add ("active__secondary");
     document.getElementById("condition").classList.remove("active__secondary");
   }
+}
+
+function getProducts() {
+  var modal = document.getElementById("filterModal");
+  let products = document.getElementsByClassName("products")[1];
+
+  products.classList.toggle("img__1");
+
+  let x = products.classList
+
+  if (x.contains('img__1')) {
+    document.getElementById("oneIcon").classList.add("hidden");
+    document.getElementById("manyIcon").classList.remove("hidden");
+  } else {
+    document.getElementById("oneIcon").classList.remove ("hidden");
+    document.getElementById("manyIcon").classList.add("hidden");
+  }
+
+  modal.style.display = "none";
 }
 
 

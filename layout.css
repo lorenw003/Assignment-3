@@ -527,7 +527,7 @@ input:read-only, input:read-only:focus-visible  {
 
 
 /* CART */
-.cart {
+.modal-content {
     background-color: var(--colour-bg);
     padding: 2em 0;
     width: 28%; 
@@ -826,6 +826,17 @@ input[type="search"], input[type="search"]:focus, input[type="search"]:focus-vis
 }
 
 
+/* SIDEBAR MODAL */
+.sidebar.modal-content {
+    padding: var(--spacing-xxxxl);
+}
+
+.sidebar.modal-content > * > .icon {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
 
 /* MEDIA QUERY */
 @media only screen 
@@ -911,7 +922,7 @@ input[type="search"], input[type="search"]:focus, input[type="search"]:focus-vis
 
 
         /* CART MODAL */
-        .cart {
+        .modal-content {
             width: 100%; 
         }
 
@@ -1164,7 +1175,14 @@ input[type="search"], input[type="search"]:focus, input[type="search"]:focus-vis
 
 
 
+        /* IMAGE TOGGLE */
+        .img__1 > * > img {
+            width: 15em;
+            height: 15em;
+        }
 
-
+        .img__1.products > * {
+            max-width: 15em;
+        }
 
 }
