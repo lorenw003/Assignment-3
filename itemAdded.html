@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="colours.css">
+
+</head>
+<body>
+    <div id="requestModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content request stack__lg">
+        
+            <h5 class="centre__text">Item Added To Your Bag</h5>
+            <div class="cluster">
+                <div class="cluster__sm">
+                    <h7 class="standard light neutral">Subtotal</h7> 
+                    <h8 class="standard secondary neutral cover">6 Items</h8>
+                </div>
+                <h8 class="bold neutral primary cover">¥88,000</h8>
+            </div>
+
+            <div class="cluster">
+                <a href="productList.html" class="btn btn__accent">Return to Shopping</a>
+                <button onclick="getCart(); closeModal()">View Cart</button>
+            </div>
+      
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="script.js"></script>

@@ -61,6 +61,25 @@ function getFilter () {
   }
 }
 
+function requestItem () {
+  var modal = document.getElementById("requestModal");
+
+  modal.style.display = "block";
+
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+}
+
+
+// FUNCTION to close a modal
+function closeModal() {
+  var modal = document.getElementById("requestModal");
+  modal.style.display = "none";
+}
+
 
 //NA (2023) How TO - Include HTML [Source code]. https://www.w3schools.com/howto/howto_html_include.asp.
 //CODE taken from w3 schools (see above reference) to reference and load html from other pages 
@@ -167,6 +186,7 @@ function getProducts() {
 }
 
 
+// FUNCTION to add predetermined item to cart
 function addToCart() {
   let z = document.getElementById("cartContent");
   let vars = z.getElementsByClassName("product__cart").id;

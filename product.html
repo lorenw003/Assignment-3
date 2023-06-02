@@ -122,7 +122,8 @@
                 </div>
 
                 <div class="cluster border-top">
-                    <button class="btn__secondary" id="cartBtn" onclick="getCart(); addToCart()" >Request</button>
+                    <button class="btn__secondary unresponsive" id="cartBtn" onclick="getCart(); addToCart()" >Request</button>
+                    <button class="btn__secondary mobile" id="cartBtn" onclick="requestItem(); addToCart()" >Request</button>
                     <button>Inquire</button>
                 </div>
             </section>
@@ -141,6 +142,8 @@
     <footer w3-include-html="footer.html"></footer>
 
     <section w3-include-html="cart.html"></section>
+
+    <section w3-include-html="itemAdded.html"></section>
 </body>
 </html>
 
