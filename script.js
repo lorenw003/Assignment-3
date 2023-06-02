@@ -1,18 +1,4 @@
-// const onClick = function() {
-//   console.log(this.id, this.innerHTML);
-//   if (this.id == "info") {
-//     document.getElementById("details").innerText = "Tanzanite, an Italian-made vintage combo organ with a rare earthy color. VOX Jaguar-like combo organ specifications for bass and tone control and sound. We have customized the Italian power supply AC220V specification to an AC adapter, so you can use it as it is with a Japanese specification 100V power outlet.";
-//   } else if (this.id == "condition") {
-//     document.getElementById("details").innerText = "Maintenance completed and fully working (all electrolytic capacitors replaced, semi-fixed resistors all replaced, BASS key contact cleaning & position adjustment, 440Hz tuning, volume pot cleaning [no gully due to operation], internal cleaning, etc.) / AC adapter jack (2.1 mm) Newly installed / Replaced power light with LED / Minor scratches and blurring overall (2020.9.28)";
-//   } else {
-//     document.getElementById("details").innerText = "If a defect other than the condition notation on the product page occurs during normal use within one year after purchase, we will repair it free of charge or irreparable. In that case, we will accept returns. For the first warranty repair within the warranty period, we will bear the shipping fee, but for the second and subsequent repairs within the warranty period, please only pay the shipping fee (shipping & return). For products that have passed one year after purchase, we will repair at the actual cost (labor, parts, shipping). If you let us know about the problem in advance, we will give you a rough estimate of the repair cost. However, please note that there may be cases where repair is not possible.";
-//   }
-// }
-
-// document.getElementById('info').onclick = onClick;
-// document.getElementById('care').onclick = onClick;
-// document.getElementById('condition').onclick = onClick;
-
+// FUNCTION to navigate to previous page based on histroyr and cureent url
 function goBack() {
   if (window.history.length = 1) {
     window.location.assign('index.html')
@@ -25,6 +11,9 @@ function goBack() {
   console.log(window.history.back())
 }
 
+
+
+// FUNCTIONS used to retieve modals or hidden features
 function getNav() {
   let x = document.getElementById("hiddenNav");
 
@@ -73,18 +62,8 @@ function getFilter () {
 }
 
 
-// function checkWindow () {
-//   let w = window.innerWidth;
-
-//   let div = document.getElementById("div2");
-
-//   if (w <= 500) {
-//     div.style.display = "none";
-//   } else {
-//     div.style.display = "flex";
-//   }
-// }
-
+//NA (2023) How TO - Include HTML [Source code]. https://www.w3schools.com/howto/howto_html_include.asp.
+//CODE taken from w3 schools (see above reference) to reference and load html from other pages 
 function includeHTML() {
   var z, i, elmnt, file, xhttp;
   /* Loop through a collection of all HTML elements: */
@@ -115,7 +94,7 @@ function includeHTML() {
   }
 }
 
-
+//FUNCTION to control dropdown and related responsive icons
 function getDropdown(icon, i) {
   let x = document.getElementsByClassName("dropdown-content")[i];
 
@@ -144,6 +123,8 @@ function getCartDrop(icon) {
   icon.classList.toggle("rotate");
 }
 
+
+//FUNCTION to change interactive element dependent on page content 
 function checkText () {
   let x = document.getElementById("details").innerText
 
@@ -164,6 +145,8 @@ function checkText () {
   }
 }
 
+
+// FUNCTION to change arrangment of products on product page according to selected filter
 function getProducts() {
   var modal = document.getElementById("filterModal");
   let products = document.getElementsByClassName("products")[1];
@@ -184,38 +167,20 @@ function getProducts() {
 }
 
 
+function addToCart() {
+  let z = document.getElementById("cartContent");
+  let vars = z.getElementsByClassName("product__cart")
 
-// $(function () {
-//     var includes = $('[data-include]')
-//     $.each(includes, function () {
-//       var file = $(this).data('include') + '.html'
-//       $(this).load(file)
-//       console.log($(this).data('include') + '.html')
-//     })
-// })
+  console.log(vars)
+  
+  for (i = 0; i < vars.length; i++) {
+    console.log(vars[i].id);
+  }
+  
+}
 
 
-// let myArr = [
-//   {
-//     name: "Saxaphone",
-//     cost: 88000,
-//     image: "1601288220_file2.jpg"
-//    },
-//    {
-//     name: "Saxaphone",
-//     cost: 88000,
-//     image: "1601288220_file2.jpg"
-//    }
-// ]
-
-// function loadElements(array) {
-//   for (let i in array) {
-//     let newDiv = document.createElement("div");
-//     newDiv.innerHTML = "<h5>" + array.name + "</h5><h8>¥" + array.cost + "</h8>";
-//     console.log(newDiv.innerHTML);
-//   }
-// }
-
-// function setUp() {
-// loadElements(myArr);
-// }
+function loadProducts() {
+  document.getElementById("loadButton").style.display= "none";
+  document.getElementById("animation").style.display = "block";
+}
