@@ -1,7 +1,7 @@
 @import url(reset.css);
 @import url(spacing.css);
-@import url(webfontkit/type.css);
-@import url(css/colours.css);
+@import url(colours.css);
+@import url(../webfontkit/type.css);
 
 body {
     margin: 2% 6% 6% 6%;
