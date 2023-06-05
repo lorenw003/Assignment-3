@@ -113,6 +113,8 @@ function includeHTML() {
   }
 }
 
+
+
 //FUNCTION to control dropdown and related responsive icons
 function getDropdown(icon, i) {
   let x = document.getElementsByClassName("dropdown-content")[i];
@@ -141,6 +143,15 @@ function getCartDrop(icon) {
 
   icon.classList.toggle("rotate");
 }
+
+
+function getCartContent() {
+  let content = document.getElementById("cartContent");
+  let x = document.getElementById('cartSidebar');
+
+  x.innerHTML = document.getElementById("cartContent").innerHTML;
+}
+
 
 
 //FUNCTION to change interactive element dependent on page content 
@@ -198,11 +209,10 @@ function addToCart() {
   } else {
     console.log("added")
   }
-  
-  
-  
 }
 
+
+//function to load product to page
 function loadProducts() {
   document.getElementById('loadButton1').style.display= "none";
   document.getElementById('loadButton').style.display= "none";

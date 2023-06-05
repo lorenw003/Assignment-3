@@ -24,7 +24,7 @@ button {
 .btn {
     border-radius: 0.4em;
 
-    padding: 0.5em 1.5em 0.1em 1.5em;
+    padding: 0.3em 1.5em;
 }
 
 .button__margins {
@@ -613,10 +613,6 @@ min-width: fit-content;
     height: 80vh;
 }
 
-/* .box-margins {
-    margin: var(--spacing-xxxl);
-} */
-
 .box__fit {
     height: fit-content;
 }
@@ -681,6 +677,7 @@ img {
     width: 12em;
     height: 12em;
 }
+
 
 
 /* SEMANTIC:PRODUCTS */
@@ -1170,6 +1167,10 @@ input[type="search"], input[type="search"]:focus, input[type="search"]:focus-vis
         .info.box > div {
             margin: 0;
             padding: 1rem 1rem;
+        }
+
+        .productinfo.square__wide {
+            max-width: 75vw;
         }
 
 
