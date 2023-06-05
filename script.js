@@ -111,6 +111,9 @@ function includeHTML() {
       return;
     }
   }
+  if (window.location.href.includes("checkout")) {
+    getCartContent();
+  }
 }
 
 
@@ -133,6 +136,8 @@ function getDropdown(icon, i) {
 function getCartDrop(icon) {
   let content = document.getElementById("cartContent");
   let x = document.getElementById('cartDropdown');
+
+  console.log(content);
 
   if (x.style.display === "none" || x.style.display === "") {
     x.innerHTML = document.getElementById("cartContent").innerHTML;
