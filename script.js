@@ -25,6 +25,8 @@ function getNav() {
   }
 }
 
+
+// gets cart modal
 function getCart () {
   var modal = document.getElementById("cartModal");
 
@@ -43,6 +45,8 @@ function getCart () {
   }
 }
 
+
+// gets mobile filter modal
 function getFilter () {
   var modal = document.getElementById("filterModal");
 
@@ -61,6 +65,8 @@ function getFilter () {
   }
 }
 
+
+// get mobile reqest confimration modal
 function requestItem () {
   var modal = document.getElementById("requestModal");
 
@@ -132,7 +138,7 @@ function getDropdown(icon, i) {
   icon.classList.toggle("rotate");
 }
 
-
+//get cart dropdown
 function getCartDrop(icon) {
   let content = document.getElementById("cartContent");
   let x = document.getElementById('cartDropdown');
@@ -149,7 +155,7 @@ function getCartDrop(icon) {
   icon.classList.toggle("rotate");
 }
 
-
+//reteives cart content to remain conistent
 function getCartContent() {
   let content = document.getElementById("cartContent");
   let x = document.getElementById('cartSidebar');
@@ -217,7 +223,7 @@ function addToCart() {
 }
 
 
-//function to load product to page
+//FUNCTION to load product to page
 function loadProducts() {
   document.getElementById('loadButton1').style.display= "none";
   document.getElementById('loadButton').style.display= "none";
@@ -249,3 +255,39 @@ function loadProducts() {
     
   }, 1500);
 }
+
+
+//CAROUSEL
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function nextSlide(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let slides = document.getElementsByClassName("product__Slides");
+  let dots = document.getElementsByClassName("dot");
+
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+
